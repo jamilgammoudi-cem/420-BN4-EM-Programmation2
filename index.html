@@ -1,0 +1,392 @@
+<!-- <!DOCTYPE html> -->
+<html>
+    <head>
+        <title>H22-420-BN4-EM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+<body>
+
+<div class="w3-bar w3-dark-gray w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-mobile" style="width:25%">H22-420-BN4-EM</a>
+  <a id="titreCours" href="#" class="w3-bar-item w3-button w3-mobile" style="width:50%">Programmation 2</a>
+</div>
+<br>
+<div class="w3-container">
+    <div class="w3-bar w3-light-grey">
+        <a target="_blank" href="https://www.cegepmontpetit.ca" class="w3-bar-item w3-button w3-dark-grey">CEM</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-red">Plagiat</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a target="_blank" href="https://departement-info-cem.github.io/plagiat" class="w3-bar-item w3-button w3-green">Cheat sheet!</a>
+                <a target="_blank" href="https://mathieudupont.github.io/H21-420-964-EM/Integrite-intellectuelle-Aide-memoire-2020-09-30.pdf" class="w3-bar-item w3-button">Qu'est-ce que le plagiat?</a>
+                <a target="_blank" href="https://mathieudupont.github.io/H21-420-964-EM/Integrite-intellectuelle-Quiz-V3.pdf" class="w3-bar-item w3-button">Quiz plagiat</a>
+            </div>
+        </div>
+        <a target="_blank" href="https://jamilgammoudi-cem.github.io/420-AN4-EM-Programmation2/Calendrier.pdf" class="w3-bar-item w3-button w3-dark-grey">Calendrier</a>
+        <a target="_blank" href="https://cegepmontpetit.omnivox.ca" class="w3-bar-item w3-button w3-orange">Omnivox</a>
+        <a href="https://jamilgammoudi-cem.github.io/420-AN4-EM-Programmation2/PC_2022H_420-BN4-EM_Département-Informatique.pdf" target="_blank" class="w3-bar-item w3-button w3-dark-grey">Plan de cours</a>
+        <a target="_blank" href="https://mareussite.cegepmontpetit.ca/cegep/mes-ressources/soutien-aux-apprentissages/tutorat-par-les-pairs/" class="w3-bar-item w3-button w3-blue">Tutorat</a>
+        <a target="_blank" href="https://mareussite.cegepmontpetit.ca/cegep/mes-ressources/soutien-aux-apprentissages/centre-de-services-adaptes/" class="w3-bar-item w3-button w3-dark-grey">Soutien à la réussite - CSA</a>
+        <a target="_blank" href="https://sites.google.com/site/notionscsharpcem/" class="w3-bar-item w3-button w3-green">Notions C#</a>
+        <a target="_blank" href="https://departement-info-cem.github.io/" class="w3-bar-item w3-button w3-dark-grey">Département d'informatique</a>
+		
+    </div>
+</div>
+
+
+
+
+
+<br>
+
+<div class="w3-container">
+
+    <button onclick="accordeon('livres')" class="w3-button w3-block w3-left-align w3-dark-grey">Suggestions de livres</button>
+    <div id="livres" class="w3-container w3-hide">
+        
+    </div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('js')" class="w3-button w3-block w3-left-align w3-dark-grey">Aide-mémoire</button>
+    <div id="js" class="w3-container w3-hide">
+
+    </div>
+
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('capsules')" class="w3-button w3-block w3-left-align w3-dark-grey">Capsules</button>
+    <div id="capsules" class="w3-container w3-hide">
+
+    </div>
+
+    <button onclick="accordeon('kahoot')" class="w3-button w3-block w3-left-align w3-black">Kahoot!</button>
+   <div id="kahoot" class="w3-container w3-hide">
+
+    </div>
+
+    <br>
+   <button onclick="accordeon('RC01')" class="w3-button w3-block w3-left-align w3-dark-gray">Rencontre 1 - <b>Liste générique</b>  
+	<span style="color:yellow;padding-left: 250px;">(Mardi 24 mai 2022)</span>
+	</button>
+    <div id="RC01" class="w3-container w3-hide">
+		
+		<div id="RC10-1" class="w3-container">
+			<div class="w3-panel w3-round w3-border">
+				<h3> Capsules vidéos </h3>
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+				  <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYWRle4R13pZRQiP4-6XowMX" class="w3-button w3-orange w3-round">Capsules vidéos!</a></p>
+				
+				</div>
+			
+		
+			</div>
+			<div class="w3-panel w3-round w3-border">
+				<h3> Exercices </h3>
+						
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre1/R01_ListeGenerique_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger les exercices </a></p>
+				</div>
+				
+			
+				
+			</div>
+			
+			
+			
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Liste générique : Introduction</h4>
+				<li><span style="color: #2b91af;">List</span>&lt;<span style="color: #0000ff;"><em>type</em></span>&gt; : La liste générique est une collection qui peut s’agrandir au besoin
+        
+    </li>
+				<div class="w3-container">
+				<img width="500px" height="200px" src="images/R01ExemplesCollection.png">	
+				</div>
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Liste générique : Définir et instancier </h4>
+				<div class="w3-code w3-container">
+                 <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Définir&nbsp;et&nbsp;instancier&nbsp;une&nbsp;collection&nbsp;de&nbsp;nombres&nbsp;entiers</span>
+List&lt;<span style="color:blue;">int</span>&gt;&nbsp;<span style="color:#1f377f;">m_colNombres</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;List&lt;<span style="color:blue;">int</span>&gt;();
+<span style="color:green;">//&nbsp;Définir&nbsp;et&nbsp;instancier&nbsp;une&nbsp;collection&nbsp;de&nbsp;chaînes</span>
+<span style="color:blue;">string</span>&gt;&nbsp;<span style="color:#1f377f;">m_colFruits</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;List&lt;<span style="color:blue;">string</span>&gt;();</pre>
+            </div>
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Liste générique : Ajouter des éléments </h4>
+				<li><strong><span style="font-family: Consolas; color: #74531f;">Add</span></strong> : Cette méthode permet d'ajouter un élément à la fin de la collection
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">m_colFruits.<span style="color: #74531f;">Add</span>(<span style="color: #a31515;">"Banane"</span>);
+</pre>
+        </div>
+    </li>
+	
+				<div class="w3-container">
+				<img width="1000px" height="400px" src="images/R01ExemplesCollectionAdd.png">	
+				</div>
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Liste générique :  Accès aux éléments </h4>
+				<li><strong><span style="font-family: Consolas; color: #74531f;">Count</span></strong> : Permet d'obtenir le nombre d'éléments que contient la collection
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">int</span>&nbsp;<span style="color: #1f377f;">nombreDeFruits</span>&nbsp;=&nbsp;m_colFruits.Count;
+</pre>
+        </div>
+    </li>
+	 <li>Obtenir un élément particulier de la collection en utilisant un index (position)
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">string</span>&nbsp;<span style="color: #1f377f;">premierFruit</span>&nbsp;=&nbsp;m_colFruits[0];&nbsp;<span style="color: green;">//&nbsp;ici&nbsp;on&nbsp;obtient&nbsp;le&nbsp;premier&nbsp;élément&nbsp;de&nbsp;la&nbsp;collection</span>
+</pre>
+        </div>
+    </li>
+	<li>Modifier le contenu d'un élément particulier de la collection en utilisant un index (position)
+        <div class="syntax">
+           <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Remplacer&nbsp;le&nbsp;deuxième&nbsp;élément&nbsp;par&nbsp;&quot;Pomme&quot;&nbsp;</span>
+m_colFruits[1]&nbsp;=&nbsp;<span style="color:#a31515;">&quot;Pomme&quot;</span>;</pre>
+        </div>
+    </li>
+	
+				<div class="w3-container">
+				<img width="1000px" height="300px" src="images/R01ExemplesCollectionAcces.png">	
+				</div>
+			</div>
+			
+			
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Liste générique :  Retirer des éléments </h4>
+				<li><strong><span style="font-family: Consolas; color: #74531f;">RemoveAt</span></strong> : Permet de retirer un élément de la collection en utilisant son index
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">m_colFruits.<span style="color: #74531f;">RemoveAt</span>(0);&nbsp;<span style="color: green;">//&nbsp;ici&nbsp;on&nbsp;retire&nbsp;le&nbsp;premier&nbsp;élément&nbsp;de&nbsp;la&nbsp;collection
+//&nbsp;Noter que tous les éléments suivant l'élément retiré seront déplacés d'une position</span></pre>
+        </div>
+    </li>
+				<div class="w3-container">
+				<img width="1500px" height="500px" src="images/R01ExemplesCollectionRemoveAt.png">	
+				</div>
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Liste générique :  Recherche d'une élément </h4>
+				 <li><strong><span style="font-family: Consolas; color: #74531f;">Contains</span></strong> : Permet de vérifier si une valeur est un des éléments de la collection ou non.
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">m_colFruits.<span style="color: #74531f;">Contains</span>("Fraise");&nbsp;<span style="color: green;">//&nbsp;Cette méthode retourne true ou false selon que la valeur est un élément de la collection</span></pre>
+        </div>
+    </li>
+				
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Liste générique :  Parcourir une liste avec une boucle</h4>
+				
+				<li>Exemple #1 : Parcourir une collection à l'aide d'une boucle <span style="color:blue;">foreach</span> 
+        <div class="syntax">
+           <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Parcourir&nbsp;la&nbsp;collection&nbsp;afin&nbsp;de&nbsp;compter&nbsp;le&nbsp;nombre&nbsp;de&nbsp;fruits&nbsp;de&nbsp;6&nbsp;lettres</span>
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nbFruitsDe6Lettres</span>&nbsp;=&nbsp;0;
+<span style="color:#8f08c4;">foreach</span>&nbsp;(<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">fruitCourant</span>&nbsp;<span style="color:#8f08c4;">in</span>&nbsp;m_colFruits)
+{
+&nbsp;&nbsp;<span style="color:#8f08c4;">if</span>&nbsp;(fruitCourant.Length&nbsp;==&nbsp;6)
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;nbFruitsDe6Lettres++;
+&nbsp;&nbsp;}
+}</pre>
+        </div>
+    </li>	
+	
+<p > <span style="background-color:yellow;font-weight:bold">En parcourant une liste avec une boucle <span style="color:blue;">foreach</span>, il est impossible de la modifier </span>    </p>
+
+	<li>Exemple #2 : Parcourir une collection à l'aide d'une boucle <span style="color:blue;">for</span>
+        <div class="syntax">
+            <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Parcourir&nbsp;la&nbsp;collection&nbsp;afin&nbsp;de&nbsp;compter&nbsp;le&nbsp;nombre&nbsp;de&nbsp;fruits&nbsp;de&nbsp;6&nbsp;lettres</span>
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nbFruitsDe6Lettres</span>&nbsp;=&nbsp;0;
+<span style="color:#8f08c4;">for</span>&nbsp;(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span>&nbsp;=&nbsp;0;&nbsp;index&nbsp;&lt;&nbsp;m_colFruits.Count;&nbsp;index++)
+{
+&nbsp;&nbsp;<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">fruitCourant</span>&nbsp;=&nbsp;m_colFruits[index];
+&nbsp;&nbsp;<span style="color:#8f08c4;">if</span>&nbsp;(fruitCourant.Length&nbsp;==&nbsp;6)
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;nbFruitsDe6Lettres++;
+&nbsp;&nbsp;}
+}</pre>
+        </div>
+    </li>	
+	<p > <span style="background-color:yellow;font-weight:bold">En parcourant une liste avec une boucle <span style="color:blue;">for</span> afin de retirer certains éléments, il est conseillé de commencer à partir du dernier élément. Sinon, vous risquez de sauter quelques-uns ! </span>    </p>
+<li>Exemple #3 : Parcourir une collection à l'aide d'une boucle <span style="color:blue;">for</span> et retirer des éléments
+        <div class="syntax">
+            <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Parcourir&nbsp;la&nbsp;collection&nbsp;afin&nbsp;de&nbsp;retirer&nbsp;les&nbsp;nombres&nbsp;negatifs</span>
+</pre>
+        </div>
+		
+    </li>	
+	<div class="w3-container">
+				<img width="700px" height="400px" src="images/R01ExemplesCollectionForRemove.png">	
+				</div>
+				
+			</div>
+			
+			
+			
+			
+			<div class="w3-panel w3-card" style="background-color:LightPink">
+			
+				<h4>  <strong><span style="color: #3366ff; font-family: 'courier new', courier, monospace;">MessageBox</span></strong> </h4>
+				<div class="w3-container">
+					<li><strong><span style="font-family: Consolas; color: #74531f;">MessageBox</span></strong> : Permet d'afficher un message dans un popup
+        <ul>
+            <li>
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">MessageBox.Show( "Bonjour", "Salutation");&nbsp;<span style="color: green;">//&nbsp;Cette commande affiche Bonjour dans un popup qui a pour titre Salutation</span></pre>
+            </li>
+            <li>
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">MessageBox.Show("Impossible de ", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);&nbsp;
+<span style="color: green;">//&nbsp;Cette commande affiche "Impossible de " dans un popup qui a pour titre le nom du programme, avec une icone d'erreur et un bouton OK
+            </span></pre>
+            </li>
+
+        </ul>
+    </li>
+					 
+        
+    
+				
+				</div>
+			</div>
+       </div>
+	  
+
+       
+
+    </div>
+    <!-- <br> -->
+
+ 
+    <button onclick="accordeon('RC2')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 2 <span style="color:yellow;padding-left: 400px;">(Mardi 31 mai 2022)</span></button>
+    <div id="RC2" class="w3-container w3-hide">
+		
+    </div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC3')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 3 <span style="color:yellow;padding-left: 400px;">(Mardi 07 juin 2022)</span> </button>
+    <div id="RC3" class="w3-container w3-hide">
+	
+	</div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC4')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 4  <span style="color:yellow;padding-left: 395px;">(Vendredi 10 juin 2022)</span></button>
+    <div id="RC4" class="w3-container w3-hide">
+    
+       
+    </div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC5')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 5  <span style="color:yellow;padding-left: 395px;">(Mardi 14 juin 2022)</span></button>
+    <div id="RC5" class="w3-container w3-hide">
+     
+    </div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC6')" class="w3-button w3-block w3-left-align w3-blue">Rencontre 6 
+         <span style="color:yellow;padding-left: 395px;">(Mardi 21 juin 2022)</span>
+    </button>
+    <div id="RC6" class="w3-container w3-hide" style="text-align:center;">
+        
+    </div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC7')" class="w3-button w3-block w3-left-align w3-dark-gray">Rencontre 7 <span style="color:yellow;padding-left: 400px;">(Mardi 28 juin 2022)</span></button>
+    <div id="RC7" class="w3-container w3-hide">
+     
+
+        
+    </div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC8')" class="w3-button w3-block w3-left-align w3-dark-gray">Rencontre 8 <span style="color:yellow;padding-left: 400px;">(Mardi 05 juillet 2022)</span></button>
+    <div id="RC8" class="w3-container w3-hide">
+       
+    </div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC9')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 9  <b></b> 
+	<span style="color:yellow;padding-left: 400px;">(Vendredi 07 juillet 2022)</span>
+	</button>
+    <div id="RC9" class="w3-container w3-hide">
+
+	
+
+    </div>
+	
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC10')" class="w3-button w3-block w3-left-align w3-dark-gray">Rencontre 10   
+	<span style="color:yellow;padding-left: 390px;">(Mardi 12 juillet 2022)</span>
+	</button>
+    <div id="RC10" class="w3-container w3-hide">
+		
+	  
+
+       
+
+    </div>
+
+
+   
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('RC11')" class="w3-button w3-block w3-left-align w3-dark-gray">Rencontre 11 
+	<span style="color:yellow;padding-left: 390px;">(Mardi 02 août 2022)</span>
+	</button>
+    <div id="RC11" class="w3-container w3-hide">
+
+       
+			
+
+    </div>
+
+
+
+    <!-- <br> -->
+
+
+	
+
+    <button onclick="accordeon('RC12')" class="w3-button w3-block w3-left-align w3-blue">Rencontre 12  <b>                   </b>
+	<span style="color:yellow;padding-left: 390px;">(Mardi 09 août 2022)</span>
+	</button>
+    <div id="RC12" class="w3-container w3-hide">
+	
+	
+    </div>
+
+    <br>
+
+</div>
+
+<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+<script>
+    w3CodeColor();
+</script>
+
+<script>
+function accordeon(id) {
+  let x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
