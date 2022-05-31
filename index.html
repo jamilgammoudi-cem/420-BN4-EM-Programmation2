@@ -79,7 +79,7 @@
 	</button>
     <div id="RC01" class="w3-container w3-hide">
 		
-		<div id="RC10-1" class="w3-container">
+		<div class="w3-container">
 			<div class="w3-panel w3-round w3-border">
 				<h3> Capsules vidéos </h3>
 				
@@ -272,11 +272,116 @@ m_colFruits[1]&nbsp;=&nbsp;<span style="color:#a31515;">&quot;Pomme&quot;</span>
     <!-- <br> -->
 
  
-    <button onclick="accordeon('RC2')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 2 <span style="color:yellow;padding-left: 400px;">(Mardi 31 mai 2022)</span></button>
-    <div id="RC2" class="w3-container w3-hide">
+    <button onclick="accordeon('RC02')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 2 - <b>Instanciation avec new, référence</b> 
+	<span style="color:yellow;padding-left: 95px;">(Mardi 31 mai 2022)</span>
+	</button>
+	<!-- <br>
+     <div id="RC02" class="w3-container w3-hide">
 		
-    </div>
+		<div class="w3-container">
+			<div class="w3-panel w3-round w3-border">
+				<h3> Capsules vidéos </h3>
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+				  <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUk1eH6aTbdeR22C4fzrrRL" class="w3-button w3-round" style="background-color:DarkTurquoise"  >Capsules vidéos!</a></p>
+				
+				</div>
+			
+		
+			</div>
+			<div class="w3-panel w3-round w3-border">
+				<h3> Exercices </h3>
+						
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre1/R01_ListeGenerique_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger les exercices </a></p>
+					<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre1/ManipulationsCollection_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger les exercices (Manipulations de base)</a></p>
+				</div>
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre1/R01_ListeGenerique_Solution.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger la SOLUTION </a></p>
+					<p class="w3-button w3-green w3-round">(Manipulations de base) SOLUTION À VENIR...</p>
+				</div>
+			
+				
+			</div>
+				<div class="w3-panel w3-round w3-border">
+				<h3> Laboratoire 01 -  Lecteur DC</h3>
+						<ol>
+							<li>Visionner les 2 capsules sur la description de la classe DisqueCompact</li>
+							  <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUFBfoGYJtGNOj-SRGfyQcq" class="w3-button w3-DarkTurquoise w3-round" style="background-color:DarkTurquoise" >Capsules vidéos - DisqueCompact et Lecteur DC!</a></p>
+				
+							<li>Compléter et rendre les 2 exercices utilisant la classe DisqueCompact</li>
+							<li>Visionner les 2 capsules concernant le laboratoire #4, le Lecteur DC</li>
+							<li>Compléter et rendre le laboratoire #4
+						</ol>
+				
+						<div class="w3-container w3-cell w3-cell-middle">
+						
+							<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre2/R02_ExerciceDisqueCompact_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger les exercices - DisqueCompact</a></p>
+							<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre2/R02_Laboratoire1_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le Matériel  (Lecteur DC)</a></p>
+						</div>
+						<div class="w3-container w3-cell w3-cell-middle">
+						
+							
+							<p class="w3-button w3-green w3-round">(DisqueCompact) SOLUTION À VENIR...</p> <br> 
+							<p class="w3-button w3-green w3-round">(Laboratoire 01 - Lecteur de base) SOLUTION À VENIR...</p>
+						</div>
+			
+				
+			</div>
+			
+			
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Instanciation avec new, référence</h4>
+				<ol>
+    <li>Instanciation : création d'un objet avec <strong><span style="font-family: 'courier new', courier, monospace; font-size: medium; color: #0000ff;"><a href="https://sites.google.com/site/notionscsharpcem/instanciation_objet" target="_blank">new</a></span></strong></li>
+    <li>Accéder aux membres
+        <ul>
+            <li>propriétés : des valeurs appartenant à l'objet</li>
+            <li>méthodes : des actions ou traitements que l'objet peut effectuer</li>
+            <li>Constantes : lorsqu'une classe définit des constantes publiques, l'accès à ces constantes en dehors de la classe se fera toujours en utilisant <b>le nom de la classe</b> et non le nom de l'objet.<br>exemple :&nbsp; int valeur = MaClasse<b>.</b>NomConstante;</li>
+            <li>Méthodes statiques : lorsque la classe offre une ou plusieurs méthodes statiques, elles seront accessibles en utilisant <b>le nom de la classe</b>&nbsp;et non le nom de l'objet.</li>
+        </ul>
+    </li>
+    <li>Type valeur et type référence
+        <ul>
+            <ul>
+                <li>Les variables qui&nbsp;<b>stockent des valeurs</b>&nbsp;en mémoire sont dites de type valeur (comme les types&nbsp; int, char, decimal, bool,...)</li>
+                <li>Les variables qui&nbsp;<b>stockent les adresses</b>&nbsp;des objets en mémoire sont dites de type référence (comme les string, tableaux et classes)</li>
+                <li>Référence <span style="color:blue">null :</span>&nbsp;Si l'objet ne fait référence à aucun objet, sa valeur&nbsp;&nbsp;<span style="color:blue">null</span>.&nbsp; Un objet déclaré et non instancié a pour valeur null</li>
+            </ul>
+            
+        </ul>
+    </li>
 
+    <li>Variable locale et variable membre
+        <ul>
+            <li>
+                Lorsqu'une variable est déclarée<b> localement dans une méthode ou un bloc d'instructions</b>, elle n'est visible est utilisable que dans la méthode ou le bloc où elle est déclarée. <b>La variable est dite locale</b>. Sa portée se limite
+                à la méthode ou le bloc qui la déclare. Dès que l'exécution de la méthode ou du bloc est terminée, la variable n'existe plus. </li>
+            <li>Dans c# on peut déclarer des variables dont la portée est plus large (la classe). On dit que c'est une variable membre. Sa portée est toute la classe. Elle est <b>utilisable dans toutes les méthodes</b> de la classe. Pour les distinguer des
+                variables locales, on adoptera le standard de les préfixer de <b>m_</b> (m_prix par exemple).&nbsp;</li>
+        </ul>
+    </li>
+    <li>Utilisation du débogueur pour visualiser les membres d'un objet
+        <ul>
+            <li>Lors de l'exécution, en mettant un point d'arrêt et en mettant le curseur sur l'objet, vous pouvez visualiser les valeurs des différentes propriétés de l'objet </li>
+			<img src="data:image/png;base64,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"
+                    alt="">
+            <li>Vous pouvez aussi voir la structure de la classe en faisant un clic droit sur le type de l'objet c'est à dire le nom de la classe et choisir "Atteindre la définition" dans le menu.</li>
+        </ul>
+    </li>
+   
+</ol>
+				
+			</div>
+		</div>
+	</div>
+	  -->
+	
     <!-- <br> -->
 
     <button onclick="accordeon('RC3')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 3 <span style="color:yellow;padding-left: 400px;">(Mardi 07 juin 2022)</span> </button>
@@ -381,6 +486,8 @@ m_colFruits[1]&nbsp;=&nbsp;<span style="color:#a31515;">&quot;Pomme&quot;</span>
     <br>
 
 </div>
+
+
 
 <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
 <script>
