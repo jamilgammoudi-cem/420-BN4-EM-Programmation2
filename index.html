@@ -656,6 +656,59 @@ m_objCompteurHydro.<span style="color: #74531f;">Consommer</span>(25);
 				
 			</div>
 			
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h3> TP01 - Quelques notions requises </h3>
+				<ol>
+    <li>Nouvelles notions requises pour ce travail
+        <ul>
+            <li>Pour afficher une image dans un contrôle PictureBox
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">picAlbum.Image&nbsp;=&nbsp;<span style="color: #2b91af;">Image</span>.FromFile(nomCompletDuFichierACharger);
+</pre>
+            </li>
+            <li>Pour afficher aucune image dans un contrôle PictureBox&nbsp;
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">picAlbum.Image&nbsp;=&nbsp;<span style="color: blue;">null</span>;
+</pre>
+            </li>
+            <li>Pour générer un nombre aléatoire entre 1 et 9 inclusivement&nbsp;
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">int</span>&nbsp;<span style="color: #1f377f;">nombre</span>&nbsp;=&nbsp;m_objRandom.Next(1,&nbsp;10); <span style="color: green;">// la borne supérieure est exclue de l'intervalle.</span></pre>
+            </li>
+            <li>Pour déterminer si un fichier existe vous pouvez utiliser le code suivant :
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#8f08c4;">if</span>&nbsp;(<span style="color:#2b91af;">File</span>.Exists(votreFichier))
+</pre>
+            </li>
+        </ul>
+    </li>
+    <li>Notion vue dans la R01 : Pourquoi parcourir une liste à partir de la fin pour retirer des éléments fonctionne correctement ?
+        <ul>
+            <li>Si on retire un élément d'une liste cela va raccourcir la liste et déplacer les éléments suivants vers l'élément retiré. Le problème c'est que le nouvel élément à la position index pourrait lui aussi devoir être retiré, mais l'index a été
+                augmenté. Pour vous convaincre de ce problème, simplement recopier les deux exemples ci-dessous et les exécuter, ensuite observer le contenu de la collection après l'exécution de la boucle. Dans le premier cas seulement le 26 sera retiré,
+                comme si on avait oublié le 14.</li>
+            <li>Prenons une liste générique de nombres entiers et essayons de retirer tous les nombres pairs en débutant au début
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#2b91af;">List</span>&lt;<span style="color:blue;">int</span>&gt;&nbsp;<span style="color:#1f377f;">m_colNombres</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">List</span>&lt;<span style="color:blue;">int</span>&gt;()&nbsp;{&nbsp;26,14,23&nbsp;};
+ 
+<span style="color:green;">//&nbsp;Version&nbsp;#1&nbsp;qui&nbsp;ne&nbsp;fonctionne&nbsp;pas&nbsp;correctement</span>
+<span style="color:#8f08c4;">for</span>&nbsp;(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span>&nbsp;=&nbsp;0;&nbsp;<span style="color:#1f377f;">index</span>&nbsp;&lt;&nbsp;<span style="color:#1f377f;">m_colNombres</span>.Count;&nbsp;<span style="color:#1f377f;">index</span>++)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">if</span>&nbsp;(<span style="color:#1f377f;">m_colNombres</span>[<span style="color:#1f377f;">index</span>]&nbsp;%&nbsp;2&nbsp;==&nbsp;0)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">m_colNombres</span>.<span style="color:#74531f;">RemoveAt</span>(<span style="color:#1f377f;">index</span>);
+}</pre>
+            </li>
+            <li>Prenons une liste générique de nombres entiers et essayons de retirer tous les nombres pairs en débutant par la fin
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#2b91af;">List</span>&lt;<span style="color:blue;">int</span>&gt;&nbsp;<span style="color:#1f377f;">m_colNombres</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">List</span>&lt;<span style="color:blue;">int</span>&gt;()&nbsp;{&nbsp;26,14,23&nbsp;};
+ 
+<span style="color:green;">//&nbsp;Version&nbsp;#2&nbsp;qui&nbsp;fonctionne&nbsp;correctement</span>
+<span style="color:#8f08c4;">for</span>&nbsp;(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span>&nbsp;=&nbsp;<span style="color:#1f377f;">m_colNombres</span>.Count&nbsp;-1;&nbsp;<span style="color:#1f377f;">index</span>&nbsp;&gt;=&nbsp;0;&nbsp;<span style="color:#1f377f;">index</span>--)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">if</span>&nbsp;(<span style="color:#1f377f;">m_colNombres</span>[<span style="color:#1f377f;">index</span>]&nbsp;%&nbsp;2&nbsp;==&nbsp;0)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">m_colNombres</span>.<span style="color:#74531f;">RemoveAt</span>(<span style="color:#1f377f;">index</span>);
+}</pre>
+            </li>
+        </ul>
+    </li>
+</ol>
+				
+				
+			</div>
        
     </div>
 
@@ -664,8 +717,177 @@ m_objCompteurHydro.<span style="color: #74531f;">Consommer</span>(25);
     <button onclick="accordeon('RC4')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 4 - <b>Défnition d'une classe - Suite</b> 
 	<span style="color:yellow;padding-left: 130px;">(Vendredi 10 juin 2022)</span></button>
     <div id="RC4" class="w3-container w3-hide">
-    
-       
+		<div class="w3-panel w3-round w3-border">
+				<h3> Capsules vidéos </h3>
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+				  <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUPn8zIgSlHKXb5jGuGdWpv" class="w3-button w3-round" style="background-color:DarkTurquoise"  >Capsules vidéos!</a></p>
+				
+				</div>
+			
+		
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				<h3> Matériel de départ</h3>
+						
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre4/R04_ClassesSuite_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger les exercices </a></p>
+					
+				</div>
+				
+			
+				
+		</div>
+       <div class="w3-panel w3-card w3-light-grey"> 
+				<h3> Définir une classse - suite </h3>
+		
+			<ol>
+    <li><b>Encapsulation</b> : Protéger les données membres pour assurer l'intégrité de l'objet
+        <div>En programmation, l'encapsulation désigne le principe de regrouper les données (variables membres privées) avec un ensemble de routines (propriétés et/ou méthodes) permettant de les consulter ou de les manipuler. Dans ce cours nous allons protéger
+            les données des objets afin d’assurer leur intégrité. Par exemple, la classe Thermostat qui modélise un objet de la vie réelle, ne devrait pas permettre d’augmenter la température à 999 degrés Celsius.</div>
+    </li>
+    <li><strong><span style="font-family: 'courier new', courier, monospace; color: #0000ff; font-size: medium;">get</span></strong> : accès en lecture d'une propriété
+        <ul>
+            <li>Propriété en lecture seule
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">int</span>&nbsp;m_heures; <span style="color: green;">//&nbsp;champ </span>
+
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;Heures <span style="color: green;">//&nbsp;propriété </span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;<span style="color: green;">//&nbsp;accès&nbsp;en&nbsp;lecture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre>
+            </li>
+        </ul>
+    </li>
+    <li><strong><span style="font-family: 'courier new', courier, monospace; font-size: medium; color: #0000ff;">set</span></strong> : accès en écriture d'une propriété, utilisation du mot clé <span style="font-size: medium;"><strong><span style="font-family: 'courier new', courier, monospace; color: #0000ff;">value</span></strong>
+        </span>
+        <ul>
+            <li>Propriété en écriture seule
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">int</span>&nbsp;m_heures; <span style="color: green;">//&nbsp;champ </span>
+
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;Heures <span style="color: green;">//&nbsp;propriété </span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">set</span> <span style="color: green;">//&nbsp;accès&nbsp;en&nbsp;écriture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_heures&nbsp;=&nbsp;<span style="color: blue;">value</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+            </li>
+            <li><b>Propriété en lecture et écriture
+                </b>
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">int</span>&nbsp;m_heures; <span style="color: green;">//&nbsp;champ </span>
+
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;Heures <span style="color: green;">//&nbsp;propriété </span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;<span style="color: green;">// accès&nbsp;en&nbsp;lecture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">set</span>&nbsp;<span style="color: green;">//&nbsp;accès&nbsp;en&nbsp;écriture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_heures&nbsp;=&nbsp;<span style="color: blue;">value</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre>
+            </li>
+        </ul>
+    </li>
+    <li><b>Propriété calculée</b> : propriété qui fournit une valeur à partir de champs existants
+        <ul>
+            <li>Une méthode provenant de la classe <strong><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; color: #3366ff;">Montre</span></strong> sans paramètre qui produit un résultat
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span>&nbsp;<span style="color: blue;">string</span>&nbsp;<span style="color: #74531f;">ObtenirTempsCourant</span>()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures&nbsp;+&nbsp;<span style="color: #a31515;">":"</span>&nbsp;+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_minutes.<span style="color: #74531f;">ToString</span>(<span style="color: #a31515;">"00"</span>)&nbsp;+&nbsp;<span style="color: #a31515;">":"</span>&nbsp;+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_secondes.<span style="color: #74531f;">ToString</span>(<span style="color: #a31515;">"00"</span>);
+}</pre>
+                </div>
+            </li>
+            <li>Une propriété calculée qui remplace la méthode ObtenirTempsCourant()
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span>&nbsp;<span style="color: blue;">string</span>&nbsp;TempsCourant
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures&nbsp;+&nbsp;<span style="color: #a31515;">":"</span>&nbsp;+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_minutes.<span style="color: #74531f;">ToString</span>(<span style="color: #a31515;">"00"</span>)&nbsp;+&nbsp;<span style="color: #a31515;">":"</span>&nbsp;+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_secondes.<span style="color: #74531f;">ToString</span>(<span style="color: #a31515;">"00"</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre>
+                </div>
+            </li>
+            <li>Utilisation de la méthode versus utilisation de la propriété calculée
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">m_objMontre&nbsp;=&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">Montre</span>(9,&nbsp;05,&nbsp;42);
+ 
+<span style="color: green;">//&nbsp;version&nbsp;utilisant&nbsp;la&nbsp;méthode sans paramètre</span>
+txtAffichageMontre.Text&nbsp;=&nbsp;m_objMontre.<span style="color: #74531f;">ObtenirTempsCourant</span>();
+ 
+<span style="color: green;">//&nbsp;version&nbsp;utilisant&nbsp;la&nbsp;propriété calculée</span>
+txtAffichageMontre.Text&nbsp;=&nbsp;m_objMontre.TempsCourant;
+</pre>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li><b>Propriété automatique</b> : elle élimine la déclaration de la variable membre privée
+        <ul>
+            <li>Version habituelle incluant la déclaration d'une variable membre privée
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">double</span>&nbsp;m_temperature;
+ 
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">double</span>&nbsp;Temperature
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;{&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_temperature;&nbsp;}
+}
+</pre>
+            </li>
+            <li>Version utilisant la propriété automatique
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: green;">//&nbsp;Propriété&nbsp;automatique&nbsp;en&nbsp;lecture publique et en écriture privé</span>
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">double</span>&nbsp;Temperature&nbsp;{&nbsp;<span style="color: blue;">get</span>;&nbsp;<span style="color: blue;">private set</span>;&nbsp;}</pre>
+            </li>
+        </ul>
+    </li>
+    <li><strong><span style="font-family: 'courier new', courier, monospace; font-size: medium; color: #8f08c4;">throw</span></strong> : lancer une exception lorsque l'état de l'objet est incohérent
+        <ul>
+            <li>Exemple #1 : un constructeur qui doit respecter la cohérence de l'objet
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: gray;"><span style="color: blue;">public</span>&nbsp;<span style="color: #2b91af;">Thermostat</span>(<span style="color: blue;">double</span>&nbsp;<span style="color: #1f377f;">pTemperature</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">if</span>&nbsp;(<span style="color: #1f377f;">pTemperature</span>&nbsp;&lt;&nbsp;MIN_TEMPERATURE&nbsp;||&nbsp;<span style="color: #1f377f;">pTemperature</span>&nbsp;&gt;&nbsp;MAX_TEMPERATURE)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">throw</span>&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">ArgumentOutOfRangeException</span>();
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;m_temperature&nbsp;=&nbsp;<span style="color: #1f377f;">pTemperature</span>;
+}</span></pre>
+            </li>
+            <li>Exemple #2 : une propriété qui doit respecter la cohérence de l'objet
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;Heures
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;<span style="color: green;">// accès&nbsp;en&nbsp;lecture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">set</span>&nbsp;<span style="color: green;">//&nbsp;accès&nbsp;en&nbsp;écriture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">if</span>&nbsp;(<span style="color: blue;">value</span>&nbsp;&lt;&nbsp;0&nbsp;||&nbsp;<span style="color: blue;">value</span>&nbsp;&gt;&nbsp;23)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">throw</span>&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">ArgumentOutOfRangeException</span>();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_heures&nbsp;=&nbsp;<span style="color: blue;">value</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre>
+            </li>
+        </ul>
+    </li>
+</ol>
+		
+		
+		
+		</div>
     </div>
 
 
@@ -679,7 +901,7 @@ m_objCompteurHydro.<span style="color: #74531f;">Consommer</span>(25);
 
     <!-- <br> -->
 
-    <button onclick="accordeon('RC6')" class="w3-button w3-block w3-left-align w3-blue">Rencontre 6 - <b>Examen 01 (25%)</b>
+    <button onclick="accordeon('RC6')" class="w3-button w3-block w3-left-align w3-blue">Rencontre 6 - <b>Examen 01 <span style="color:yellow;"> (25%)</span></b>
          <span style="color:yellow;padding-left: 220px;">(Mardi 21 juin 2022)</span>
     </button>
     <div id="RC6" class="w3-container w3-hide" style="text-align:center;">
@@ -704,6 +926,11 @@ m_objCompteurHydro.<span style="color: #74531f;">Consommer</span>(25);
     </div>
 
     <!-- <br> -->
+
+	<button onclick="accordeon('TP02')" class="w3-button w3-block w3-left-align w3-dark-grey">TP02  <span style="color:yellow;"> (25%)</span></button>
+     <div id="TP02" class="w3-container w3-hide">
+       
+    </div>
 
     <button onclick="accordeon('RC9')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 9  <b></b> 
 	<span style="color:yellow;padding-left: 400px;">(Vendredi 07 juillet 2022)</span>
@@ -731,18 +958,18 @@ m_objCompteurHydro.<span style="color: #74531f;">Consommer</span>(25);
     
 	
 	<!-- <br> -->
-	<button onclick="accordeon('RC6')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 11 - <b>Examen 01 (Formatif)</b>
+	<button onclick="accordeon('RC11')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 11 - <b>Examen 01 (Formatif)</b>
          <span style="color:yellow;padding-left: 195px;">(Mardi 02 août 2022)</span>
     </button>
-    <div id="RC6" class="w3-container w3-hide" style="text-align:center;">
+    <div id="RC11" class="w3-container w3-hide" style="text-align:center;">
         
     </div>
 
     <!-- <br> -->
 
-    <button onclick="accordeon('RC7')" class="w3-button w3-block w3-left-align w3-blue">Rencontre 12 - <b>Examen 01 (40%)</b>
+    <button onclick="accordeon('RC12')" class="w3-button w3-block w3-left-align w3-blue">Rencontre 12 - <b>Examen 01 <span style="color:yellow;"> (40%)</span></b>
 	<span style="color:yellow;padding-left: 220px;">(Mardi 09 août 2022)</span></button>
-    <div id="RC7" class="w3-container w3-hide">
+    <div id="RC12" class="w3-container w3-hide">
     <br>
 
 </div>
