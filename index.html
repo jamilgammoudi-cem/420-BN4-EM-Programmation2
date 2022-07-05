@@ -1154,7 +1154,287 @@ txtAffichageMontre.Text&nbsp;=&nbsp;m_objMontre.TempsCourant;
 
     <button onclick="accordeon('RC8')" class="w3-button w3-block w3-left-align w3-dark-gray">Rencontre 8 <span style="color:yellow;padding-left: 400px;">(Mardi 05 juillet 2022)</span></button>
     <div id="RC8" class="w3-container w3-hide">
-       
+       <button onclick="accordeon('RC08-01')" class="w3-button w3-block w3-left-align w3-green">Conversion de type, paramètres optionnels, types d'erreurs et débogage</button>
+	
+		<div id ="RC08-01" class="w3-panel w3-round w3-border w3-hide">
+				<h3> Conversion de type, paramètres optionnels, types d'erreurs et débogage</h3>
+				
+				<table>
+					<tr>
+						<td>
+							<p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYVW5faSwy5FQTA9mcruY7TA" class="w3-button w3-round" style="background-color:DarkTurquoise"  >Capsules vidéos!</a></p>
+					
+						</td>
+						
+					</tr>
+				
+					<tr>
+						<td>
+							<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre8/R08A_Exercices_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+					
+						</td>
+						
+					</tr>
+					
+				
+				</table>
+				
+				<div class="w3-panel w3-card w3-light-grey"> 
+<ol>
+							<li><span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">implicit</span> : conversion d'un type vers un autre type sans perte d'information</li>
+							<li><span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">explicit</span> : conversion d'un type vers un autre type qui peut entraîner une perte d'information</li>
+							<li><span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">struct</span> : <span><em style=""><span>type valeur
+										</span></em></span>
+								<div class="description">Une variable dont le type de base est <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">struct</span> contient directement la ou les valeurs. Par exemple les types <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">bool</span>,
+									<span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">char</span>, <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">double</span>, <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">int</span> et <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">decimal</span> sont tous des <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">struct</span>,
+									soit des types valeur. Une variable de ce type contient une valeur.
+								</div>
+							</li>
+							<li><span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">class</span> : <span><em>type référence
+									</em></span>
+								<div class="description">Une variable dont le type de base est <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">class</span>, contient une référence (une adresse) vers un espace mémoire contenant la ou les valeurs. C'est
+									le cas par exemple des types <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">StreamReader</span>, <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">StreamWriter</span>,
+									<span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">Random</span>, des collections ainsi que les tableaux. Les variables de ce type, peuvent prendre la valeur spéciale <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">null</span>.
+									Noter que le type <span style="font-size: medium; color: #0000ff; font-family: 'courier new', courier, monospace;">string</span> est un type référence.
+								</div>
+							</li>
+							<li><strong>Paramètre optionnel</strong> : On peut définir un ou plusieurs paramètres comme étant optionnels.
+								<ul>
+									<li>Exemple d'un paramètre optionnel utilisé pour le constructeur de la classe Thermostat
+										<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">public</span>&nbsp;<span style="color:#2b91af;">Thermostat</span>(<span style="color:blue;">double</span>&nbsp;<span style="color:#1f377f;">pTemperature</span>&nbsp;=&nbsp;TEMPERATURE_DÉFAUT)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">if</span>&nbsp;(<span style="color:#1f377f;">pTemperature</span>&nbsp;&lt;&nbsp;MIN_TEMPERATURE&nbsp;||&nbsp;<span style="color:#1f377f;">pTemperature</span>&nbsp;&gt;&nbsp;MAX_TEMPERATURE)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">throw</span>&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">ArgumentOutOfRangeException</span>();
+						 
+&nbsp;&nbsp;&nbsp;&nbsp;m_temperature&nbsp;=&nbsp;<span style="color:#1f377f;">pTemperature</span>;
+}
+						</pre>
+									</li>
+									<li>Pour cet exemple le paramètre au premier constructeur est manquant, alors la valeur TEMPERATURE_DÉFAUT sera utilisée. Pour le deuxième puisque la valeur 25 est fournie, c'est elle qui sera utilisée.
+										<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#2b91af;">Thermostat</span>&nbsp;<span style="color:#1f377f;">m_objThermostatChambre</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">Thermostat</span>();
+<span style="color:#2b91af;">Thermostat</span>&nbsp;<span style="color:#1f377f;">m_objThermostatCuisine</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">Thermostat</span>(25);</pre>
+									</li>
+								</ul>
+							</li>
+							<li><strong>Types d'erreurs</strong> : Il y a essentiellement 3 types d'erreurs.
+								<ul>
+									<li><strong>Erreur de syntaxe</strong> : impossible d'exécuter les instructions du programme.
+										<div class="description">Ce type d’erreur se produit au moment de la compilation, lorsqu'un mot clé du langage est mal orthographié. Très fréquentes avec les premiers outils de développement où l’éditeur de code et le compilateur étaient deux entités séparées,
+											elles deviennent de plus en plus rares avec les environnements tels que Visual Studio. La plupart de ces environnements proposent une analyse syntaxique au fur et à mesure de la saisie du code. De ce point de vue, Visual Studio propose
+											de nombreuses fonctionnalités nous permettant d’éliminer ces erreurs.
+										</div>
+									</li>
+									<li><strong>Erreur de logique</strong> : le programme s'exécute normalement, mais il ne donne pas le résultat attendu.
+										<div class="description">S’il existe une erreur de ce type dans un de vos programmes, celui-ci s’exécute parfaitement, en ce sens que vous n’obtenez aucun message d’erreur, mais le résultat n’est pas celui que vous attendiez. Afin d'identifier correctement ce
+											type d'erreur, il est nécessaire de s'assurer de l’exactitude des résultats obtenus avec un bon jeu d'essais.</div>
+									</li>
+									<li><strong>Erreur d'exécution</strong> : le programme compile et s'exécute, mais il provoque une erreur à l'exécution.
+										<div class="description">Ces erreurs sont également appelées des exceptions, parce qu’elles indiquent en général que quelque chose d’exceptionnel (et de malencontreux) s’est produit. Par exemple le programme essaie de lire un fichier à partir d'un disque qui est
+											défectueux ou absent.</div>
+									</li>
+								</ul>
+							</li>
+							<li>Utilisation du débogueur
+								<ul>
+									<li>Émettre une ou plusieurs hypothèses sur la source de l'erreur à corriger</li>
+									<li>Placer un ou plusieurs points d'arrêts pour stopper l'exécution du code et observer l'état des variables</li>
+									<li>Éxécuter le code en utilisant le : "Pas à pas principal F10" ou "Pas à pas détaillé F11"</li>
+								</ul>
+							</li>
+					</ol>					
+				</div>
+				<button onclick="accordeon('RC08-01')" class="w3-button w3-block w3-left-align w3-gray">Section courante : Afficher/Cacher</button>
+				
+		</div>
+		<button onclick="accordeon('RC08-02')" class="w3-button w3-block w3-left-align w3-green">Type par énumération, sous-formulaire, initialisaeur d'objets</button>
+	
+		<div id ="RC08-02" class="w3-panel w3-round w3-border w3-hide">
+				<h3> Type par énumération, sous-formulaire, Initialiseur d'objet et de collection</h3>
+				
+				<table>
+					<tr>
+						<td>
+							<p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUwg2TB205i3He6xpF1yrgg" class="w3-button w3-round" style="background-color:DarkTurquoise"  >Capsules vidéos!</a></p>
+					
+						</td>
+						
+					</tr>
+				
+					<tr>
+						<td>
+							<p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre8/R08B_Exercices_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+					
+						</td>
+						
+					</tr>
+					
+				
+				</table>
+				
+				<div class="w3-panel w3-card w3-light-grey"> 
+					<ol>
+    <li><span style="font-size: medium; color: #0000ff;"><strong><span style="font-family: 'courier new', courier, monospace;">enum</span></strong>
+        </span> : mot clé permettant de définir un nouveau type par énumération
+        <ul>
+            <li>Sans spécifier de valeur de départ, va donc débuter à 0 et poursuivre par pas de 1
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;"></span><span style="color: blue;">public enum</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>&nbsp;{&nbsp;Gauche,&nbsp;&nbsp;Droit&nbsp;,&nbsp;Centre&nbsp;};
+</pre>
+            </li>
+            <li>En spécifiant la valeur de départ, va augmenter de 1 par la suite
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;"></span><span style="color: blue;">public enum</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>&nbsp;{&nbsp;Gauche&nbsp;=&nbsp;-1,&nbsp;Droit,&nbsp;Centre&nbsp;};
+</pre>
+            </li>
+            <li>En spécifiant chacune des valeurs
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;"></span><span style="color: blue;">public enum</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>&nbsp;{&nbsp;Gauche&nbsp;=&nbsp;1,&nbsp;Droit&nbsp;=&nbsp;2,&nbsp;Centre&nbsp;=&nbsp;4&nbsp;};
+</pre>
+            </li>
+        </ul>
+    </li>
+    <li>Différentes utilisations du switch
+        <ul>
+            <li>Exemple d'un switch utilisant des littéraux
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">int</span>&nbsp;<span style="color: #1f377f;">choix</span>&nbsp;=&nbsp;cboChoix.SelectedIndex;
+ 
+<span style="color: #8f08c4;">switch</span>&nbsp;(<span style="color: #1f377f;">choix</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;0:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;gauche"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;1&nbsp;:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;droite"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;2&nbsp;:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;au&nbsp;centre"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+}</pre>
+            </li>
+            <li>Exemple d'un switch utilisant des constantes
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">const</span>&nbsp;<span style="color: blue;">int</span>&nbsp;GAUCHE&nbsp;=&nbsp;0;
+<span style="color: blue;">const</span>&nbsp;<span style="color: blue;">int</span>&nbsp;DROIT&nbsp;=&nbsp;1;
+<span style="color: blue;">const</span>&nbsp;<span style="color: blue;">int</span>&nbsp;CENTRE&nbsp;=&nbsp;2;
+ 
+<span style="color: blue;">int</span>&nbsp;<span style="color: #1f377f;">choix</span>&nbsp;=&nbsp;cboChoix.SelectedIndex;
+ 
+<span style="color: #8f08c4;">switch</span>&nbsp;(<span style="color: #1f377f;">choix</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;GAUCHE:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;gauche"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;DROIT:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;droite"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;CENTRE:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;au&nbsp;centre"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+}</pre>
+            </li>
+            <li>Exemple utilisant un type par énumération prédéfini nommée HorizontalAlignement
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: #2b91af;">HorizontalAlignment</span>&nbsp;<span style="color: #1f377f;">choix</span>&nbsp;=&nbsp;(<span style="color: #2b91af;">HorizontalAlignment</span>)cboChoix.SelectedIndex;
+ 
+<span style="color: #8f08c4;">switch</span>&nbsp;(<span style="color: #1f377f;">choix</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">HorizontalAlignment</span>.Left:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;gauche"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">HorizontalAlignment</span>.Right:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;droite"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">HorizontalAlignment</span>.Center:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;au&nbsp;centre"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;&nbsp;&nbsp;
+}</pre>
+            </li>
+            <li>Exemple utilisant notre nouveau type par énumération ChoixAlignement
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: #2b91af;">ChoixAlignement</span>&nbsp;<span style="color: #1f377f;">choix</span>&nbsp;=&nbsp;(<span style="color: #2b91af;">ChoixAlignement</span>)cboChoix.SelectedIndex;
+ 
+<span style="color: #8f08c4;">switch</span>&nbsp;(<span style="color: #1f377f;">choix</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>.Gauche:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;gauche"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>.Droit:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;droite"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>.Centre:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;au&nbsp;centre"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+}</pre>
+            </li>
+        </ul>
+    </li>
+    <li><strong><span style="font-family: Consolas; color: #74531f;">ShowDialog</span></strong> : Une méthode pour afficher un formulaire modal
+        <ul>
+            <li>Instancier un ou plusieurs formulaires supplémentaires
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: #2b91af;">FrmExemple1</span>&nbsp;<span style="color: #1f377f;">objFormulaire</span>&nbsp;=&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">FrmExemple1</span>();
+</pre>
+            </li>
+            <li>Afficher un formulaire avec la méthode ShowDialog()
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: #1f377f;">objFormulaire</span>.<span style="color: #74531f;">ShowDialog</span>();
+</pre>
+            </li>
+        </ul>
+    </li>
+    <li>Exemple : <span class="" style="color: rgb(125, 159, 211);"><i><b>Sous-formulaire auquel on passe une collection</b></i></span>
+        <ul>
+            <li>Modifier le constructeur d'un formulaire pour forcer le passage d'informations
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: black;"><span style="color: blue;">private</span>&nbsp;<span style="color: #2b91af;">List</span>&lt;<span style="color: #2b91af;">Distributrice</span>&gt;&nbsp;m_colDistributrices;
+ 
+<span style="color: blue;">public</span>&nbsp;<span style="color: #2b91af;">FrmListeMachines</span>(<span style="color: #2b91af;">List</span>&lt;<span style="color: #2b91af;">Distributrice</span>&gt;&nbsp;<span style="color: #1f377f;">pcolDistributrice</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #74531f;">InitializeComponent</span>();
+&nbsp;&nbsp;&nbsp;&nbsp;m_colDistributrices&nbsp;=&nbsp;<span style="color: #1f377f;">pcolDistributrice</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;</span><span color="#74531f" style="color: #74531f;">...</span><span color="#000000" style="color: #000000;">
+}</span></pre>
+            </li>
+            <li>Passer une collection en paramètre au constructeur d'un formulaire
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">void</span>&nbsp;<span style="color: #74531f;">mnuAffichageListeDesMachines_Click</span>(<span style="color: blue;">object</span>&nbsp;<span style="color: #1f377f;">sender</span>,&nbsp;<span style="color: #2b91af;">EventArgs</span>&nbsp;<span style="color: #1f377f;">e</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #2b91af;">FrmListeMachines</span>&nbsp;<span style="color: #1f377f;">formulaire</span>&nbsp;=&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">FrmListeMachines</span>(m_colDistributrices);
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1f377f;">formulaire</span>.<span style="color: #74531f;">ShowDialog</span>();
+}
+</pre>
+            </li>
+        </ul>
+    </li>
+    <li><b>Initialiseur d'objet et de collection
+        </b>
+        <ul>
+            <li>Exemple d'un initialiseur d'objet avec la classe Montre
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: green;">//&nbsp;Quelques&nbsp;fois&nbsp;on&nbsp;ne&nbsp;dispose&nbsp;pas&nbsp;d'un&nbsp;constructeur&nbsp;avec&nbsp;plusieurs&nbsp;paramètres.</span>
+<span style="color: green;">//&nbsp;Mais&nbsp;il&nbsp;est&nbsp;tout&nbsp;de&nbsp;même&nbsp;possible&nbsp;de&nbsp;fournir&nbsp;des&nbsp;valeurs&nbsp;aux&nbsp;propriétés</span>
+<span style="color: green;">//&nbsp;au&nbsp;moment&nbsp;de&nbsp;l'instanciation,&nbsp;en&nbsp;utilisant&nbsp;un&nbsp;initialiseur&nbsp;d'objet&nbsp;comme&nbsp;suit&nbsp;:</span>
+
+m_objMontre&nbsp;=&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">Montre</span>()&nbsp;{&nbsp;Heures&nbsp;=&nbsp;12,&nbsp;Minutes&nbsp;=&nbsp;20,&nbsp;Secondes&nbsp;=&nbsp;55&nbsp;};</pre>
+                </div>
+            </li>
+            <li>Exemple de l'initialisation d'une collection d'objets de la classe Personne
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">m_colPersonnes&nbsp;=&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">List</span>&lt;<span style="color: #2b91af;">Personne</span>&gt;()&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">Personne</span>()&nbsp;{&nbsp;Nom&nbsp;=&nbsp;<span style="color: #a31515;">"Robert&nbsp;Lapointe"</span>,&nbsp;Nas&nbsp;=&nbsp;<span style="color: #a31515;">"276187261"</span>&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">Personne</span>()&nbsp;{&nbsp;Nom&nbsp;=&nbsp;<span style="color: #a31515;">"Louise&nbsp;Tremblay"</span>,&nbsp;Nas&nbsp;=&nbsp;<span style="color: #a31515;">"527189354"</span>&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">Personne</span>()&nbsp;{&nbsp;Nom&nbsp;=&nbsp;<span style="color: #a31515;">"Denis&nbsp;Verreau"</span>,&nbsp;Nas&nbsp;=&nbsp;<span style="color: #a31515;">"782356273"</span>}&nbsp;
+};</pre>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li>Exercices à compléter en classe (à la maison si nécessaire)
+        <ul>
+            <li>Exer1 : Définir et utiliser un type par énumération</li>
+            <li>Exer2 : Afficher un autre formulaire avec ShowDialog</li>
+            <li>Exer3 : Une machine distributrice de breuvages</li>
+            <li>Exer4 : Gestion d'une collections de distributrices</li>
+            <li>Exer5 : Version de la distributrice utilisant un tableau 1D</li>
+            <li>Exer6 : Initialiseur avec un objet de la classe Montre</li>
+            <li>Exer7 : Initialiseur avec une collection d'objets de la classe Personne</li>
+        </ul>
+    </li>
+</ol>
+				</div>
+				<button onclick="accordeon('RC08-02')" class="w3-button w3-block w3-left-align w3-gray">Section courante : Afficher/Cacher</button>
+				
+		</div>
     </div>
 
     <!-- <br> -->
@@ -1165,7 +1445,7 @@ txtAffichageMontre.Text&nbsp;=&nbsp;m_objMontre.TempsCourant;
     </div>
 
     <button onclick="accordeon('RC9')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 9  <b></b> 
-	<span style="color:yellow;padding-left: 400px;">(Vendredi 07 juillet 2022)</span>
+	<span style="color:yellow;padding-left: 400px;">(Jeudi 07 juillet 2022)</span>
 	</button>
     <div id="RC9" class="w3-container w3-hide">
 
