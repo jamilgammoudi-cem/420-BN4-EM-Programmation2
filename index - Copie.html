@@ -1,0 +1,2171 @@
+<!-- <!DOCTYPE html> -->
+<html>
+    <head>
+        <title>A22-420-AN4-EM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		
+    </head>
+
+<body >
+
+<div class="w3-bar w3-dark-gray w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-mobile" style="width:25%">A22-420-AN4-EM</a>
+  <a id="titreCours" href="#" class="w3-bar-item w3-button w3-mobile" style="width:50%">Programmation 1</a>
+</div>
+<br>
+<div class="w3-container">
+    <div class="w3-bar w3-light-grey">
+        <a target="_blank" href="https://www.cegepmontpetit.ca" class="w3-bar-item w3-button w3-dark-grey">CEM</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-red">Plagiat</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a target="_blank" href="https://departement-info-cem.github.io/plagiat" class="w3-bar-item w3-button w3-green">Cheat sheet!</a>
+                <a target="_blank" href="https://mathieudupont.github.io/H21-420-964-EM/Integrite-intellectuelle-Aide-memoire-2020-09-30.pdf" class="w3-bar-item w3-button">Qu'est-ce que le plagiat?</a>
+                <a target="_blank" href="https://mathieudupont.github.io/H21-420-964-EM/Integrite-intellectuelle-Quiz-V3.pdf" class="w3-bar-item w3-button">Quiz plagiat</a>
+            </div>
+        </div>
+        <a target="_blank" href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Horaire.pdf" class="w3-bar-item w3-button w3-dark-grey">Calendrier</a>
+        <a target="_blank" href="https://cegepmontpetit.omnivox.ca" class="w3-bar-item w3-button w3-orange">Omnivox</a>
+        <a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/PC_2022A_420-AN4-EM.pdf" target="_blank" class="w3-bar-item w3-button w3-dark-grey">Plan de cours</a>
+        <a target="_blank" href="https://mareussite.cegepmontpetit.ca/cegep/mes-ressources/soutien-aux-apprentissages/tutorat-par-les-pairs/" class="w3-bar-item w3-button w3-blue">Tutorat</a>
+        <a target="_blank" href="https://mareussite.cegepmontpetit.ca/cegep/mes-ressources/soutien-aux-apprentissages/centre-de-services-adaptes/" class="w3-bar-item w3-button w3-dark-grey">Soutien à la réussite - CSA</a>
+        <a target="_blank" href="https://sites.google.com/site/notionscsharpcem/" class="w3-bar-item w3-button w3-green">Notions C#</a>
+        <a target="_blank" href="https://departement-info-cem.github.io/" class="w3-bar-item w3-button w3-dark-grey">Département d'informatique</a>
+		
+    </div>
+</div>
+
+
+
+
+
+<br>
+
+<div class="w3-container">
+
+    <button onclick="accordeon('livres')" class="w3-button w3-block w3-left-align w3-dark-grey">Suggestions de livres</button>
+    <div id="livres" class="w3-container w3-hide">
+        
+    </div>
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('js')" class="w3-button w3-block w3-left-align w3-dark-grey">Aide-mémoire</button>
+    <div id="js" class="w3-container w3-hide">
+
+    </div>
+
+
+    <!-- <br> -->
+
+    <button onclick="accordeon('capsules')" class="w3-button w3-block w3-left-align w3-dark-grey">Capsules</button>
+    <div id="capsules" class="w3-container w3-hide">
+
+    </div>
+
+    <button  onclick="window.location.href = 'https://edm.moodle.decclic.qc.ca/course/view.php?id=6119'" class="w3-button w3-block w3-left-align w3-lime" target="_blank"> QUIZs</button>
+   
+
+    <br>
+
+    <button onclick="accordeon('RC1')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 01 <span style="color:yellow;padding-left: 400px;">(Mercredi 19 octobe 2022)</span></button>
+    
+	<div id="RC1" class="w3-container w3-hide">
+	<button onclick="accordeon('RC1-1')" class="w3-button w3-block w3-left-align w3-green">Notions de base : variable, type, assignation, expression et opérateur</button>
+	<div class="w3-panel w3-round w3-border">
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUpTpseRx82YvCGNF7-eFhS" class="w3-button w3-orange w3-round">Capsules vidéos à regarder !</a></p>
+            </div>
+			<div class="w3-container w3-cell w3-cell-middle">
+                <p><b>Cliquez pour télécharger les exercices : </b></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre1/R01-LesBases-Materiel.zip" class="w3-button w3-green w3-round">Pratique</a></p>
+				
+			</div>
+			<div class="w3-container w3-cell w3-cell-middle">
+                <p><b>Cliquez pour télécharger la solution : </b></p>
+            </div>
+             <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre1/R01-LesBases-Solution.zip" class="w3-button w3-orange w3-round">Solution</a></p>
+				
+			</div>
+			
+	
+    </div>
+	 <div id="RC1-1" class="w3-container">
+	<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Déclaration de variables</h4>
+            <div id="variable" class="w3-code w3-container">
+                 <pre style="font-family: Consolas; font-size: 16px; background: white;"><span style="color: blue;">int</span>&nbsp;nombre&nbsp;=&nbsp;0;
+<span style="color: blue;">string</span>&nbsp;nom&nbsp;=&nbsp;<span style="color: rgb(163, 21, 21);">"Julie"</span>;
+<span style="color: blue;">char</span>&nbsp;lettre&nbsp;=&nbsp;<span style="color: rgb(163, 21, 21);">'A'</span>;
+<span style="color: blue;">bool</span>&nbsp;estPair&nbsp;=&nbsp;<span style="color: blue;">true</span>;
+<span style="color: blue;">double</span>&nbsp;prixTotal&nbsp;=&nbsp;<span style="color: blue;">8.99</span>;
+
+</pre>
+            </div>
+        </div>
+	
+	
+	<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Type de donnée</h4>
+            <div class="w3-container">
+                 <ul>
+            <li><span style="color: #0000ff;">int </span>: pour un nombre entier positif ou négatif</li>
+            <li><span style="color: #0000ff;">bool&nbsp;</span>: pour une donnée dont la valeur ne peut être que <span style="color: #0000ff;">true</span> ou <span style="color: #0000ff;">false</span></li>
+            <li><span style="color: #0000ff;">char&nbsp;</span>: pour un caractère Unicode. Sa valeur est entre guillemets simples (''). À chaque caractère est associé un <a href="http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm" target="_blank">nombre</a>&nbsp;décimal.
+                Ex : 'A' vaut 65, 'a' vaut 97</li>
+            <li><span style="color: #0000ff;">string&nbsp;</span>: pour une chaîne de caractères. Sa valeur est une séquence de caractères, entre guillemets (""). Une chaîne est immuable, son contenu ne peut être modifié. Ex: "Bonjour"</li>
+            <li><span style="color: #0000ff;">double&nbsp;</span>: pour des données avec une partie fractionnaire.</li>
+            <li>Pour la taille et le domaine de valeur des types de données consultez cette page <a href="https://sites.google.com/site/notionscsharpcem/type" target="_blank">type</a><br></li>
+        </ul>
+            </div>
+    </div>
+	
+	<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Exemples de déclarations</h4>
+           <div class="w3-code w3-container">
+                <pre style="font-family: Consolas; font-size: 16px; background: white;"><span style="color: blue;">int </span>nombre;
+<span style="color: blue;">string</span>&nbsp;nomPersonne;
+<span style="color: blue;">char</span>&nbsp;lettre;
+<span style="color: blue;">bool</span>&nbsp;estPair;
+double <span style="color: black;">prixTotal;
+</span></pre>
+            </div>
+        </div>
+		
+		<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Instruction d'assignation</h4>
+           <div class="w3-container">
+                
+				<ul>
+            <li>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">nomVariable&nbsp;=&nbsp;expression; <span style="color:green;">
+ // expression est évaluée et sa valeur est&nbsp;déposée dans&nbsp;le&nbsp;conteneur&nbsp;(mémoire) associé<br><span> // à la </span>variable&nbsp;dont&nbsp;l'identificateur&nbsp;est&nbsp;nomVariable. &nbsp;</span>
+ expression peut être un <a href="https://sites.google.com/site/notionscsharpcem/litteral" target="_blank">littéral</a>, une expression ou une propriété </pre>
+
+                <span style="color: Red">Remarque&nbsp;</span>:&nbsp;</li>
+            <li>
+                expression = nomVariable; <b>n'est pas</b> une assignation correcte. nomVariable doit toujours être à gauche du =. <br>La valeur assignée à une variable peut être une valeur simple ou le résultat de l'évaluation d'une expression.
+            </li>
+            <li>Exemples de déclarations avec initialisation: <br>
+                <pre class="w3-code w3-container" style="font-family: Consolas; font-size: 13px; background: white;"><span style="color: blue;">int</span>&nbsp;nombre&nbsp;=&nbsp;0;
+<span style="color: blue;">string</span>&nbsp;nom&nbsp;=&nbsp;<span style="color: rgb(163, 21, 21);">"Julie"</span>;
+<span style="color: blue;">char</span>&nbsp;lettre&nbsp;=&nbsp;<span style="color: rgb(163, 21, 21);">'A'</span>;
+<span style="color: blue;">bool</span>&nbsp;estPair&nbsp;=&nbsp;<span style="color: blue;">true</span>;
+double <span style="color: black;">prixTotal&nbsp;=&nbsp;<span style="color:#a31515;">8.99</span>;
+</span></pre>
+            </li>
+            <li>Assigner une valeur à la propriété d'un contrôle
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">vsiNombre.Value&nbsp;=&nbsp;expression;</pre>
+            </li>
+        </ul>
+				
+				
+            </div>
+        </div>
+		
+		<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Opérateurs arithmétiques</h4>
+            <div class="w3-container">
+                 
+				  <ul>
+            <li> + - * / sont les opérateurs usuels . % est l'opérateur modulo. Cet opérateur retourne le reste de la division entière.</li>
+            <li>Ex : 60 / 7&nbsp; c'est la division entière. Le résultat est&nbsp; 8</li>
+            <li>Ex :
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;note1&nbsp;=&nbsp;60;
+</pre>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;resultat&nbsp;=&nbsp;note1&nbsp;%&nbsp;2;&nbsp;<span style="color:green;">//note1&nbsp;%&nbsp;2&nbsp;retourne&nbsp;le&nbsp;reste&nbsp;de&nbsp;la&nbsp;division&nbsp;entière&nbsp;&nbsp;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//de&nbsp;note1&nbsp;par&nbsp;2. Dans&nbsp;ce&nbsp;cas&nbsp;résultat&nbsp;est&nbsp;0</span>
+ 
+<span style="color:blue;">int</span>&nbsp;resultat&nbsp;=&nbsp;note1&nbsp;%&nbsp;7;<span style="color:green;">//note1&nbsp;%&nbsp;7&nbsp;retourne&nbsp;le&nbsp;reste&nbsp;de&nbsp;la&nbsp;division&nbsp;entière&nbsp;&nbsp;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//de&nbsp;note1&nbsp;par&nbsp;7. Dans&nbsp;ce&nbsp;cas&nbsp;résultat&nbsp;est&nbsp;4</span></pre>
+            </li>
+        </ul>
+				 
+				 
+				 
+            </div>
+        </div>
+		
+		<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Expressions arithmétiques</h4>
+            <div class="w3-container">
+                 
+				    <ul>
+            <li>L’ordre d’évaluation d'une expression est effectué de gauche à droite en tenant compte des parenthèses et de la priorité des opérateurs.<br> Ex:
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;note1&nbsp;=&nbsp;60,&nbsp;note2&nbsp;=&nbsp;80;
+<span style="color:blue;">int</span>&nbsp;moyenneErronée&nbsp;=&nbsp;note&nbsp;1&nbsp;+&nbsp;note2&nbsp;/&nbsp;2;<span style="color:green;">//la&nbsp;division&nbsp;est&nbsp;effectuée</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//l'addition&nbsp;est&nbsp;effectuée</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:green;">//l'assignation&nbsp;moyenneErronée&nbsp;=&nbsp;100 est effectuée</span></pre>
+
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;moyenneCorrecte&nbsp;=&nbsp;(note&nbsp;1&nbsp;+&nbsp;note2)&nbsp;/&nbsp;2;<span style="color:green;">//l'addition&nbsp;dans&nbsp;les&nbsp;parenthèses est effectuée</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <span style="color:green;">//la&nbsp;division&nbsp;par&nbsp;2 est effectuée</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//l'assignation&nbsp;moyenneCorrecte&nbsp;=&nbsp;70 </span>est effectuée</pre>
+                <table border="1" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td width="77" valign="top">
+                                <p align="center"><b>&nbsp;Priorité</b></p>
+                            </td>
+                            <td width="147" valign="top">
+                                <p><b>&nbsp;Catégorie</b></p>
+                            </td>
+                            <td width="350" valign="top">
+                                <p><b>&nbsp;Les opérateurs</b></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="77" valign="top">
+                                <p align="center"><br> &nbsp;1&nbsp;<span style="font-size: 0.9375rem; text-align: left;">(plus haute)</span><span style="font-size: 0.9375rem; text-align: left;"></span></p>
+                            </td>
+                            <td width="147" valign="top">
+                                <p>&nbsp;<br> &nbsp;parenthèses
+                                </p>
+                            </td>
+                            <td width="350" valign="top">
+                                <p>&nbsp;<br>
+                                    <span lang="FR">( )</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="77" valign="top">
+                                <p align="center"><br> &nbsp;2
+                                    <br><br></p>
+                            </td>
+                            <td width="147" valign="top">
+                                <p>&nbsp;<br> &nbsp;Unaire
+                                </p>
+                            </td>
+                            <td width="350" valign="top">
+                                <p>&nbsp;<br>
+                                    <span lang="FR">nombre++&nbsp;&nbsp;&nbsp;nombre--&nbsp;&nbsp;&nbsp;&nbsp;<b>-</b>nombre</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="77" valign="top">
+                                <p align="center"><br> 3
+                                </p>
+                            </td>
+                            <td width="147" valign="top">
+                                <p><br> &nbsp;
+                                    <span lang="FR">Arithmétique-multiplicative</span></p>
+                            </td>
+                            <td width="350" valign="top">
+                                <p><span>&nbsp;</span><span><span lang="FR" style="">* &nbsp;&nbsp;&nbsp; /
+  &nbsp;&nbsp;&nbsp; &nbsp;%<b>&nbsp;</b></span></span><span lang="FR">(modulo)</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="77" valign="top">
+                                <p align="center"><br> 4
+                                </p>
+                            </td>
+                            <td width="147" valign="top">
+                                <p>&nbsp;<br>
+                                    <span lang="FR">&nbsp;Arithmétique-additive</span></p>
+                            </td>
+                            <td width="350" valign="top">
+                                <p><span><b>&nbsp;</b>+&nbsp; -</span><span lang="FR"><span>&nbsp;</span>somme</span> et différence pour les types numériques<br>
+                                    <span><span lang="FR" style=""><b>&nbsp;</b><span style=""><span lang="FR" style="">+</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;concaténation lorsqu'un ou 2 opérandes sont de type string</span>
+                                    </span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="77" valign="top">
+                                <p align="center"><br> 5
+                                </p>
+                            </td>
+                            <td width="147" valign="top">
+                                <p><br> &nbsp;
+                                    <span lang="FR">Assignation&nbsp; &nbsp; &nbsp; &nbsp;assignation&nbsp; &nbsp; &nbsp;composée (vu dans la R04)</span></p>
+                            </td>
+                            <td width="350" valign="top">
+                                <p>&nbsp;<span><b>&nbsp;</b></span><span style="font-size: 0.9375rem;">=&nbsp; &nbsp;&nbsp;</span></p>
+                                <p><span><span style="">&nbsp;</span></span>
+                                </p>
+                                <p><span><span style="">&nbsp; +=&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-=&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;*=&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;/=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%= &nbsp;</span></span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+				 
+				 
+				 
+            </div>
+        </div>
+        
+		<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Utiliser le débogueur</h4>
+            <div class="w3-container">
+                 <ul>
+            <li>Visual Studio offre un outil très utile appelé débogueur. Il permet au programmeur :
+                <ul>
+                    <li>de facilement analyser et corriger les bugs</li>
+                    <li>d'exécuter le programme pas-à-pas (instruction par instruction) en utilisant des points d'arrêt</li>
+                    <li> de consulter les valeurs des variables et des propriétés des contrôles à tout moment lors de l'exécution du programme</li>
+                </ul>
+            </li>
+
+        </ul>
+            </div>
+        </div>
+		<div class="w3-panel w3-card" style="background-color:LightPink"> 
+            <h4>
+			Contrôles <span style="color: #0000ff;">VisualInt</span>&nbsp;,&nbsp;<span style="color: #0000ff;">NumericUpDown</span>, <span style="color: #0000ff;"><a href="https://sites.google.com/site/notionscsharpcem/guicontroles/button" target="_blank">Button</a></span>        et événement <span style="color: #0000ff;"><a href="https://sites.google.com/site/notionscsharpcem/guicontroles/button" target="_blank">Click</a></span>
+			</h4>
+            <div class="w3-container">
+                 <ul>
+            <li>
+                Le contrôle VisualInt permet de saisir et d'afficher un nombre entier. Ce contrôle a plusieurs propriétés. La propriété <span style="color: #0000ff;">Value </span>retourne la valeur. On utilisera le préfixe vsi pour nommer les contrôles
+                de type <i>VisualInt</i>
+                <br> Exemple : Assignation d'une valeur à la propriété Value du contrôle vsiNombre
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">vsiNombre.Value&nbsp;=&nbsp;10;&nbsp;<span style="color:green;">//Assigner&nbsp;10&nbsp;à&nbsp;la&nbsp;propriété&nbsp;Value&nbsp;du&nbsp;contrôle vsiNombre.</span>
+</pre>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">prix</span>;
+prix&nbsp;=&nbsp;vsiNombre.Value; <span style="color:green;">//Assigner&nbsp;la&nbsp;valeur&nbsp;de&nbsp;la&nbsp;propriété&nbsp;Value&nbsp;de&nbsp;vsiNombre&nbsp;à&nbsp;la&nbsp;variable&nbsp;prix.</span>
+</pre>
+            </li>
+            <li>
+                Le contrôle NumericUpDown permet de saisir et d'afficher un nombre décimal. Ce contrôle a plusieurs propriétés. La propriété <span style="color: #0000ff;">Value </span>retourne la valeur. On utilisera le préfixe num pour nommer les contrôles
+                de type <i>NumericUpDown</i>
+                <br> Exemple :Assignation d'une valeur à la propriété Value du contrôle numNombre
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">numNombre.Value&nbsp;=&nbsp;20;&nbsp;<span style="color:green;">//Assigner&nbsp;20&nbsp;à&nbsp;la&nbsp;propriété&nbsp;Value&nbsp;du&nbsp;numNombre.</span></pre>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">numDegFah.Value&nbsp;=&nbsp;numDegCel.Value&nbsp;*&nbsp;9&nbsp;/&nbsp;5&nbsp;+&nbsp;32;
+</pre>
+            </li>
+            <li>Ces 2 contrôles ont plusieurs autres propriétés importantes (<span style="color: #0000ff;">Maximum</span>, <span style="color: #0000ff;">Minimum</span>,...) que vous pouvez consulter&nbsp; <a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/visualcells/visualint"
+                    target="_blank">ici </a> et
+                <a href="https://sites.google.com/site/notionscsharpcem/guicontroles/numericupdown" target="_blank">ici</a></li>
+        </ul>
+            </li>
+
+        </ul>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+	
+		
+	</div>
+    <!-- <br> -->
+	<button onclick="accordeon('RC2')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 02 <span style="color:yellow;padding-left: 400px;">(Mercredi 26 octobre 2022)</span></button>
+    
+	<div id="RC2" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUwUugnovQN1jrMVo0TNCqN" class="w3-button w3-orange w3-round">Capsules vidéos à regarder !</a></p>
+            </div>
+			<div class="w3-container w3-cell w3-cell-middle">
+                <p><b>Cliquez pour télécharger les exercices : </b></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre2/R02-SelectionIfElse-Materiel.zip" class="w3-button w3-green w3-round">Pratique</a></p>
+            </div>
+			<div class="w3-container w3-cell w3-cell-middle">
+                <p><b>Cliquez pour télécharger la solution : </b></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre2/R02-SelectionIfElse-Solution.zip" class="w3-button w3-orange w3-round">Solution</a></p>
+            </div>
+			
+		</div>
+		<div class="w3-panel w3-round w3-border">
+           <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Le type bool</h4>
+            <div class="w3-container">
+                 <ul>
+					<li>Un booléen est un type de variable à deux états : <span style="color: #0000ff;">true</span> ou <span style="color: #0000ff;">false</span></li>
+					
+				</ul>
+            </div>
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4>Expression booléenne</h4>
+				<div class="w3-container">
+					 <ul>
+						<li>C'est une expression qui utilise des opérateurs relationnels et/ou des opérateurs logiques. </li>
+						<li>Le résultat d'une expression booléenne est toujours <span style="color: #0000ff;">true</span> ou <span style="color: #0000ff;">false</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4>Opérateurs relationnels (<span style="color: #0000ff;"> <, >, <=, >=, ==, != </span>)</h4>
+				<div class="w3-container">
+					 <ul>
+						<li>Ces opérateurs permettent de construire des expressions booléennes simples dont le résultat est toujours <span style="color: #0000ff;">true</span> ou <span style="color: #0000ff;">false</span></li>
+						<li>== vérifie l'égalité et != vérifie l'inégalité. Voir <a href="https://sites.google.com/site/notionscsharpcem/operateur">ici</a></li>
+					</ul>
+				</div>
+			</div>	
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4>Opérateurs logiques (<span style="color: #0000ff;"> &&, ||, ! </span>)</h4>
+				<div class="w3-container">
+					 <ul>
+						<li>
+							Ces opérateurs permettent de construire des expressions booléennes simples ou complexes dont le résultat est toujours true ou false.
+						</li>
+						<li>Le résultat d'un &amp;&amp; est vrai seulement lorsque les 2 opérandes ont pour valeur true autrement le résultat est false<br></li>
+						<li>Le résultat d'un || est false seulement lorsque les 2 opérandes sont à false autrement le résultat est true</li>
+						<li>La négation (!) permet d'inverser le true en false et le false en true.</li>
+					</ul>
+					<table class="w3-table w3-bordered">
+						<tr>
+							<th>Priorité</th>
+							<th>Catégorie</th>
+							<th>Les opérateurs</th>
+						</tr>
+						<tr>
+							<td>1(Plus haute)</td>
+							<td>Parenthèses</td>
+							<td>()</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Unaire</td>
+							<td>!(non logique)    nombre++   nombre--    -nombre</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Arithmétique-multiplicative</td>
+							<td>*     /      %  (modulo)</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Arithmétique-additive</td>
+							<td> <p>+  -  somme et différence pour les types numériques</p>
+								 <p>+     concaténation lorsqu'un ou 2 opérandes sont de type string</p>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Relationnel</td>
+							<td><      >       <=    >=</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Égalité</td>
+							<td>==     !=</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>Logique</td>
+							<td> <p>&& (ET)    le ET est prioritaire au OU</p>
+								 <p>|| (OU)</p>
+							</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>Assignation</td>
+							<td>=       +=      -=       *=       /=       %=</td>
+						</tr>
+					</table>
+				
+			
+				</div>
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Sélection simple&nbsp;<span style="color: #0000ff;">&nbsp;if/else </span>et imbriquées <span style="color: #0000ff;">if/else if </span></h4>
+            <div class="w3-container">
+                      <ul>
+            <li>Cette structure est utilisée lorsque l'exécution d'un bloc d'instructions est conditionnelle. On utilise alors une condition qui est une expression booléenne qui retourne true ou false.
+            </li>
+<div class="w4-example"> 
+			<h4>La sélection à une branche <span style="color: #0000ff;">if</span></h4>
+            
+			<div class="w3-code w3-container">
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">                
+<span style="color:blue;">if</span>&nbsp;(condition)
+{
+	<span style="color:green;">//&nbsp;Bloc d'instructions&nbsp;à&nbsp;exécuter&nbsp;si&nbsp;la&nbsp;condition&nbsp;est&nbsp;satisfaite.</span>
+}</pre> 
+ </div>
+  <ul> 
+<li>Lorsque condition retourne <span style="color: #0000ff;">true</span>, le bloc d'instructions est exécuté </li>
+		   <li>Lorsque condition retourne <span style="color: #0000ff;">false</span>, le bloc d'instructions n'est pas exécuté.</li>
+		    </ul> 
+		   </div>
+            <div class="w4-example"> 
+			<h4>Exemple</h4>
+			<div class="w3-code w3-container">
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">age</span>&nbsp;=&nbsp;20;
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">prix</span>;
+<span style="color:#8f08c4;">if</span>&nbsp;(<span style="color:#1f377f;">age</span>&nbsp;&gt;=&nbsp;60)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;10;
+}</pre>
+</div>
+            </div>
+
+
+ <div class="w4-example"> 
+			<h4>La sélection à deux branches <span style="color: #0000ff;">if   else </span></h4>
+            <div class="w3-code w3-container">
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">if</span>&nbsp;(condition)
+{
+	<span style="color:green;">//Bloc d'instructions à&nbsp;exécuter&nbsp;si&nbsp;la&nbsp;condition&nbsp;est&nbsp;satisfaite.</span>
+}
+<span style="color:blue;">else</span>
+{
+	<span style="color:green;">//Bloc d'instructions à&nbsp;exécuter&nbsp;si&nbsp;la condition&nbsp;n'est&nbsp;pas&nbsp;satisfaite.</span>
+}</pre>
+ </div>
+  </div>
+
+<div class="w4-example"> 
+			<h4>Exemple</h4>
+            <div class="w3-code w3-container">
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">age</span>&nbsp;=&nbsp;20;
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;;
+<span style="color:#8f08c4;">if</span>&nbsp;(<span style="color:#1f377f;">age</span>&nbsp;&gt;=&nbsp;60)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;10;
+}
+<span style="color:#8f08c4;">else</span>&nbsp;
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;25;
+}</pre>
+     </div>
+  </div>       
+  <div class="w4-example"> 
+			<h4>if imbriquée <span style="color:blue;"> if else if </span></h4>
+            <div class="w3-code w3-container">
+  
+           
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">if</span>&nbsp;(condition1)
+{
+&nbsp;&nbsp;<span style="color:green;">//&nbsp;Bloc d'instrucions à exécuter lorsque condition1&nbsp;est &nbsp;satisfaite</span>
+}&nbsp;
+<span style="color:blue;">else</span>&nbsp;<span style="color:blue;">if</span>&nbsp;(condition2)&nbsp;
+{
+&nbsp;&nbsp;<span style="color:green;">//&nbsp;Bloc d'instrucions à exécuter lorsque condition2&nbsp;est &nbsp;satisfaite et condition1 est false</span>
+}&nbsp;
+<span style="color:blue;">else</span>
+{
+&nbsp;&nbsp;<span style="color:green;">//&nbsp;Bloc d'instrucions à exécuter lorsque condition1&nbsp;est &nbsp;false et condition2 est false</span>
+}</pre>
+    </div>
+  </div> 
+
+ <div class="w4-example"> 
+			<h4>Exemple</h4>
+            <div class="w3-code w3-container">
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">age</span>&nbsp;=&nbsp;20;
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;;
+<span style="color:#8f08c4;">if</span>&nbsp;(<span style="color:#1f377f;">age</span>&nbsp;&gt;=&nbsp;60)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;10;
+}
+<span style="color:#8f08c4;">else</span>&nbsp;<span style="color:#8f08c4;">if</span>(<span style="color:#1f377f;">age</span>&nbsp;&gt;=&nbsp;18)&nbsp;
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;25;
+}
+<span style="color:#8f08c4;">else</span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;20;
+}</pre> 
+   </div>
+    <ul> 
+   <li>Lorsque le traitement nécessite plus de 2 conditions, vous pouvez imbriquer les <span style="color: #0000ff;">else if </span>autant que vous voulez.</li>
+<li>Importance des<span style="color: #800080;"><strong> {&nbsp;&nbsp; }</strong></span> : Les accolades sont très importantes. Elles permettent de bien délimiter les instructions qui constituent le bloc d'instructions à exécuter</li>   
+    </ul> 
+   </div> 
+   
+ 
+  
+
+
+
+            
+        
+           
+            
+        
+            </div>
+        </div>
+		
+		<div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Type <span style="font-size: 2rem; color:blue">string</span></h4>
+            <div class="w3-container">
+                 <ul>
+            <li>Permet de déclarer une chaîne de caractères. Sa valeur est une séquence de caractères, entre guillemets (""). Une chaîne est immuable, son contenu ne peut être modifié. Ex: "Bonjour"</li>
+            <li> Concaténation de chaînes de caractères :&nbsp; + &nbsp;
+                <ul>
+                    <li>Consiste à placer une&nbsp;<span>chaîne de caractères</span>&nbsp;à la suite d'une autre chaîne de caractères.&nbsp;<br> Exemples :
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">nom</span>&nbsp;=&nbsp;<span style="color:#a31515;">"julie"</span>;
+<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">message</span>&nbsp;=&nbsp;<span style="color:#a31515;">"Bonjour&nbsp;"</span>&nbsp;+&nbsp;<span style="color:#1f377f;">nom</span>;</pre>La variable message dans ce cas est égale à "Bonjour Julie"</li>
+                </ul>
+            </li>
+        </ul>
+				 
+				 
+            </div>
+        </div>
+		<div class="w3-panel w3-card" style="background-color:LightPink"> 
+            <h4>Contrôle <span style="font-size: 2rem; color: rgb(0, 0, 255);"><a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/visualcells/visualbool" target="_blank">VisualBool</a></span></h4>
+            <div class="w3-container">
+                 <ul>
+            <li>Permet de déclarer une chaîne de caractères. Sa valeur est une séquence de caractères, entre guillemets (""). Une chaîne est immuable, son contenu ne peut être modifié. Ex: "Bonjour"</li>
+            <li> Concaténation de chaînes de caractères :&nbsp; + &nbsp;
+                <ul>
+                    <li>Consiste à placer une&nbsp;<span>chaîne de caractères</span>&nbsp;à la suite d'une autre chaîne de caractères.&nbsp;<br> Exemples :
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">nom</span>&nbsp;=&nbsp;<span style="color:#a31515;">"julie"</span>;
+<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">message</span>&nbsp;=&nbsp;<span style="color:#a31515;">"Bonjour&nbsp;"</span>&nbsp;+&nbsp;<span style="color:#1f377f;">nom</span>;</pre>La variable message dans ce cas est égale à "Bonjour Julie"</li>
+                </ul>
+            </li>
+        </ul>
+				 
+				 
+            </div>
+			
+        </div>
+		</div>
+	</div>
+	<!-- <br> -->
+	<button onclick="accordeon('RC3')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 03 - <b>Switch <span style="color:yellow;"> </span></b>
+	<span style="color:yellow;padding-left: 330px;">(Vendredi 11 novembre 2022)</span> </button>
+	
+	 
+	<div id="RC3" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYVmd50FBgaCO0G7B35HrLpV" class="w3-button w3-orange w3-round">Capsules vidéos à regarder !</a></p>
+            </div>
+			<div class="w3-container w3-cell w3-cell-middle">
+                <p><b>Cliquez pour télécharger le laboratoire : </b></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre3/R03_Laboratoire1_Materiel.zip" class="w3-button w3-green w3-round">Pratique</a></p>
+            </div>
+			<div class="w3-container w3-cell w3-cell-middle">
+                <p><b>Cliquez pour télécharger la solution : </b></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre3/R03_Laboratoire1_Solution.zip" class="w3-button w3-orange w3-round">Solution</a></p>
+            </div>
+			
+		</div>
+		<div class="w3-panel w3-round w3-border">
+           <div class="w3-panel w3-card w3-light-grey"> 
+				<h4>Constante</h4>
+				<div class="w3-container">
+					 <ol>
+						<li><span style="color: #0000ff;">Déclaration&nbsp;</span>et utilisation de <span style="color: #0000ff;"><a href="https://sites.google.com/site/notionscsharpcem/constante" target="_blank">constantes</a></span></li>
+						<li>Instruction d'incrémentation/décrémentation et assignation composée<span style="color: #0000ff;"><strong> ++, --, +=, -=, *=, /=</strong></span>
+							<ul>
+								<li>
+									L'incrémentation/décrémentation permet d'augmenter/de soustraire de 1 la valeur de la variable<br> nbre++; est équivalente à l'instruction nbre = nbre +1;<br>nbre--; est équivalente à l'instruction nbre = nbre - 1;
+								</li>
+								<li>Assignation composée</li>
+							</ul>
+						</li>
+						 
+					</ol>
+				</div>
+			</div>
+			<div class="w3-panel w3-card" style="background-color:LightPink"> 
+				<h4>Utilisation des propriétés booléennes <span style="color: #0000ff;">Checked, Enabled</span> et <span style="color: #0000ff;">ReadOnly</span></h4>
+				<div class="w3-container">
+									<ul>
+										<li>La propriété booléenne <span style="color: #0000ff;">Checked </span>est utilisée avec certains contrôles tels que les menus, les cases à cocher.</li>
+										<li>Obtient ou définit une valeur indiquant si le contrôle est activé <br>Exemple : Vérifier si le
+											menu mnuSpecial est activé
+											<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#8f08c4;">if</span>&nbsp;(mnuSpecialModeTest.Checked)&nbsp;...
+							</pre>
+										</li>
+										<li>Les propriétés booléennes <a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/visualcells" target="_blank"><span style="color: #0000ff;">Enabled</span> et <span style="color: #0000ff;">ReadOnly </span></a> <br>Exemple:
+											le contrôle vsiChoixJouer1 devient inactif. Il ne répondra plus aux événements
+											<pre style="font-family:Consolas;font-size:13px;color:black;background:white;">vsiChoixJoueur1.Enabled&nbsp;=&nbsp;<span style="color:blue;">false</span>;
+							</pre><br> Exemple : le contrôle vsiChoixJour1 devient en lecture seulement
+											<pre style="font-family:Consolas;font-size:13px;color:black;background:white;">vsiChoixJoueur1.ReadOnly&nbsp;=&nbsp;<span style="color:blue;">true</span>;
+							</pre>
+										</li>
+									</ul>
+						
+				</div>
+			</div>
+		</div>
+		<div class="w3-panel w3-round w3-border">
+           <div class="w3-panel w3-card w3-light-grey"> 
+				<h4>Selection multiple avec switch</h4>
+				
+			</div>
+			<div class="w3-panel w3-round w3-border">
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYWk1O78wQLZZdoU_SzRpJrp" class="w3-button w3-orange w3-round">Capsules vidéos à regarder !</a></p>
+            </div>
+			<div class="w3-container w3-cell w3-cell-middle">
+                <p><b>Cliquez pour télécharger les exercices : </b></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre3/R03_switch_Exercices_Materiel.zip" class="w3-button w3-green w3-round">Pratique</a></p>
+            </div>
+			<div class="w3-container w3-cell w3-cell-middle">
+                <p><b>Cliquez pour télécharger la solution : </b></p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                   <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre3/R03_switch_Exercices_Solution.zip" class="w3-button w3-orange w3-round">Solution</a></p>
+				
+            </div>
+			
+		</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4><span style="color:blue">Type char</span></h4>
+				<div class="w3-container">
+					 
+        <ul>
+            <li>Permet de déclarer un caractère Unicode. Sa valeur est entre guillemets simples (''). </li>
+			<li>À chaque caractère est associé un <a href="http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm" target="_blank">nombre</a>. Ex : 'A' vaut 65,
+                'a' vaut 97</li>
+            <li>Les opérations sur les nombres sont applicables aux données de type char<br> Exemple :
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">char</span>&nbsp;<span style="color:#1f377f;">lettre1</span>&nbsp;=&nbsp;<span style="color:#a31515;">'A'</span>;
+<span style="color:#1f377f;">lettre1</span>++;<br></pre>Dans ce cas lettre1 vaut 66 c'est à dire le caractère 'B'<br>Exemple :<br>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">resultat</span>&nbsp;=&nbsp;3;
+<span style="color:blue;">char</span>&nbsp;<span style="color:#1f377f;">lettre1</span>&nbsp;=&nbsp;<span style="color:#a31515;">'A'</span>;
+<span style="color:#1f377f;">resultat</span>&nbsp;+=&nbsp;<span style="color:#1f377f;">lettre1</span>;</pre> Dans ce cas resultat vaut 68<br>Exemple :
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">char</span>&nbsp;<span style="color:#1f377f;">lettre1</span>&nbsp;=&nbsp;<span style="color:#a31515;">'A'</span>;
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">resultat</span>&nbsp;=&nbsp;<span style="color:#1f377f;">lettre1</span>&nbsp;*&nbsp;2;</pre> Dans ce cas resultat vaut 130<br> Exemple :
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">char</span>&nbsp;<span style="color:#1f377f;">lettre1</span>&nbsp;=&nbsp;<span style="color:#a31515;">'C'</span>;
+<span style="color:blue;">bool</span>&nbsp;<span style="color:#1f377f;">resultat</span>&nbsp;=&nbsp;<span style="color:#1f377f;">lettre1</span>&nbsp;&nbsp;&lt;&nbsp;<span style="color:#a31515;">'D'</span>;</pre> Dans ce cas resultat vaut true
+            </li>
+
+        </ul>
+    
+				</div>
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4>Sélection multiple avec <span style="font-family: 'courier new', courier, monospace; color: #0000ff;">switch</span></h4>
+				<div class="w3-container">
+					 
+            
+        <ul>
+            <li>Instruction <span style="font-family: 'courier new', courier, monospace; color: #0000ff;">switch</span><br> L'instruction switch est utilisée lorsque le traitement nécessite plusieurs conditions. Dans ce cas l'utilisation d'un if imbriqué
+                n'est pas conseillée car le code devient moins lisible et plus difficile à déboguer. Le switch s'écrit généralement comme suit:
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">switch</span>&nbsp;(expression)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">case</span>&nbsp;&nbsp;val1&nbsp;:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//bloc&nbsp;instructions;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">case</span>&nbsp;&nbsp;val2&nbsp;:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//bloc&nbsp;instructions;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">case</span>&nbsp;&nbsp;val3&nbsp;:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//bloc&nbsp;instructions;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">break</span>;
+&nbsp;&nbsp;&nbsp;...
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">default</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//bloc&nbsp;instructions;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">break</span>;
+}</pre> Le switch peut ne pas comprendre la clause default.<br>L'exécution d'une instruction switch nécessite
+                <ul>
+                    <li>l'évaluation de l'expression</li>
+                    <li>la comparaison de la valeur de l'expression avec les différentes étiquettes val1, val2, val3</li>
+                    <li>on exécute le bloc d'instructions associé à l'étiquette qui est égale à la valeur de l'expression. l'exécution de l'instruction break de saut empêche l'exécution des autres blocs d'instructions</li>
+                    <li>si aucune étiquette n'est égale à la valeur de l'expression, c'est le bloc associé au default qui est exécuté</li>
+                </ul>
+                Il peut y avoir un nombre quelconque d’étiquettes case. Les étiquettes case ne peuvent pas avoir la même valeur. L’instruction de saut break est nécessaire après chaque bloc. Les étiquettes case sont exécutées dans l’ordre.
+
+            </li>
+            <li>Cascade de <span style="font-family: 'courier new', courier, monospace;"><span style="color: #0000ff;">if</span> .. <span style="color: #0000ff;">else</span> <span style="color: #0000ff;">if</span> .. équivalente à l'instruction switch</span>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">if</span>&nbsp;(expression&nbsp;==&nbsp;val1)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;bloc&nbsp;instructions</span>
+}
+<span style="color:blue;">else</span>&nbsp;<span style="color:blue;">if</span>&nbsp;(expression&nbsp;==&nbsp;val2)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;bloc&nbsp;instructions</span>
+}
+<span style="color:blue;">else</span>&nbsp;<span style="color:blue;">if</span>&nbsp;(expression&nbsp;==&nbsp;val3)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;bloc&nbsp;instructions</span>
+}
+<span style="color:blue;">else</span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;bloc&nbsp;instructions</span>
+}</pre>
+            </li>
+            <li>exemple
+                <ul>
+                    <li>
+                        <pre style="font-family: Consolas; font-size: 13px; background: white;"><span style="color: blue;">int</span>&nbsp;<span style="color: rgb(31, 55, 127);">nbre1</span>&nbsp;=&nbsp;4,&nbsp;<span style="color: rgb(31, 55, 127);">nbre2</span>&nbsp;=&nbsp;2;
+int <span style="color: rgb(31, 55, 127);">resultat</span>&nbsp;=&nbsp;<span style="color: rgb(163, 21, 21);">0</span>;
+<span style="color: blue;">char</span>&nbsp;<span style="color: rgb(31, 55, 127);">op</span>&nbsp;=&nbsp;<span style="color: rgb(163, 21, 21);">'*'</span>;
+<span style="color: rgb(143, 8, 196);">switch</span>&nbsp;(<span style="color: rgb(31, 55, 127);">op</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">'+'</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(31, 55, 127);">resultat</span>&nbsp;=&nbsp;<span style="color: rgb(31, 55, 127);">nbre1</span>&nbsp;+&nbsp;<span style="color: rgb(31, 55, 127);">nbre2</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">'-'</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(31, 55, 127);">resultat</span>&nbsp;=&nbsp;<span style="color: rgb(31, 55, 127);">nbre1</span>&nbsp;-&nbsp;<span style="color: rgb(31, 55, 127);">nbre2</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">'*'</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(31, 55, 127);">resultat</span>&nbsp;=&nbsp;<span style="color: rgb(31, 55, 127);">nbre1</span>&nbsp;*&nbsp;<span style="color: rgb(31, 55, 127);">nbre2</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">'/'</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(31, 55, 127);">resultat</span>&nbsp;=&nbsp;<span style="color: rgb(31, 55, 127);">nbre1</span>&nbsp;/&nbsp;<span style="color: rgb(31, 55, 127);">nbre2</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</pre>
+                    </li>
+                </ul>
+            </li>
+            <li>Dans le cas où le bloc d'instructions à exécuter est <span style="color:red;font-weight: bold;">le même pour plusieurs étiquettes </span>, on peut <span style="color:red;font-weight: bold;">regrouper </span>ces étiquettes comme l'exemple ci-dessous
+                <pre style="font-family: Consolas; font-size: 13px; background: white;"><span style="color: black;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nombre</span>&nbsp;=&nbsp;<span style="color:#a31515;">2</span>;
+<span style="color:blue;">string</span>&nbsp;</span>session;
+<span style="color: rgb(143, 8, 196);">switch</span>&nbsp;(<span style="color: blue;">nombre</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">1</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">2</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;session=&nbsp;<span style="color: rgb(163, 21, 21);">"Tronc commun"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">3</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">4</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">5</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">case</span>&nbsp;<span style="color: rgb(163, 21, 21);">6</span>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(31, 55, 127);">session</span>&nbsp;=&nbsp;<span style="color: rgb(163, 21, 21);">"Formation spécifique"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">break</span>;
+<span style="color: rgb(163, 21, 21);">    default:</span>
+        <span style="color: rgb(31, 55, 127);">session</span>&nbsp;=&nbsp;<span style="color: rgb(163, 21, 21);">"Erreur"</span>;            
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(143, 8, 196);">break</span>;
+}</pre>
+            </li>
+
+        </ul>
+    
+    
+				</div>
+			</div>
+				<div class="w3-panel w3-card" style="background-color:LightPink"> 
+					<h4>Présentation du contrôle grille, du déplacement d'un <span style="font-family: 'courier new', courier, monospace; color: #3366ff;">Sprite </span>et l'événement <span style="font-family: 'courier new', courier, monospace; color: #3366ff;">ValueChanged</span></h4>
+					<div class="w3-container">
+						 
+        <ul>
+            <li>Objet <a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/basevisualarray" target="_blank">BaseGrid</a>
+                <ul>
+                    <li>Propriété <span style="font-family: 'courier new', courier, monospace; color: #0000ff;">Length:</span>obtient ou définit le nombre de cellules dans la grille<br>Exemple : la grille vsiGrille a 10 cellules<br><br>
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">vsiGrille.Length&nbsp;=&nbsp;10;
+</pre>
+                    </li>
+                </ul>
+            </li>
+            <li>Objet <strong><span style="font-family: 'courier new', courier, monospace; color: #3366ff;"><a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/sprite" target="_blank">Sprite</a></span></strong>
+                <ul>
+                    <li>Propriétés <span style="font-family: 'courier new', courier, monospace; color: #0000ff;"><a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/sprite" target="_blank">DisplayIndex</a></span>&nbsp;: Obtient ou définit
+                        l'index de la grille où le sprite se trouve<br>Exemple : le sprite sprJoueur sera placé sur la première cellule de la grille (à l'index 0) <br><br>
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">sprJoueur.DisplayIndex&nbsp;=&nbsp;0;
+</pre>
+                    </li>
+                    <li>Autres propriétés :&nbsp;<a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/sprite" target="_blank"><span style="font-family: 'courier new', courier, monospace; color: #0000ff;">FollowGrid</span>, <span style="font-family: 'courier new', courier, monospace; color: #0000ff;">Animated</span></a>,
+                        <span style="font-family: 'courier new', courier, monospace; color: #0000ff;">Visible</span>. Ce sont des propriétés booléennes<br>Exemple : animer le sprite sprJoueur<br>
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">sprJoueur.Animated&nbsp;=&nbsp;<span style="color:blue;">true</span>;
+</pre><br>Exemple : le sprite sprJoueur suit la grille lorsqu'il se déplace<br><br>
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">sprJoueur.FollowGrid&nbsp;=&nbsp;<span style="color:blue;">true</span>;
+</pre>
+                    </li>
+                </ul>
+            </li>
+            <li>Événement <span style="font-family: 'courier new', courier, monospace; color: #0000ff;">ValueChanged </span>:&nbsp;Cet événement se produit lorsque la valeur du contrôle change</li>
+        </ul>
+    
+					</div>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+	<!-- <br> -->
+	 <button onclick="accordeon('TP01')" class="w3-button w3-block w3-left-align w3-grey">TP01 <span style="color:yellow;"> (10%)</span></b>
+	<span style="color:yellow;padding-left: 410px;">(Vendredi 11 novembre 2022)</span></button>
+    
+
+	
+	<div id="TP01" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+			<div class="w3-panel w3-round w3-border">
+           <div class="w3-panel w3-card w3-light-grey"> 
+				<h4>TP01 (10%)</h4>
+				
+			</div>
+			<div class="w3-panel w3-round w3-border">
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYXRs1N42il-B4IWVhjLwGRD" class="w3-button w3-orange w3-round">Capsules vidéos à regarder !</a></p>
+				</div>
+				<div class="w3-container w3-cell w3-cell-middle">
+					<p><b>Cliquez pour télécharger le matériel du TP03 : </b></p>
+				</div>
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre3/TP1_Serpents-echelles_Materiel.zip" class="w3-button w3-green w3-round">Pratique</a></p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- <br> -->
+	<!-- <br> -->
+	<button onclick="accordeon('RC4')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 04 <span style="color:yellow;padding-left: 400px;">(Mercredi 16 novembre 2022)</span></button>
+    
+	<div id="RC4" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+               <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUkT9ipacXSI0Ke8jP69XjC" class="w3-button w3-orange w3-round">Capsules vidéos à regarder !</a></p>
+           
+			</div>
+         
+		</div>
+		<div class="w3-panel w3-round w3-border">
+			<h3> Démonstrations </h3>
+            
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre4/R04_DemoBoucleFor_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel de la démonstration</a></p>
+            
+			</div>
+			
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre4/R04_DemoBoucleFor_Solution.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger la solution</a></p>
+            </div>
+			
+		
+	
+		</div>
+		<div class="w3-panel w3-round w3-border">
+							<div class="w3-panel w3-card w3-light-grey"> 
+								<h4> Utilisation</h4>
+								<div class="w3-container">
+														<ul>
+													<li>La résolution de certains problèmes nécessite un traitement répétitif. </li>
+													<li>Il existe plusieurs instructions qui permettent de répéter un nombre déterminé de fois un traitement.&nbsp;</li>
+													<li>On utilise souvent le terme boucle lorsqu'on parle d'instruction de répétition.</li>
+														
+													
+													
+													
+												</ul>
+								</div>
+								
+							</div>
+							<div class="w3-panel w3-card w3-light-grey"> 
+								<h4> Syntaxe</h4>
+								<div class="w3-container">
+									
+											
+										<div style="display:flex" class="w3-container">
+											<div style="height:100%;flex-grow:1" class="w3-code">
+																				<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#8f08c4;">for</span>&nbsp;(initialisation;&nbsp;condition&nbsp;d&#39;exécution;&nbsp;incrémentation/décrémentation)
+				{
+				&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;bloc&nbsp;d&#39;instructions&nbsp;à&nbsp;exécuter&nbsp;un&nbsp;certain&nbsp;nombre&nbsp;de&nbsp;fois</span>
+				}</pre>
+											</div>
+											<div style="text-align:right flex-grow:1" >
+												<img src="images/boucleFor.png">								
+											</div>								
+											
+										</div>			
+										
+												<ul>
+													<li> initialisation</i> : déclare et assigne une valeur à la variable servant d'index (compteur). Elle permettra de compter le nombre de répétitions(itérations) à effectuer
+													</li>
+													<li> condition d'exécution</i> : c'est une expression booléenne. Tant que cette expression est vraie, le bloc d'instructions est exécuté.&nbsp;&nbsp;</span>
+													</li>
+													<li> incrémentation/décrémentation</i> : augmentation ou diminution de la variable compteur. Il faut toujours s'assurer que cette incrémentation ou décrémentation du
+														compteur fait que la condition d'exécution devienne false pour arrêter la répétition et donc ne pas renter dans une boucle infinie.
+													</li>
+													<li> Bloc d'instructions</i> : Les instructions à exécuter la condition est vraie 
+													</li>
+													
+									</ul>
+								</div>
+								
+							</div>
+								<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Exemple 01</h4>
+				<div class="w3-container">
+					<div style="display:flex" class="w3-container">
+							<div style="height:100%;flex-grow:1" class="w3-code">
+																<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Afficher&nbsp;le&nbsp;mot&nbsp;&quot;Bonjour&quot;&nbsp;10&nbsp;fois&nbsp;sur&nbsp;la&nbsp;console</span>
+<span style="color:#8f08c4;">for</span>&nbsp;(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span> = 0;&nbsp;index &lt; 5;index++)
+{
+&nbsp;&nbsp;&nbsp;Console.WriteLine(<span style="color:#a31515;">&quot;Bonjour&quot;</span>);
+ 
+}
+<span style="color:green;">//&nbsp;Déroulement&nbsp;de&nbsp;l&#39;exécution</span>
+<span style="color:green;">//&nbsp;index&nbsp;=&nbsp;0&nbsp;</span>
+<span style="color:green;">//&nbsp;index&nbsp;&lt;&nbsp;5&nbsp;alors&nbsp;Afficher&nbsp;&quot;Bonjour&quot;;&nbsp;index++&nbsp;(index=1)</span>
+<span style="color:green;">//&nbsp;index&nbsp;&lt;&nbsp;5&nbsp;alors&nbsp;Afficher&nbsp;&quot;Bonjour&quot;;&nbsp;index++&nbsp;(index=2)</span>
+<span style="color:green;">//&nbsp;index&nbsp;&lt;&nbsp;5&nbsp;alors&nbsp;Afficher&nbsp;&quot;Bonjour&quot;;&nbsp;index++&nbsp;(index=3)</span>
+<span style="color:green;">//&nbsp;index&nbsp;&lt;&nbsp;5&nbsp;alors&nbsp;Afficher&nbsp;&quot;Bonjour&quot;;&nbsp;index++&nbsp;(index=4)</span>
+<span style="color:green;">//&nbsp;index&nbsp;&lt;&nbsp;5&nbsp;alors&nbsp;Afficher&nbsp;&quot;Bonjour&quot;;&nbsp;index++&nbsp;(index=5)</span>
+<span style="color:green;">//&nbsp;index&nbsp;&lt;&nbsp;5&nbsp;Non&nbsp;!&nbsp;Arrêter</span></pre>
+							</div>
+							<div style="text-align:right flex-grow:1" >
+								<img src="images/boucleForExemple1.png">								
+							</div>								
+							
+						</div>			
+						
+								
+				</div>
+				
+			</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Exemple 02</h4>
+				<div class="w3-container">
+					<div style="display:flex" class="w3-container">
+							<div style="height:100%;flex-grow:1" class="w3-code">
+																<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Calculer&nbsp;la&nbsp;somme&nbsp;des&nbsp;nombres&nbsp;de&nbsp;1&nbsp;à&nbsp;5&nbsp;et&nbsp;afficher&nbsp;le&nbsp;résultat&nbsp;sur&nbsp;la&nbsp;console</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">somme</span>&nbsp;=&nbsp;0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">for</span>&nbsp;(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span>&nbsp;=&nbsp;1;&nbsp;index&nbsp;&lt;=&nbsp;5;index++)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;somme&nbsp;=&nbsp;somme&nbsp;+&nbsp;index;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(<span style="color:#a31515;">&quot;Somme = &nbsp;&quot;</span>&nbsp;+&nbsp;somme);
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Déroulement&nbsp;de&nbsp;l&#39;exécution</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;somme&nbsp;=&nbsp;0;&nbsp;index&nbsp;=&nbsp;1;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;index&nbsp;1;&nbsp;index&nbsp;&lt;=&nbsp;5&nbsp;alors&nbsp;somme&nbsp;=&nbsp;somme&nbsp;+&nbsp;index&nbsp;(somme&nbsp;devient&nbsp;1);&nbsp;index++</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;index&nbsp;2;&nbsp;index&nbsp;&lt;=&nbsp;5&nbsp;alors&nbsp;somme&nbsp;=&nbsp;somme&nbsp;+&nbsp;index&nbsp;(somme&nbsp;devient&nbsp;3);&nbsp;index++</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;index&nbsp;3;&nbsp;index&nbsp;&lt;=&nbsp;5&nbsp;alors&nbsp;somme&nbsp;=&nbsp;somme&nbsp;+&nbsp;index&nbsp;(somme&nbsp;devient&nbsp;6);&nbsp;index++</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;index&nbsp;4;&nbsp;index&nbsp;&lt;=&nbsp;5&nbsp;alors&nbsp;somme&nbsp;=&nbsp;somme&nbsp;+&nbsp;index&nbsp;(somme&nbsp;devient&nbsp;10);&nbsp;index++</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;index&nbsp;5;&nbsp;index&nbsp;&lt;=&nbsp;5&nbsp;alors&nbsp;somme&nbsp;=&nbsp;somme&nbsp;+&nbsp;index&nbsp;(somme&nbsp;devient&nbsp;15);&nbsp;index++</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;index&nbsp;6;&nbsp;index&nbsp;&lt;=&nbsp;5&nbsp;NON&nbsp;!&nbsp;Arréter&nbsp;la&nbsp;boucle!</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Afficher&nbsp;la&nbsp;somme&nbsp;sur&nbsp;la&nbsp;console</span></pre>
+							</div>
+							<div style="text-align:right flex-grow:1" >
+								<img src="images/boucleForExemple2.png">								
+							</div>								
+							
+						</div>			
+						
+								
+				</div>
+				
+			</div>
+			
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> <a href="https://sites.google.com/site/notionscsharpcem/tableau/tableau1d" target="_blank">Tableau 1D</a> préinitialisé, indexation et <span style="color: #0000ff;">Length&nbsp;</span></h4>
+				<div class="w3-container">
+				<ul>
+            <li>Un tableau à une dimension est un regroupement d'éléments de même type</li>
+            <li>Dans cette section nous utiliserons des tableaux&nbsp;<b>préinitialisés</b>.  </li>
+			 <li>De manière générale la déclaration d'un tableau préninitialisé se fait comme suit:<br>type[ ] tabNomDuTableau = {elt1, el2,..., elt};&nbsp;<br>Ex:
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>[]&nbsp;<span style="color:#1f377f;">tabNbres</span>&nbsp;=&nbsp;{&nbsp;12,&nbsp;0,&nbsp;5,&nbsp;76,&nbsp;12,&nbsp;5,&nbsp;4&nbsp;};
+</pre><br> voir d'autres exemples<a href="https://sites.google.com/site/notionscsharpcem/tableau/tableau1d" target="_blank"> ici
+            </a></li>
+			</ul>
+				</div>
+				
+			</div>
+			
+				<div class="w3-panel w3-round w3-border">
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUkT9ipacXSI0Ke8jP69XjC" class="w3-button w3-orange w3-round">Capsules vidéos à regarder !</a></p>
+            
+			</div>
+          
+		</div>
+		<div class="w3-panel w3-round w3-border">
+			<h3> Démonstrations </h3>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre4/R04_DemoTableau1D_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel de la démonstration </a></p>
+            </div>
+			
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre4/R04_DemoTableau1D_Solution.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger la solution</a></p>
+            </div>
+			
+		</div>
+		<div class="w3-panel w3-round w3-border">
+			<h3> Exercices </h3>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre4/R04_GrilleEtRepetition_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel des exercices </a></p>
+            </div>
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre4/R04_GrilleEtRepetition_Solution.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger la solution</a></p>
+            </div>
+			
+	
+		</div>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Syntaxe</h4>
+				<div class="w3-container">
+					
+							
+						<div style="display:flex" class="w3-container">
+							<div style="height:100%;flex-grow:1" class="w3-code">
+																<pre style="font-family:Consolas;font-size:13px;color:black;background:white;">type[]&nbsp;<span style="color:#1f377f;">tabNomDuTableau</span>&nbsp;=&nbsp;{&nbsp;elt1,&nbsp;el2,&nbsp;...,&nbsp;elt&nbsp;};
+</pre>
+							</div>
+															
+							
+						</div>			
+						
+						<ul>
+							<li>L'accès à un élément du tableau se fait par l'opération <b>d'indexation</b>. </li>
+							<li>L'indexation consiste à utiliser un&nbsp;<b style="font-size: 0.9375rem;">index</b><span style="font-size: 0.9375rem;">&nbsp;entre&nbsp;</span><b style="font-size: 0.9375rem;">[ ]</b>
+                <span style="font-size: 0.9375rem;">. </li>
+				<li>L'index est un nombre entier. Le premier élément du tableau se trouve à&nbsp;<b style="font-size: 0.9375rem;">l'index 0</b></span><br>&nbsp;tabNbres[0] est le premier élément du tableau tabNbres. Cet
+                élément vaut 12,<br>tabNbres[1] est le deuxième élément du tableau tabNbres. Cet élément vaut 0
+                <br>tabNbres[2] est le troisième élément du tableau tabNbres. Cet élément vaut 5</li>
+
+            <li>En C# le nombre d'éléments d'un tableau est déterminé à l'aide de la propriété tabNbres.<span style="color: #0000ff;">Length&nbsp;</span></li>
+            <li>tabNbres.Length retourne le nombre d'éléments de tabNbres, dans ce cas 7</li>
+            <li>Étant donné que les indexes commencent à 0, le dernier élément du tableau se trouve à l'index tabNbres.Length-1
+                <br> tabNbres[tabNbres.Length-1] est le dernier élément du tableau et vaut 4</li>
+            <li>L'instruction tabNbres[6] = 4; a pour effet de changer le 7ième élément du tableau en lui assignant la valeur 4.&nbsp;<br> L'instruction élément = tabNbres[6]; a pour effet d'assigner à la variable élément la valeur du 7ième élément du tableau.</li>
+              <li>  En aucun cas on ne peut assigner une valeur à un tableau. L'assignation ne peut se faire que pour les éléments du tableau un à la fois.</li>
+        		
+									
+						</ul>
+				</div>
+				
+			</div>
+			
+			<div class="w3-panel w3-card" style="background-color:LightPink"> 
+				<h4> Les grilles&nbsp;<span style="color: #0000ff;">VisualIntArray,VisualBoolArray</span> et <span style="color: #0000ff;">VisualCharArray&nbsp;</span>à une dimension</h4>
+				<div class="w3-container">
+					
+        <ul>
+            <li> Ces grilles seront utilisées pour représenter graphiquement des tableaux à une dimension.</li>
+			<li>Chaque élément du tableau sera représenté par une cellule de la grille. </li>
+			<li>On utilisera comme pour les tableaux un index pour désigner&nbsp; une cellule
+                de la grille.<br> Si viaNombres est le nom de la grille
+                <br> viaNombres[0] désigne le contenu de la première cellule de la grille
+                <br>viaNombres[1] désigne le contenu de la deuxième cellule de la grille
+                <br>Ex : Le code qui permet de représenter le tableau tabNbres par la grille viaNombres
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>[]&nbsp;<span style="color:#1f377f;">tabNbres</span>&nbsp;=&nbsp;{&nbsp;12,&nbsp;0,&nbsp;5,&nbsp;76,&nbsp;12,&nbsp;5,&nbsp;4&nbsp;};
+<span style="color:#8f08c4;">for</span>&nbsp;(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span>&nbsp;=&nbsp;0;&nbsp;<span style="color:#1f377f;">index</span>&nbsp;&lt;&nbsp;<span style="color:#1f377f;">tabNbres</span>.Length;&nbsp;<span style="color:#1f377f;">index</span>++)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;viaNombres[<span style="color:#1f377f;">index</span>]&nbsp;=&nbsp;<span style="color:#1f377f;">tabNbres</span>[<span style="color:#1f377f;">index</span>];
+}</pre>
+            </li>
+
+            <li>Remettre toutes les cellules de la grille à leur état initial avec la méthode : <span style="font-family: 'courier new', courier, monospace; color: #0000ff;">Clear()</span></li>
+            <li>Activer/Désactiver des cellules à l'aide des méthodes :<span style="font-family: 'courier new', courier, monospace; color: #0000ff;">EnableCell()</span>&nbsp;et&nbsp;<span style="font-family: 'courier new', courier, monospace; color: #0000ff;">DisableCell()</span><br>
+            </li>
+        </ul>
+    
+										
+										
+										
+										
+				</div>
+				
+			</div>
+	
+		</div>
+							<div class="w3-panel w3-round w3-border">
+				<h3> Laboratoire 2 ( <span style="color:red">Les motifs animés sont facultatifs</span>)</h3>
+					<div class="w3-container w3-cell w3-cell-middle">
+					
+					  <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYXNvUQPTsKJcl4yAlusC0eh" class="w3-button w3-orange w3-round">Capsules vidéos supplémentaires et explication laboratoire 2!</a></p>
+					
+					</div>
+					 
+					<div class="w3-container w3-cell w3-cell-middle">
+					
+						<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre4/R04_Laboratoire2_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel de laboratoire 2 </a></p>
+					</div>
+					
+					<div class="w3-container w3-cell w3-cell-middle">
+					
+						<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre4/R04_Laboratoire2_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger la solution</a></p>
+					</div>
+					
+			
+				</div>
+
+	</div>
+	
+	<!-- <br> -->
+	<button onclick="accordeon('RC5')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 05 <span style="color:yellow;padding-left: 400px;">(Mercredi 23 novembre 2022)</span></button>
+    
+	<div id="RC5" class="w3-container w3-hide">
+				<div class="w3-panel w3-round w3-border">
+		<h2> Examen Formatif #01 </h2>
+			<!-- 
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="Manquant" class="w3-button w3-orange w3-round">Capsules vidéos - Formatif 01!</a></p>
+            
+			</div>
+			  -->
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre5/R05_Formatif1_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel - Formatif 01 </a></p>
+            </div>
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre5/R05_Formatif1_Solution.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger la solution - Formatif 01</a></p>
+            </div>
+			
+	
+		</div>
+	</div>
+	<!-- <br> -->
+	
+	<button onclick="accordeon('RC6')" class="w3-button w3-block w3-left-align w3-blue">Rencontre 06 - <b>Examen 01 <span style="color:yellow;"> (20%)</span></b>
+	<span style="color:yellow;padding-left: 225px;">(Mercredi 30 novembre 2022)</span> </button>
+	
+	
+	<div id="RC6" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+				
+				</div>
+				<div class="w3-panel w3-round w3-border">
+				   <div class="w3-panel w3-card w3-light-grey"> 
+						<h4></h4>
+						<div class="w3-container">
+							
+						</div>
+					</div>
+				</div>
+	</div>
+	<!-- <br> -->
+	<button onclick="accordeon('RC7')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 07 <span style="color:yellow;padding-left: 400px;">(Mercredi 07 décembre 2022)</span></button>
+    
+	<div id="RC7" class="w3-container w3-hide">
+	
+		
+		<div class="w3-panel w3-round w3-border">
+				<h3> Exercices de rappel sur les tableaux 1D et la boucle for</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre7/R07_Rappel_BoucleEtTableau1D_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre7/R07_Rappel_BoucleEtTableau1D_Solution.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution</a></p>
+				 
+            </div>
+				
+				
+				
+				
+				
+		</div>
+			 
+		<div class="w3-panel w3-round w3-border">
+				<h3> Exercices string et tableau de string</h3>
+				
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYXDeIc5vtUpfCiSpD9BdSq0" class="w3-button w3-orange w3-round">Capsules vidéos</a></p>
+            
+			</div>
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre7/R07_ExercicesString_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre7/R07_ExercicesString_Solution.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution</a></p>
+				 
+            </div>
+				
+				
+				
+				
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				<h3> Exercices Grille mode Image et Timer</h3>
+				 
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYVV8BtQvCalntOnQpIPYF37" class="w3-button w3-orange w3-round">Capsules vidéos</a></p>
+            
+			</div>	 
+		    <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre7/R07_ExercicesImageTimer_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel  </a></p>
+            </div>
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre7/R07_ExercicesImageTimer_Solution.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution</a></p>
+            </div>
+				
+				
+				
+				
+				
+		</div>
+		
+				<div class="w3-panel w3-round w3-border">
+				   <div class="w3-panel w3-card w3-light-grey"> 
+						<h4></h4>
+						<div class="w3-container">
+								<ul>
+				 <li> Le type <span style="color: #0000ff; font-size: medium;"><strong><span style="font-family: 'courier new', courier, monospace;">string</span></strong>
+        </span> permet de déclarer une chaîne de caractères.</li> 
+		<li>Une chaîne de caractères est une séquence de caractères, entre guillemets ("").</li> 
+		<li>Une chaîne est immuable, son contenu ne peut être modifié. Ex: "Bonjour"</li>
+		<li> Exemple de déclaration 		
+						
+						<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">chaine</span>&nbsp;=&nbsp;<span style="color:#a31515;">"Une&nbsp;belle&nbsp;journée!"</span>;
+		</pre>
+		</li>
+		<li> Une chaine de cartactère peut être considerée comme un tableau 1D. L'index du premier caractère est 0.
+		
+		<table style="text-align:center; border: 1px solid white;border-collapse: collapse">
+				<tr style=" border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">0</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">1</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">2</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">3</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">4</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">5</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">6</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">7</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">8</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">9</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">10</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">11</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">12</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">13</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">14</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">15</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">16</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">17</td>
+			
+				</tr>
+						<tr style=" border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">U</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">n</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">e</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse"> </td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">b</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">e</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">l</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">l</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">e</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse"> </td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">j</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">o</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">u</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">r</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">n</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">é</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">e</td>
+				<td style="border: 1px solid white;background-color: #96D4D4; border-collapse: collapse">!</td>
+				</tr>
+				</table>
+					</li>
+				<li> Pour accéder à un caractère de la chaine, on doit utiliser son nom et l'index.
+				<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">chaine</span>&nbsp;=&nbsp;<span style="color:#a31515;">&quot;Une&nbsp;belle&nbsp;journée!&quot;</span>;
+<span style="color:blue;">char</span>&nbsp;<span style="color:#1f377f;">premierCaractere</span>&nbsp;=&nbsp;chaine[0];<span style="color:green;">//&nbsp;premierCaractere&nbsp;contient&nbsp;&#39;U&#39;</span>
+<span style="color:blue;">char</span>&nbsp;<span style="color:#1f377f;">dernierCaractere</span>&nbsp;=&nbsp;chaine[chaine.Length-1];<span style="color:green;">//&nbsp;dernierCaractere&nbsp;contient&nbsp;&#39;!&#39;</span></pre>
+				</li>
+				 <li> Concaténation de deux chaînes: <b>opérateur +</b> dans un contexte de chaîne de caractères. La concaténation permet de juxtaposer 2 chaînes de&nbsp; caractères.&nbsp;&nbsp;
+                <br><b>Exemple:
+                </b>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">chaine1</span>&nbsp;=&nbsp;<span style="color:#a31515;">"Une&nbsp;belle&nbsp;journée"</span>;
+<span style="color:blue;">string</span>&nbsp;&nbsp;<span style="color:#1f377f;">chaine2</span>&nbsp;=&nbsp;<span style="color:#a31515;">"ensoleillée"</span>;
+<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">mesasage</span>&nbsp;=&nbsp;<span style="color:#1f377f;">chaine1</span>&nbsp;+&nbsp;<span style="color:#a31515;">"&nbsp;"</span>&nbsp;+&nbsp;<span style="color:#1f377f;">chaine2</span>; <span style="color:Green">
+//la valeur de message est la chaine de caractères "Une belle journée ensoleillée"</span><br></pre>
+            </li>
+			<li>Les opérateurs <b>==</b> et <b>!=</b> permettent de vérifier <b>l'égalité et l'inégalité</b> de 2 chaînes de caractères
+                <br><b>Exemple:</b>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">chaine1</span>&nbsp;=&nbsp;<span style="color:#a31515;">"Une&nbsp;belle&nbsp;journée"</span>;
+<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">chaine2</span>&nbsp;=&nbsp;<span style="color:#a31515;">"ensoleillée"</span>;
+<span style="color:blue;">bool</span>&nbsp;<span style="color:#1f377f;">egale</span>;
+<span style="color:#8f08c4;">if</span>&nbsp;(<span style="color:#1f377f;">chaine1</span>&nbsp;==&nbsp;<span style="color:#1f377f;">chaine2</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">egale</span>&nbsp;=&nbsp;<span style="color:blue;">true</span>;
+}
+<span style="color:#8f08c4;">else</span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">egale</span>&nbsp;=&nbsp;<span style="color:blue;">false</span>;
+}
+<b>Remarque</b>: Le if dans l'exemple précédent peut être écrit comme suit: egale = chaine1<span style="font-size: 11.375px;">&nbsp;==&nbsp;</span><span style="font-size: 11.375px;">chaine;</span></pre>
+                <pre style="font-family:Consolas;font-size:13px;color:Green;background:white;">//Dans ce cas la valeur de la variable egale est false
+</pre>
+            </li>
+			 <li>Plusieurs <a href="https://sites.google.com/site/notionscsharpcem/typestring" target="_blank">méthodes et propriété</a><span class="" style="color: rgb(125, 159, 211);">s:</span>&nbsp;ToUpper(), ToLower(), ... Length permettent de manipuler
+                les chaînes de caractères.&nbsp;<br><b>
+          Exemple</b>:
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">message</span>&nbsp;=&nbsp;<span style="color:#a31515;">"Une&nbsp;belle&nbsp;journée&nbsp;ensoleillée"</span>;
+<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">chaine</span>&nbsp;=&nbsp;<span style="color:#1f377f;">message</span>.<span style="color:#74531f;">ToUpper</span>();
+
+Dans ce cas la valeur de chaine est "UNE BELLE JOURNÉE ENSOLEILLÉE"</pre><b>Exemple:
+ </b>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">message</span>&nbsp;=&nbsp;<span style="color:#a31515;">"Une&nbsp;belle&nbsp;journée&nbsp;ensoleillée"</span>;
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">longueur</span>&nbsp;=&nbsp;<span style="color:#1f377f;">message</span>.Length;</pre>Dans ce cas la valeur de longueur est 29.<br>
+            </li>
+				</ul>
+						</div>
+					</div>
+					
+					<div class="w3-panel w3-card" style="background-color:LightPink"> 
+				<h4>Propriétés et méthodes&nbsp; supplémentaires pour les contrôles VisualArrays et TextBox&nbsp; </h4>
+				<div class="w3-container">
+				
+				
+										<ol>
+    
+
+
+    <li>Contrôle VisualArrays&nbsp;<br>
+        <ul>
+            <li>Propriété&nbsp;<a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/basevisualarray" target="_blank">SelectedIndex</a>&nbsp;: retourne l'index de la cellule sélectionnée dans la grille<br>
+                <ul>
+                    <li>Sélectionner une cellule par programmation <br>
+
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//sélectionne la 3ième cellule de la grille</span>
+viaNombres.SelectedIndex&nbsp;=&nbsp;2; 
+ </pre>
+                    </li>
+                    <li>Vérifier si une cellule est sélectionnée dans la grille<br>
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#8f08c4;">if</span>(viaNombres.SelectedIndex&nbsp;!=&nbsp;-1)...
+</pre> </li>
+                    <li>Obtenir l'index de la cellule sélectionnée dans la grille<br>
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span>&nbsp;=&nbsp;viaNombres.SelectedIndex;
+</pre> </li>
+                    <li>Désélectionner toutes les cellules : lorsqu'aucune cellule n'est sélectionnée,&nbsp;<span style="font-family: 'courier new', courier, monospace;">SelectedIndex</span> vaut -1<br>
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">viaNombres.SelectedIndex&nbsp;=&nbsp;-1;<br></pre>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Propriété <span style="color:blue;">SelectedValue </span>: retourne la valeur de la cellule sélectionnée dans la grille
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#8f08c4;">if</span>&nbsp;(vsaGrille.SelectedIndex&nbsp;!=&nbsp;-1&nbsp;&amp;&amp;&nbsp;vsaGrille.<span class="" style="color: rgb(125, 159, 211);">SelectedValue&nbsp;</span>==&nbsp;<span style="color:#a31515;">"kiwi"</span>)...
+</pre>
+            </li>
+
+
+            <li>Les méthodes <a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/basevisualarray" target="_blank">DisableCell(), DisableSelectedCell( )</a>&nbsp;et&nbsp;<a href="https://sites.google.com/site/notionscsharpcem/gui---visualarrays/visualstringarray"
+                    target="_blank">MixUp( )</a></li>
+            <li><b>Exemple:
+              </b>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Désactiver&nbsp;la&nbsp;première&nbsp;cellule&nbsp;de&nbsp;la&nbsp;grille</span>
+vsaGrille.<span style="color:#74531f;">DisableCell</span>(0);</pre>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//Désactiver&nbsp;la&nbsp;cellule&nbsp;sélectionnée</span>
+vsaGrille.<span style="color:#74531f;">DisableSelectedCell</span>();</pre>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Mélanger&nbsp;les&nbsp;éléments&nbsp;de&nbsp;la&nbsp;grille</span>
+vsaGrille.<span style="color:#74531f;">MixUp</span>();</pre>
+            </li>
+
+        </ul>
+    </li>
+    <li> Contrôle <a href="https://sites.google.com/site/notionscsharpcem/guicontroles/textbox" target="_blank">TextBox </a>(en français :Zone de texte) et <a href="https://sites.google.com/site/notionscsharpcem/guicontroles/label" target="_blank">Label </a>(en
+        français :Étiquette)
+        <ul>
+            <li>Propriété <a href="https://sites.google.com/site/notionscsharpcem/guicontroles/textbox" target="_blank">Text , Visible, MaxLength</a>
+                <br><b>Exemple:
+              </b>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">txtNom.Text&nbsp;=&nbsp;<span style="color:#a31515;">"Julie"</span>;
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nombreCaracteresPossible</span>&nbsp;=&nbsp;txtNom.MaxLength;
+txtNom.Visible&nbsp;=&nbsp;<span style="color:blue;">false</span>;</pre>
+            </li>
+        </ul>
+    </li>
+	<li> Contrôle VisualStringArray en mode ImageFile
+        <ul>
+			<li> On affiche dans chaque cellule une image </li>
+			<li> On doit assigner à chaque cellule le chemin d'accès au fichier image </li>
+            
+                <br><b>Exemple:  </b>
+				<ul>
+					<li>On veut afficher dans la première cellule de la grille vsaGrilleImages, l'image correspondant au premier fruit dans le tableau m_tabMotsFruits (pomme).</li>
+					<li>On doit assigenr alors à la première cellule de la grille vsaGrilleImages le chemin d'accès au fichier correspondant au fruit pomme</li>
+				</ul>
+				<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#a31515;">&quot;images/pomme.png&quot;</span>;<span style="color:green;">//&nbsp;images&nbsp;est&nbsp;le&nbsp;dossier&nbsp;contenant&nbsp;les&nbsp;fichiers&nbsp;des&nbsp;images</span>
+				</pre>
+				
+             
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>[]&nbsp;<span style="color:#1f377f;">m_tabMotsFruits</span>&nbsp;=&nbsp;{&nbsp;<span style="color:#a31515;">&quot;pomme&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;radis&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;raisin&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;tomate&quot;</span>,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a31515;">&quot;ananas&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;avocat&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;banane&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;cantaloup&quot;</span>,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a31515;">&quot;cerise&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;citron&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;fraise&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;kiwi&quot;</span>,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a31515;">&quot;orange&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;piment&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;poire&quot;</span>,&nbsp;<span style="color:#a31515;">&quot;poivron&quot;</span>};
+ 
+vsaGrilleImages[0]&nbsp;=&nbsp;<span style="color:#a31515;">&quot;images/&quot;</span>&nbsp;+&nbsp;m_tabMotsFruits[0]&nbsp;+&nbsp;<span style="color:#a31515;">&quot;.png&quot;</span>;</pre>
+         
+		
+        </ul>
+    </li>
+	    <li>Le contrôle Timer
+        <ul>
+            <li>Le langage C# offre un contrôle <b>Timer </b>qui possède un <b>évènement </b><span style="color:blue">Tick </span> qui permet d'exécuter un bloc d'instructions de manière répétitive selon un intervalle de temps défini. C'est la propriété
+                <span style="color:blue">Interval </span>qui définit la valeur de cet intervalle en millisecondes.
+            </li>
+            <li>Les méthodes&nbsp;<span style="color:blue">Start()</span> et <span style="color:blue">Stop()&nbsp;</span>permettent respectivement de démarrer et d'arrêter le Timer. Une fois que la méthode Stop() est exécutée, l’événement Tick arrête d'exécuter
+                le bloc d'instructions.</li>
+            <li><b>Exemple</b> : Soit tmrHorloge un contrôle timer
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">tmrHorloge.<span style="color:#74531f;">Start</span>();//démarre l'évènemment Tick
+</pre>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">private</span>&nbsp;<span style="color:blue;">void</span>&nbsp;<span style="color:#74531f;">tmrHorloge_Tick</span>(<span style="color:blue;">object</span>&nbsp;<span style="color:#1f377f;">sender</span>,&nbsp;<span style="color:#2b91af;">EventArgs</span>&nbsp;<span style="color:#1f377f;">e</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;instructions à exécuter périodiquement</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+}</pre>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">tmrHorloge.<span style="color:#74531f;">Stop</span>();<span style="color:green;"> // arrête l'exécution de l'évènement Tick</span></pre>
+
+            </li>
+        </ul>
+    </li>
+
+
+    
+</ol>
+				</div>
+				
+			</div>
+					
+				</div>
+	</div>
+	<!-- <br> -->
+	<button onclick="accordeon('RC8')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 08 <span style="color:yellow;padding-left: 400px;">(Jeudi 08 décembre 2022)</span></button>
+    
+	<div id="RC8" class="w3-container w3-hide">
+		
+		<div class="w3-panel w3-round w3-border">
+			<h3> TP02 (20%) </h3>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYVV8BtQvCalntOnQpIPYF37" class="w3-button w3-orange w3-round">Capsules vidéos!</a></p>
+            
+			</div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre8/TP02_Association_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel du TP02</a></p>
+            
+			</div>
+			
+			
+		
+	
+		</div>
+		
+	</div>
+	<!-- <br> -->
+	<button onclick="accordeon('RC9')" class="w3-button w3-block w3-left-align w3-grey">Rencontre 09 - <b>TP02 <span style="color:yellow;"> (20%)</span></b>
+	<span style="color:yellow;padding-left: 275px;">(Mercredi 14 décembre 2022)</span> </button>
+	
+	 
+	<div id="RC9" class="w3-container w3-hide">
+		 <div class="w3-panel w3-round w3-border">
+			<h3> Exercices : Instructions de répétition imbriquées et Tableaux/Grilles 2D</h3>
+           
+			 <div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYVApXQQkLJ2ivbAH-PfL_aQ" class="w3-button w3-brown w3-round">Capsules vidéos!</a></p>
+            
+			</div>
+			 
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre9/R09_Exercices_Adressage2D_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel des exercices</a></p>
+            
+			</div>
+			
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre9/R09_Exercices_Adressage2D_Solution.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution des exercices</a></p>
+            </div>
+			
+		
+		</div>
+		  <div class="w3-panel w3-round w3-border">
+			
+			<h3> Laboratoire : Instructions de répétition imbriquées et Tableaux/Grilles 2D</h3>
+            
+			</br>
+			 <div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYX-X9gNu8Ms5H2BGZzb-p4n" class="w3-button w3-brown w3-round">Capsules vidéos!</a></p>
+            
+			</div>
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre9/R09_TrouverDuplicatas_Materiel.zip" class="w3-button w3-orange w3-round">Télécharger le matériel de l'exercice préparatif au laboratoire</a></p>
+		<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre9/R09_Laboratoire3_Materiel.zip" class="w3-button w3-orange w3-round">Télécharger le matériel du laboratoire</a></p>
+            
+			</div>
+			
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+		<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre9/R09_TrouverDuplicatas_Solution.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution de l'exercices</a></p>
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre9/R09_Laboratoire3_Solution.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution du laboratoire</a></p>
+            </div>
+			
+		
+		</div>
+		 
+		 <button onclick="accordeon('RC91')" class="w3-button w3-block w3-left-align w3-green">Instruction de répétition imbriquées <span style="color:blue">for</span></button>
+		 <div id="RC91" class="w3-container w3-hide">
+            
+			 <div class="w3-panel w3-round w3-border">
+				<h3> Démonstration : Instruction de répétition imbriquées </h3>
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre9/R09_DemoForImbriquee_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel de la démonstration</a></p>
+				
+				</div>
+				
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="" class="w3-button w3-orange w3-round">Cliquez pour télécharger la solution de la démonstration (Les triangles à compléter!)</a></p>
+				</div>
+			
+				
+			</div>
+             <div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Syntaxe</h4>
+				<div class="w3-container">
+					
+							
+						<div style="display:flex" class="w3-container">
+							<div style="margin-right: 100px; height:100%;flex-grow:1" class="w3-code">
+																
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#8f08c4;">for</span>&nbsp;(initialisation;&nbsp;condition&nbsp;d&#39;exécution;&nbsp;incrémentation/décrémentation)
+{
+   &nbsp;<span style="color:#8f08c4;">for</span>&nbsp;(initialisation;&nbsp;condition&nbsp;d&#39;exécution;&nbsp;incrémentation/décrémentation)
+   &nbsp;{
+    &nbsp;&nbsp;<span style="color:green;">//bloc&nbsp;d&#39;instructions</span>
+   &nbsp;}
+}</pre>
+							</div>
+							<div >
+								<img src="Rencontre9/boucle2D.png">								
+							</div>								
+							
+						</div>			
+						
+								<ul>
+									<li> initialisation</i> : déclare et assigne une valeur à la variable servant d'index (compteur). Elle permettra de compter le nombre de répétitions(itérations) à effectuer
+									</li>
+									<li> condition d'exécution</i> : c'est une expression booléenne. Tant que cette expression est vraie, le bloc d'instructions est exécuté.&nbsp;&nbsp;</span>
+									</li>
+									<li> incrémentation/décrémentation</i> : augmentation ou diminution de la variable compteur. Il faut toujours s'assurer que cette incrémentation ou décrémentation du
+										compteur fait que la condition d'exécution devienne false pour arrêter la répétition et donc ne pas renter dans une boucle infinie.
+									</li>
+									<li> Bloc d'instructions</i> : Les instructions à exécuter la condition est vraie 
+									</li>
+									
+					</ul>
+				</div>
+				
+			</div>
+            <div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Exemple</h4>
+				<div class="w3-container">
+					
+							
+								
+						<div style="text-align: center;">
+                            <img src="Rencontre9/boucle2D_exemple1.png">								
+                        </div>	
+								
+				</div>
+				
+			</div>
+             <button onclick="accordeon('RC91')" class="w3-button w3-block w3-left-align w3-gray">Notions théoriques : Afficher/Cacher</button>
+	
+         </div>
+		    <button onclick="accordeon('RC92')" class="w3-button w3-block w3-left-align w3-green">Tableau 2D </button>
+        <div id="RC92" class="w3-container w3-hide">
+		 
+		 <div class="w3-panel w3-round w3-border">
+			<h3> Démonstration : Tableau 2D </h3>
+            
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre9/R09_DemoTableau2D_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel de la démonstration</a></p>
+            
+			</div>
+			
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="" class="w3-button w3-orange w3-round">Cliquez pour télécharger la solution de la démonstration</a></p>
+            </div>
+			
+		
+		</div>
+             <div class="w3-panel w3-card w3-light-grey"> 
+                 <h4> Illustration et notions de base</h4>
+                 <div class="w3-container">
+                    <div style="text-align: center;" >
+                        <img src="Rencontre9/tableau2D.png">								
+                    </div>	
+                                         <ul>
+                                     <li>Un élément d'un tableau 2D est désigné par deux indexes [indexRangée,indexColonne].</li>
+                                    <li> Le premier index désigne le numéro de la rangée et le deuxième index désigne le numéro de la colonne.</li>
+                                    <li> Les deux indexes débutent par la valeur 0</li>
+                                    <li> tabNombres2D.Length donne la taille du tableau tabNombres2D (nombre d'éléments) </li>
+                                    <li> tabNombres2D.GetLength(0) est le nombre de rangées du tableau tabNombres2D (nombre d'éléments) </li>
+                                    <li> tabNombres2D.GetLength(1) est le nombre de colonnes du tableau tabNombres2D (nombre d'éléments) </li>
+                                    <li> tabNombres[0,0] est l'élément à la première rangée de la première colonne. </li>
+                                    <li> tabNombres[0,tabNombres2D.GetLength(1)-1] est le dernier élément de la première rangée du tableau. </li>
+                                    <li> tabNombres[tabNombres2D.GetLength(0)-1,0] est le dernier élément de la première colonne du tableau. </li>
+                                    
+                                     
+                                         
+                                     
+                                     
+                                     
+                                 </ul>
+                 </div>
+                 
+             </div>
+             <div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Syntaxe : Déclaration, initialisation et utilisation</h4>
+				<div class="w3-container">
+					
+							
+						<div style="display:flex" class="w3-container">
+							<div style="margin-right: 100px; height:100%;flex-grow:1" class="w3-code">
+																
+                                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>[,]&nbsp;<span style="color:#1f377f;">tabNombres2D</span>&nbsp;=&nbsp;{
+                        {&nbsp;10,&nbsp;&nbsp;23,&nbsp;&nbsp;30,&nbsp;40,&nbsp;50&nbsp;},
+                        {&nbsp;&nbsp;9,&nbsp;-20,&nbsp;&nbsp;&nbsp;0,&nbsp;25,&nbsp;45},
+                        {&nbsp;&nbsp;8,&nbsp;&nbsp;&nbsp;7,&nbsp;530,&nbsp;34,&nbsp;63&nbsp;},
+                        {&nbsp;&nbsp;8,&nbsp;&nbsp;&nbsp;7,&nbsp;530,&nbsp;34,&nbsp;63&nbsp;},
+                        {101,&nbsp;&nbsp;78,&nbsp;&nbsp;14,&nbsp;17,&nbsp;12&nbsp;},
+                    &nbsp;&nbsp;};
+                
+<span style="color:green;">//&nbsp;Assigner&nbsp;à&nbsp;une&nbsp;variable&nbsp;nombre&nbsp;le&nbsp;contenu&nbsp;de&nbsp;l&#39;élément&nbsp;à&nbsp;la&nbsp;rangée&nbsp;0&nbsp;et&nbsp;à&nbsp;la&nbsp;colonne&nbsp;0</span>
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nombre</span>&nbsp;=&nbsp;tabNombres2D[0,&nbsp;0];
+<span style="color:green;">//&nbsp;Effectuer&nbsp;la&nbsp;somme&nbsp;des&nbsp;deux&nbsp;premiers&nbsp;éléments</span>
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">somme</span>&nbsp;=&nbsp;tabNombres2D[0,&nbsp;0]&nbsp;+&nbsp;tabNombres2D[0,&nbsp;1];
+
+                </pre>
+							</div>
+															
+							
+						</div>			
+						
+								
+				</div>
+				
+			</div>
+            <div class="w3-panel w3-card" style="background-color:LightPink"> 
+				<h4> Grille 2D</h4>
+				<div class="w3-container">
+					
+							
+								
+						<div style="text-align: center;">
+                            <img src="Rencontre9/Grille2D.png">								
+                        </div>	
+								<ul>
+									<li> Une grille 2D permet de représenter graphiquement un tableau 2D
+									</li>
+									<li> L'accès aux éléments de la grille est effectué de la même facon comme dans un tableau 2D
+									</li>
+									<li> NomGrille.RowCount donne le nombre de rangées dans la grille NomGrille
+									</li>
+									<li> NomGrille.ColumnCount donne le nombre de colonnes dans la grille NomGrille
+									</li>
+									
+					</ul>
+				</div>
+				
+			</div>
+             <button onclick="accordeon('R92')" class="w3-button w3-block w3-left-align w3-gray">Notions théoriques : Afficher/Cacher</button>
+	
+         </div>
+	</div>
+	
+	<!-- <br> -->
+	<button onclick="accordeon('RC10')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 10 <span style="color:yellow;padding-left: 400px;">(Mercredi 21 décembre 2022)</span></button>
+    
+	    
+		<div id="RC10" class="w3-container w3-hide">
+            <div class="w3-panel w3-round w3-border">
+			<h3> Capsules vidéos : (Les méthodes avec paramètres) </h3>
+            
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYVYNtGeZwXZWylUp2Czm_as" class="w3-button w3-brown w3-round">Capsules vidéos (Méthode AVEC paramètres!</a></p>
+            
+			</div>
+			
+			<h3> Capsules vidéos : (Les méthodes avec valeur de retour) </h3>
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUUWJO0KkhTkPLT1OHs6B9j" class="w3-button w3-brown w3-round">Capsules vidéos (Méthode AVEC valeur de retour)!</a></p>
+            
+			</div>
+			</div>
+			<!--
+			<div class="w3-panel w3-round w3-border">
+				<h3> Démonstration : Les méthodes </h3>
+						
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="" class="w3-button w3-orange w3-round">Cliquez pour télécharger la démonstration (Les méthodes!)</a></p>
+					<p><a href="" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution  (Les méthodes!)</a></p>
+				
+				</div>
+			
+				
+			</div>
+			-->
+			<div class="w3-panel w3-round w3-border">
+				<h3> Exercices : Les méthodes </h3>
+						
+				
+				<div class="w3-container w3-cell w3-cell-middle">
+				
+					<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre10/R10_Exercices_MethodeAvecParametres_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger les exercices (méthodes sans/avec paramètres)</a></p>
+					<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre10/R10_Exercices_MethodeAvecValeurDeRetour_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger les exercices (méthodes avec valeur de retour)</a></p>
+				
+				</div>
+				<div class="w3-container w3-cell w3-cell-middle">
+					<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre10/R10_Exercices_MethodeAvecParametres_Solution.zip" class="w3-button w3-green w3-round">Télécharger la SOLUTION aux exercices (méthodes sans/avec paramètres)</a></p>
+					<p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre10/R10_Exercices_MethodeAvecValeurDeRetour_Solution.zip" class="w3-button w3-green w3-round">Télécharger la SOLUTION aux exercices (méthodes avec valeur de retour)</a></p>
+				
+				</div>
+				
+			
+				
+			</div>
+		
+			<div class="w3-panel w3-card w3-light-grey"> 
+			<h4> Exemples d'utilisation de méthodes prédéfinies</h4>
+			<div class="w3-container">
+			
+				 
+					<ul>
+						<li>Classe <a href="https://sites.google.com/site/notionscsharpcem/annexes/classemath" target="_blank">Math</a>&nbsp; : Abs(val) - Floor(val) - Ceiling(val)
+							<br> Exemple:
+							<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">valeurAbsolue1</span>&nbsp;=&nbsp;<span style="color:#2b91af;">Math</span>.<span style="color:#74531f;">Abs</span>(-6);<span style="color:Green;">//retourne la valeur absolue </span>
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">valeurAbsolue2</span>&nbsp;=&nbsp;<span style="color:#2b91af;">Math</span>.<span style="color:#74531f;">Abs</span>(6);//retourne la valeur absolue </pre> valeurAbsolue1 et valeurAbsolue2 ont pour valeur 6
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">double</span>&nbsp;<span style="color:#1f377f;">valeur1</span>&nbsp;=&nbsp;<span style="color:#2b91af;">Math</span>.<span style="color:#74531f;">Floor</span>(4.67);<span style="color:green;">//&nbsp;retourne&nbsp;l'entier&nbsp;inferieur&nbsp;ou&nbsp;égal&nbsp;à&nbsp;la&nbsp;valeur&nbsp;décimale&nbsp;passée&nbsp;en&nbsp;paramètre</span>
+valeur1 vaut 4
+<span style="color:blue;">double</span>&nbsp;<span style="color:#1f377f;">valeur3</span>&nbsp;=&nbsp;<span style="color:#2b91af;">Math</span>.<span style="color:#74531f;">Ceiling</span>(4.67);<span style="color:green;">//&nbsp;retourne&nbsp;le&nbsp;plus&nbsp;petit&nbsp;entier&nbsp;supérieur&nbsp;ou&nbsp;égal&nbsp;à&nbsp;la&nbsp;valeur&nbsp;décimale&nbsp;passée&nbsp;en&nbsp;paramètre</span>
+valeur3 vaut 5
+</pre>
+						</li>
+						<li>Classe String : ToUpper() , ToString() <br> ToString() convertit une valeur numérique en sa représentation sous chaine de caractères
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nombre</span>&nbsp;=&nbsp;125;
+<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">nombreFormaté</span>&nbsp;=&nbsp;<span style="color:#1f377f;">nombre</span>.<span style="color:#74531f;">ToString</span>();</pre> ToString("00") en plus de convertir, formate la donnée.&nbsp;Le spécificateur de format personnalisé «0» sert de symbole d'espace réservé.&nbsp;
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nombre</span>&nbsp;=&nbsp;1;
+<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">nombreFormaté</span>&nbsp;=&nbsp;<span style="color:#1f377f;">nombre</span>.<span style="color:#74531f;">ToString</span>(<span style="color:#a31515;">"00"</span>);//la valeur de nombreFormaté<span style="color: rgb(33, 37, 41); font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 11.375px;">&nbsp;</span>est "01"</pre>
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">double</span>&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;78.029999;
+txtResultat.Text&nbsp;=&nbsp;<span style="color:#1f377f;">prix</span>.<span style="color:#74531f;">ToString</span>(<span style="color:#a31515;">"00.00"</span>);// affiche la chaine "78,03"</pre>
+						</li>
+					</ul>
+    
+			
+			</div>
+			</div>
+             <div class="w3-panel w3-card w3-light-grey"> 
+				<h4> Définir sa propre méthode !</h4>
+				<div class="w3-container">
+					<ul>
+									<li> Les méthodes permettent de bien structurer et d'éviter les répétitions du code. .
+
+									</li>
+									<li> Une méthode est un bloc d'instructions auquel on associe un nom
+									</li>
+									<li> Une méthode peut retourner une valeur
+									</li>
+									<li> Une méthode peut avoir 0 ou plusieurs paramètres en entrée. On doit sépcifier le type et le nom de chaque paramètre.
+									</li>
+									<li> Un paramètre peut être une variable de type int, string, bool, etc. La variable peut être aussi un tableau.
+									</li>
+									<li> Une méthode est définie par sa signature : Nom de la méthode et le nombre, le type et l'ordre des paramètres
+									</li>
+									<li> Le type de la méthode est définie par le type de sa valeur de retour. Exemple : Une méthode qui retourne un entier est dite de type entier. 
+									</li>
+									<li> Une méthode peut retourner aussi un tableau. 
+									</li>
+									<li> Une méthode qui ne retourne rien est dite de type void
+									</li>
+									</li>
+									
+					</ul>
+						<h5> Déclaration d'une méthode qui ne retourne pas de valeur</h4>	
+						<div style="display:flex" class="w3-container">
+							<div style="margin-right: 100px; height:100%;flex-grow:1" class="w3-code">
+																
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;">
+<span style="color:green;">//&nbsp;Signature&nbsp;de&nbsp;la&nbsp;méthode</span>
+<span style="color:blue;">public</span>&nbsp;<span style="color:blue;">void</span>&nbsp;<span style="color:#74531f;">NomDeLaMethode</span>(typeParametre1&nbsp;<span style="color:#1f377f;">nomParametre1</span>,&nbsp;typeParametre1&nbsp;<span style="color:#1f377f;">nomParametre2</span>,...,&nbsp;typeParametreN&nbsp;<span style="color:#1f377f;">nomParametreN</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<span style="color:green;">//&nbsp;Bloc&nbsp;d&#39;instructions&nbsp;qui&nbsp;représente&nbsp;le&nbsp;corps&nbsp;de&nbsp;la&nbsp;méthode</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</pre>
+							</div>
+														
+							
+						</div>			
+						<h5> Déclaration d'une méthode qui retourne une valeur</h4>	
+						<div style="display:flex" class="w3-container">
+							<div style="margin-right: 100px; height:100%;flex-grow:1" class="w3-code">
+																
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;">
+<span style="color:green;">//&nbsp;Signature&nbsp;de&nbsp;la&nbsp;méthode</span>
+<span style="color:blue;">public</span>&nbsp;typeValeurDeRetour&nbsp;<span style="color:#74531f;">NomDeLaMethode</span>(typeParametre1&nbsp;<span style="color:#1f377f;">nomParametre1</span>,&nbsp;typeParametre1&nbsp;<span style="color:#1f377f;">nomParametre2</span>,...,&nbsp;typeParametreN&nbsp;<span style="color:#1f377f;">nomParametreN</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<span style="color:green;">//&nbsp;Bloc&nbsp;d&#39;instructions&nbsp;qui&nbsp;représente&nbsp;le&nbsp;corps&nbsp;de&nbsp;la&nbsp;méthode</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<span style="color:#8f08c4;">return</span>&nbsp;valeur;
+
+}</pre>
+							</div>
+														
+							
+						</div>	
+						<ul>
+							<li>typeValeurDeRetour désigne le type de la valeur que doit retourner la méthode (int, char, string, bool, int[],...)</li>
+							<li>une méthode qui retourne une valeur doit <span style="text-decoration: underline; font-weight: bold;">obligatoirement avoir</span> au moins une <span style="font-weight: bold;">instruction</span> <span style="color:#8f08c4; font-weight: bold;">return</span> </li>
+						
+						
+						</ul>	
+								
+				</div>
+				
+			</div>
+            <div class="w3-panel w3-card w3-light-grey"> 
+				<h4> 4 formes de méthodes avec exemple</h4>
+				<h5> Forme 01 : Méthode <span style="background-color:aqua;">sans paramètres</span> et <span style="background-color:yellow;">sans valeur de retour</span></h5>
+				<div class="w3-container">
+						
+						<div style="display:flex" class="w3-container">
+							<div style="margin-right: 100px; height:100%;flex-grow:1" class="w3-code">
+																
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;TODO&nbsp;01&nbsp;:&nbsp;Définir&nbsp;une&nbsp;méthode&nbsp;nommée&nbsp;AfficherMessageSurConsoleV1&nbsp;qui&nbsp;affiche&nbsp;le&nbsp;message&nbsp;&quot;Bonjour&quot;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Cette&nbsp;méthode&nbsp;ne&nbsp;retourne&nbsp;rien,&nbsp;alors&nbsp;elle&nbsp;est&nbsp;de&nbsp;type&nbsp;void</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Cette&nbsp;méthode&nbsp;n&#39;a&nbsp;pas&nbsp;de&nbsp;paramètres&nbsp;en&nbsp;entrée&nbsp;()</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">public</span>&nbsp;<span style="color:blue;">static</span>&nbsp;<span style="background-color:yellow;color:blue;">void</span>&nbsp;<span style="color:#74531f;">AfficherMessageSurConsoleV1</span><span style="background-color:aqua;">()</span>&nbsp;<span style="color:green;">//&nbsp;Signature&nbsp;de&nbsp;la&nbsp;méthode</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(<span style="color:#a31515;">&quot;Bonjour&quot;</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+							</div>
+						    	
+						</div>	
+						<h6>Appel de la méthode</h6>
+						<div style="margin-right: 100px; flex-grow:1" class="w3-code">						
+							<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;TODO&nbsp;02&nbsp;:&nbsp;Appeler&nbsp;la&nbsp;méthode&nbsp;AfficherMessageSurConsoleV1</span>
+AfficherMessageSurConsoleV1();</pre>
+						</div>		
+				</div>
+				<h5> Forme 02 : Méthode <span style="background-color:aqua;">avec paramètres</span> et  <span style="background-color:yellow;">sans valeur de retour</span> </h5>
+				<div class="w3-container">
+						
+						<div style="display:flex" class="w3-container">
+							<div style="margin-right: 100px; height:100%;flex-grow:1" class="w3-code">
+																
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;TODO&nbsp;03&nbsp;:&nbsp;Définir&nbsp;une&nbsp;méthode&nbsp;nommée&nbsp;AfficherMessageSurConsoleV2&nbsp;qui&nbsp;affiche&nbsp;un&nbsp;message&nbsp;récu&nbsp;en&nbsp;paramètre&nbsp;(en&nbsp;entrée)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Cette&nbsp;méthode&nbsp;ne&nbsp;retourne&nbsp;rien,&nbsp;alors&nbsp;elle&nbsp;est&nbsp;de&nbsp;type&nbsp;void</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Cette&nbsp;méthode&nbsp;a&nbsp;un&nbsp;paramètre&nbsp;de&nbsp;type&nbsp;string&nbsp;qui&nbsp;correspond&nbsp;au&nbsp;message&nbsp;à&nbsp;afficher&nbsp;sur&nbsp;la&nbsp;console</span>
+ 
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">public</span>&nbsp;<span style="color:blue;">static</span>&nbsp;<span style="background-color:yellow;color:blue;">void</span>&nbsp;<span style="color:#74531f;">AfficherMessageSurConsoleV2</span><span style="background-color:aqua;color:blue;">(string&nbsp;<span style="color:#1f377f;">pMessage</span>)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(pMessage);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+							</div>
+														
+							
+						</div>	
+						<h6>Appel de la méthode</h6>
+						<div style="margin-right: 100px; flex-grow:1" class="w3-code">						
+							<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;TODO&nbsp;04&nbsp;:&nbsp;Appeler&nbsp;la&nbsp;méthode&nbsp;AfficherMessageSurConsoleV2</span>
+AfficherMessageSurConsoleV2(<span style="color:#a31515;">&quot;Bonsoir&quot;</span>);</pre>
+						</div>							
+						
+								
+				</div>
+					<h5> Forme 03 : Méthode <span style="background-color:aqua">sans paramètres</span> et <span style="background-color:yellow">avec valeur de retour</span>  </h5>
+				<div class="w3-container">
+						
+						<div style="display:flex" class="w3-container">
+							<div style="margin-right: 100px; height:100%;flex-grow:1" class="w3-code">
+																
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;TODO&nbsp;05&nbsp;:&nbsp;Définir&nbsp;une&nbsp;méthode&nbsp;nommée&nbsp;SommeDeuxNombresV1&nbsp;qui&nbsp;additionne&nbsp;10&nbsp;et&nbsp;5&nbsp;et&nbsp;retourne&nbsp;le&nbsp;résultat</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Cette&nbsp;méthode&nbsp;est&nbsp;de&nbsp;type&nbsp;int.&nbsp;Elle&nbsp;retourne&nbsp;un&nbsp;entier&nbsp;qui&nbsp;correspond&nbsp;à&nbsp;la&nbsp;somme&nbsp;de&nbsp;10&nbsp;et&nbsp;5</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Cette&nbsp;méthode&nbsp;n&#39;a&nbsp;pas&nbsp;de&nbsp;paramètres&nbsp;en&nbsp;entrée</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">public</span>&nbsp;<span style="color:blue;">static</span>&nbsp;<span style="background-color:yellow;color:blue;">int</span>&nbsp;<span style="color:#74531f;">SommeDeuxNombresV1</span><span style="background-color:aqua">()</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">somme</span>&nbsp;=&nbsp;0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;somme&nbsp;=&nbsp;10&nbsp;+&nbsp;5;
+ 
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">return</span>&nbsp;somme;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+							</div>
+															
+							
+						</div>			
+						<h6>Appel de la méthode</h6>
+						<div style="margin-right: 100px; flex-grow:1" class="w3-code">						
+							<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;TODO&nbsp;06&nbsp;:&nbsp;Appeler&nbsp;la&nbsp;méthode&nbsp;SommeDeuxNombresV1</span>
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">resultat</span>&nbsp;=&nbsp;SommeDeuxNombresV1();</pre>
+						</div>	
+								
+				</div>
+					<h5> Forme 04 : Méthode <span style="background-color:aqua;">avec paramètres</span> et <span style="background-color:yellow;">avec valeur de retour</span> </h5>
+				<div class="w3-container">
+						
+						<div style="display:flex" class="w3-container">
+							<div style="margin-right: 100px; height:100%;flex-grow:1" class="w3-code">
+																
+<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;TODO&nbsp;07&nbsp;:&nbsp;Définir&nbsp;une&nbsp;méthode&nbsp;nommée&nbsp;SommeDeuxNombresV2&nbsp;qui&nbsp;calcule&nbsp;et&nbsp;retourne&nbsp;la&nbsp;somme&nbsp;de&nbsp;deux&nbsp;nombres&nbsp;entiers&nbsp;reçus&nbsp;en&nbsp;paramètres</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Cette&nbsp;méthode&nbsp;est&nbsp;de&nbsp;type&nbsp;int.&nbsp;Elle&nbsp;retourne&nbsp;un&nbsp;entier&nbsp;qui&nbsp;correspond&nbsp;à&nbsp;la&nbsp;somme&nbsp;des&nbsp;deux&nbsp;nombres</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:green;">//&nbsp;Cette&nbsp;méthode&nbsp;a&nbsp;deux&nbsp;paramètres&nbsp;en&nbsp;entrée.&nbsp;Les&nbsp;deux&nbsp;nombres&nbsp;à&nbsp;additionner.</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">public</span>&nbsp;<span style="color:blue;">static</span>&nbsp;<span style="background-color:yellow;color:blue;">int</span>&nbsp;<span style="color:#74531f;">SommeDeuxNombresV2</span> <span style="background-color:aqua"> (<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">pNombre1</span>,&nbsp;<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">pNombre2</span>)</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">somme</span>&nbsp;=&nbsp;0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;somme&nbsp;=&nbsp;pNombre1&nbsp;+&nbsp;pNombre2;
+ 
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">return</span>&nbsp;somme;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+							</div>
+														
+							
+						</div>	
+						<h6>Appel de la méthode</h6>
+						<div style="margin-right: 100px; flex-grow:1" class="w3-code">						
+							<pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;TODO&nbsp;08&nbsp;:&nbsp;Appeler&nbsp;la&nbsp;méthode&nbsp;SommeDeuxNombresV2</span>
+resultat&nbsp;=&nbsp;SommeDeuxNombresV2(10,&nbsp;5);
+ 
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nombre1</span>&nbsp;=&nbsp;10;
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">nombre2</span>&nbsp;=&nbsp;5;
+resultat&nbsp;=&nbsp;SommeDeuxNombresV2(nombre1,&nbsp;nombre2);</pre>
+						</div>							
+						
+								
+				</div>
+				
+			</div>
+             <button onclick="accordeon('RC10')" class="w3-button w3-block w3-left-align w3-gray">Notions théoriques : Afficher/Cacher</button>
+	
+         </div>
+	
+	<!-- <br> -->
+	<button onclick="accordeon('RC11')" class="w3-button w3-block w3-left-align w3-grey">Rencontre 11 - <b>TP03 <span style="color:yellow;"> (20%)</span></b>
+	<span style="color:yellow;padding-left: 275px;">(Jeudi 22 décembre 2022)</span> </button>
+	
+	 
+	<div id="RC11" class="w3-container w3-hide">
+		 <div class="w3-panel w3-round w3-border">
+			<h3> Formatif #02</h3>
+           
+			 
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre11/Formatif2_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel du formatif #02</a></p>
+            
+			</div>
+			
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre11/Formatif2_Solution.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution du formatif #02</a></p>
+            </div>
+			
+		
+		</div>
+		 <div class="w3-panel w3-round w3-border">
+			<h3> TP03 (20%)</h3>
+           
+			 <div class="w3-container w3-cell w3-cell-middle">
+			
+              <p><a target="_blank" href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYVtGu0OPLHOpS_qR_e71Aoo" class="w3-button w3-brown w3-round">Capsules vidéos!</a></p>
+            
+			</div>
+			  <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-A22AN4-EM-Programmation1/Rencontre11/TP03_Materiel.zip" class="w3-button w3-green w3-round">Cliquez pour télécharger le matériel du TP#03</a></p>
+            </div>
+			
+		
+		</div>
+	</div>
+	<!-- <br> -->
+	<button onclick="accordeon('RC12')" class="w3-button w3-block w3-left-align w3-blue">Rencontre 12 - <b>Examen 02 <span style="color:yellow;"> (30%)</span></b>
+	<span style="color:yellow;padding-left: 225px;">(Mardi 10 janvier 2023)</span> </button>
+    
+	<div id="RC12" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+				
+				</div>
+				<div class="w3-panel w3-round w3-border">
+				   <div class="w3-panel w3-card w3-light-grey"> 
+						<h4></h4>
+						<div class="w3-container">
+							
+						</div>
+					</div>
+				</div>
+	</div>
+    <!-- <br> -->
+
+
+    <br>
+
+</div>
+
+<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+<script>
+    w3CodeColor();
+</script>
+
+<script>
+function accordeon(id) {
+  let x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
