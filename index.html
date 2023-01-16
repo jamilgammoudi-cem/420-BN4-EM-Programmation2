@@ -341,9 +341,177 @@ lstFruits.SelectedIndex&nbsp;=&nbsp;3;</pre>
 	<button onclick="accordeon('RC02')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 2  <b></b> 
 	<span style="color:yellow;padding-left: 400px;">(Mardi 17 janvier 2023)</span>
 	</button>
-    <div id="RC02" class="w3-container w3-hide">
+   <div id="RC02" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+			<h3> Capsules vidéo</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYWCZcEZq5nLvFQfrur8aqDp" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				<h3> Exercices</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre2/R02_Exercices_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution</a></p>
+				 
+            </div>
+				
+				
+				
+				
+				
+		</div>
+			 
+		<div class="w3-panel w3-round w3-border">
+			<h3> Fichier texte avec séparateur</h3>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<ol>
+    <li>La méthode <span style="color: #74531f;"><strong><span style="font-family: 'courier new', courier, monospace; font-size: small;">Parse()</span></strong>
+        </span>
+        <ul>
+            <li><span style="color:blue;">double</span>.<span style="color:#74531f;">Parse(chaine)</span>, <span style="color:blue;">int</span>.<span style="color:#74531f;">Parse(chaine)</span>,...La méthode Parse() permet de convertir une chaine en nombre.
+                Si la chaine contient des caractères qui ne peuvent pas faire partie d'un nombre, la conversion produit une erreur à l'exécution.&nbsp;
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;">txtPrix.Text&nbsp;=&nbsp;<span style="color:#a31515;">"12,99"</span>;
+txtNombre.Text&nbsp;=&nbsp;<span style="color:#a31515;">"5"</span>;
+<span style="color:blue;">double</span>&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;<span style="color:blue;">double</span>.<span style="color:#74531f;">Parse</span>(txtPrix.Text)&nbsp;*&nbsp;<span style="color:blue;">int</span>.<span style="color:#74531f;">Parse</span>(txtNombre.Text);
+txtPrixTotal.Text&nbsp;=&nbsp;<span style="color:#1f377f;">prix</span>.<span style="color:#74531f;">ToString</span>(<span style="color:#a31515;">"C"</span>);&nbsp;<span style="color:green;">// ToString("C")&nbsp;permet&nbsp;d'afficher&nbsp;le&nbsp;signe&nbsp;de&nbsp;la&nbsp;monnaie.&nbsp;Dans&nbsp;ce&nbsp;cas&nbsp;$</span></pre>
+            </li>
+        </ul>
+    </li>
+    <li>La méthode <span style="color: #74531f;"><strong><span style="font-family: 'courier new', courier, monospace; font-size: small;">Split()</span></strong>
+        </span>
+        <ul>
+            <li>C'est une méthode qui s'applique à une chaine de caractères. Elle retourne un <b>tableau</b> qui contient les sous-chaines délimitées par le caractère spécifié
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">chaine</span>&nbsp;=&nbsp;<span style="color:#a31515;">"fraise,pomme,poire,kiwi"</span>;
+<span style="color:blue;">string</span>[]&nbsp;<span style="color:#1f377f;">tabFruits</span>&nbsp;=&nbsp;<span style="color:#1f377f;">chaine</span>.<span style="color:#74531f;">Split</span>(<span style="color:#a31515;">','</span>);
+<span style="color:green;">// tabFruits&nbsp;contient&nbsp;:</span></pre>
+                <img src="data:image/png;base64,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" alt=""><br>
 
-	
+            </li>
+
+        </ul>
+    </li>
+    <li>Exemples : Lecture d'un fichier texte avec séparateur
+        <ul>
+            <li>Lecture d'une ligne dans un fichier
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#2b91af;">StreamReader</span> <span style="color:#1f377f;">objFichier</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">StreamReader</span>(<span style="color:#a31515;">"informations.txt"</span>);
+<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">ligneLue</span>&nbsp;=&nbsp;<span style="color:#a31515;">""</span>;
+<span style="color:blue;">string</span>[]&nbsp;<span style="color:#1f377f;">tabNoms</span>;
+<span style="color:#8f08c4;">if</span>&nbsp;(!<span style="color:#1f377f;">objFichier</span>.EndOfStream)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">ligneLue</span>&nbsp;=&nbsp;<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">ReadLine</span>();
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">tabNoms</span>&nbsp;=&nbsp;<span style="color:#1f377f;">ligneLue</span>.<span style="color:#74531f;">Split</span>(<span style="color:#a31515;">'/'</span>);
+}
+objFichier.Close();</pre>
+            </li>
+            <li>&nbsp;Lecture d'une ligne d'un fichier. Les données extraites sont de type&nbsp;<span style="color: #0000ff;"><strong><span style="font-family: 'courier new', courier, monospace; font-size: small;">double</span></strong>&nbsp;</span>
+                <ul>
+                    <li>
+                        <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#8f08c4;">if</span>&nbsp;(!<span style="color:#1f377f;">objFichier</span>.EndOfStream)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">string</span>&nbsp;<span style="color:#1f377f;">ligneLue</span>&nbsp;=&nbsp;<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">ReadLine</span>();
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">string</span>[]&nbsp;<span style="color:#1f377f;">tabPrix</span>&nbsp;=&nbsp;<span style="color:#1f377f;">ligneLue</span>.<span style="color:#74531f;">Split</span>(<span style="color:#a31515;">'/'</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">double</span>&nbsp;<span style="color:#1f377f;">prix</span>&nbsp;=&nbsp;<span style="color:blue;">double</span>.<span style="color:#74531f;">Parse</span>(<span style="color:#1f377f;">tabPrix</span>[0]); <span style="color:green">// prix vaut 105</span>
+}</pre>
+                        <img src="data:image/png;base64,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" alt="" style="color: rgb(73, 80, 87); font-size: 0.9375rem; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;"><br><br>
+                        <img src="data:image/png;base64,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" alt=""><br>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>La méthode <span style="color: #74531f;"><strong><span style="font-family: 'courier new', courier, monospace;">Write()</span></strong>
+        </span> avec un objet <span style="color: #3366ff;"><strong><span style="font-family: 'courier new', courier, monospace;">StreamWriter.</span></strong>
+        </span>
+        <ul>
+            <li>
+                La méthode Write() écrit dans le fichier sans ajouter un saut de ligne.
+
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#2b91af;">StreamWriter</span>&nbsp;<span style="color:#1f377f;">objFichier</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">StreamWriter</span>(<span style="color:#a31515;">"resultats.txt"</span>);
+<span style="color:blue;">string</span>[]&nbsp;<span style="color:#1f377f;">tabNoms</span>&nbsp;=&nbsp;{&nbsp;<span style="color:#a31515;">"Marie&nbsp;Tremblay"</span>,&nbsp;<span style="color:#a31515;">"Julie&nbsp;Labelle"</span>,&nbsp;<span style="color:#a31515;">"Jean&nbsp;Lebeau"</span>&nbsp;};
+<span style="color:#8f08c4;">for</span>&nbsp;(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span>&nbsp;=&nbsp;0;&nbsp;<span style="color:#1f377f;">index</span>&nbsp;&lt;&nbsp;<span style="color:#1f377f;">tabNoms</span>.<span style="color:#74531f;">Length</span>-1;&nbsp;<span style="color:#1f377f;">index</span>++)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">Write</span>(<span style="color:#1f377f;">tabNoms</span>[<span style="color:#1f377f;">index</span>]&nbsp;+&nbsp;<span style="color:#a31515;">"/"</span>);
+}
+<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">Write</span>(<span style="color:#1f377f;">tabNoms</span>[<span style="color:#1f377f;">tabNoms</span>.<span style="color:#74531f;">Length</span>-1]&nbsp;); <span style="color:green">// écrire le dernier élément du fichier</span>
+<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">Close</span>();</pre>
+            </li>
+        </ul>
+    </li>
+
+    <li>La méthode <span style="color:#74531f;"><span style="font-family: 'courier new', courier, monospace;">Read()</span></span>avec un objet&nbsp;StreamReader.
+        <ul>
+            <li>Read() lit un seul caractère avec un objet StreamReader et avance la position d'un caractère
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:#1f377f;"><span class="" style="color: rgb(125, 159, 211);">int</span> carLu</span>&nbsp;=&nbsp;<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">Read</span>();<span style="color:green;">//&nbsp;carLu&nbsp;a&nbsp;pour&nbsp;valeur&nbsp;l'entier&nbsp;correspondant&nbsp;au&nbsp;caractère&nbsp;lu.&nbsp;</span>
+        <span style="color:green;">// Ex:&nbsp;Si&nbsp;le&nbsp;caractère&nbsp;lu&nbsp;est&nbsp;</span>
+        <span style="color:green;">// A&nbsp;carLu&nbsp;est&nbsp;65&nbsp;</span>
+        <span style="color:green;">// B&nbsp;carLu&nbsp;est&nbsp;66....</span></pre>
+
+            </li>
+        </ul>
+
+    </li>
+    <li>Instanciation d'un tableau&nbsp;
+        <ul>
+            <li>Dans la R21 nous avons vu comment créer des objets par instanciation. Les tableaux que nous avons utilisé étaient jusque là pré initialisés.
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>[]&nbsp;<span style="color:#1f377f;">tabNombres</span>&nbsp;=&nbsp;{&nbsp;3,&nbsp;4,&nbsp;10,&nbsp;5,&nbsp;8&nbsp;};&nbsp;<span style="color:green;">// tableau&nbsp;pré&nbsp;initialisé&nbsp;avec&nbsp;5&nbsp;éléments&nbsp;entiers</span>
+</pre>
+                <b>Si on ne pré initialise pas le tableau il faut l'instancier </b>pour que la réservation de places en mémoire soit connue à la compilation. Comme toujours, nous utiliserons le <span style="font-size: 0.9375rem; color: blue;">new </span>pour
+                instancier un tableau.
+            </li>
+            <li>Exemple pour <b>instancier un tableau d'entiers à une dimension avec 5 éléments
+
+                </b>
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">int</span>[]&nbsp;<span style="color:#1f377f;">tabNombres</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:blue;">int</span>[5]; <span style="color:green;">// Le 5&nbsp;indique&nbsp;le&nbsp;nombre&nbsp;d'entiers&nbsp;à&nbsp;réserver&nbsp;dans le tableau&nbsp;tabNombres</span>
+<span style="color:#2b91af;">StreamReader</span>&nbsp;<span style="color:#1f377f;">objFichier</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">StreamReader</span>(<span style="color:#a31515;">"informations2.txt"</span>);
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">index</span>&nbsp;=&nbsp;0;
+<span style="color:#8f08c4;">while</span>&nbsp;(!<span style="color:#1f377f;">objFichier</span>.EndOfStream&nbsp;&amp;&amp;&nbsp;<span style="color:#1f377f;">index</span>&nbsp;&lt;&nbsp;<span style="color:#1f377f;">tabNombres</span>.Length)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">tabNombres</span>[<span style="color:#1f377f;">index</span>]&nbsp;=&nbsp;<span style="color:blue;">int</span>.<span style="color:#74531f;">Parse</span>(<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">ReadLine</span>());
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">index</span>++;
+}
+<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">Close</span>();</pre>
+            </li>
+            <li>Exemple pour instancier un tableau de string à une dimension. 3 est le nombre de places à réserver pour tabChaines.
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">string</span>[]&nbsp;<span style="color:#1f377f;">tabChaines</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:blue;">string</span>[3];&nbsp;
+</pre>
+            </li>
+            <li>Exemple pour instancier un tableau de double à 2 dimensions
+                <pre style="font-family:Consolas;font-size:13px;color:black;background:white;"><span style="color:blue;">double</span>[&nbsp;,&nbsp;]&nbsp;<span style="color:#1f377f;">tabPrix</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:blue;">double</span>[2,&nbsp;3]; <span style="color:green;">// 2&nbsp;représente&nbsp;le&nbsp;nombre&nbsp;de&nbsp;rangées&nbsp;et&nbsp;3&nbsp;représente&nbsp;le&nbsp;nombre&nbsp;de colonnes&nbsp;de&nbsp;tabPrix</span>
+<span style="color:#2b91af;">StreamReader</span>&nbsp;<span style="color:#1f377f;">objFichier</span>&nbsp;=&nbsp;<span style="color:blue;">new</span>&nbsp;<span style="color:#2b91af;">StreamReader</span>(<span style="color:#a31515;">"informations.txt"</span>);
+<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">rangée</span>&nbsp;=&nbsp;0;
+<span style="color:#8f08c4;">while</span>&nbsp;(!<span style="color:#1f377f;">objFichier</span>.EndOfStream&nbsp;&amp;&amp;&nbsp;<span style="color:#1f377f;">rangée</span>&nbsp;&lt;&nbsp;<span style="color:#1f377f;">tabPrix</span>.<span style="color:#74531f;">GetLength</span>(0))
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">string</span>[]&nbsp;<span style="color:#1f377f;">tabLu</span>&nbsp;=&nbsp;<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">ReadLine</span>().<span style="color:#74531f;">Split</span>(<span style="color:#a31515;">'/'</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8f08c4;">for</span>&nbsp;(<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">colonne</span>&nbsp;=&nbsp;0;&nbsp;<span style="color:#1f377f;">colonne</span>&nbsp;&lt;&nbsp;<span style="color:#1f377f;">tabPrix</span>.<span style="color:#74531f;">GetLength</span>(1);&nbsp;<span style="color:#1f377f;">colonne</span>++)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">tabPrix</span>[<span style="color:#1f377f;">rangée</span>,&nbsp;<span style="color:#1f377f;">colonne</span>]&nbsp;=&nbsp;<span style="color:blue;">double</span>.<span style="color:#74531f;">Parse</span>(<span style="color:#1f377f;">tabLu</span>[<span style="color:#1f377f;">colonne</span>]);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#1f377f;">rangée</span>++;
+}
+<span style="color:#1f377f;">objFichier</span>.<span style="color:#74531f;">Close</span>();</pre>
+            </li>
+        </ul>
+    </li>
+    
+
+</ol>
+			
+			
+			</div>
+		 </div>
 
     </div>
 
@@ -353,8 +521,81 @@ lstFruits.SelectedIndex&nbsp;=&nbsp;3;</pre>
 	<span style="color:yellow;padding-left: 400px;">(Mardi 24 janvier 2023)</span>
 	</button>
     <div id="RC03" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+			<h3> Capsules vidéo</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUk1eH6aTbdeR22C4fzrrRL" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				<h3> Exercices</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre3/R03_Exercices_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            <div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="" class="w3-button w3-green w3-round">Cliquez pour télécharger la solution</a></p>
+				 
+            </div>
+				
+				
+				
+				
+				
+		</div>
+			 
+		<div class="w3-panel w3-round w3-border">
+			<h3> Instanciation de classe avec new </h3>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<ol>
+    <li>Instanciation : création d'un objet avec <strong><span style="font-family: 'courier new', courier, monospace; font-size: medium; color: #0000ff;"><a href="https://sites.google.com/site/notionscsharpcem/instanciation_objet" target="_blank">new</a></span></strong></li>
+    <li>Accéder aux membres
+        <ul>
+            <li>propriétés : des valeurs appartenant à l'objet</li>
+            <li>méthodes : des actions ou traitements que l'objet peut effectuer</li>
+            <li>Constantes : lorsqu'une classe définit des constantes publiques, l'accès à ces constantes en dehors de la classe se fera toujours en utilisant <b>le nom de la classe</b> et non le nom de l'objet.<br>exemple :&nbsp; int valeur = MaClasse<b>.</b>NomConstante;</li>
+            <li>Méthodes statiques : lorsque la classe offre une ou plusieurs méthodes statiques, elles seront accessibles en utilisant <b>le nom de la classe</b>&nbsp;et non le nom de l'objet.</li>
+        </ul>
+    </li>
+    <li>Type valeur et type référence
+        <ul>
+            <ul>
+                <li>Les variables qui&nbsp;<b>stockent des valeurs</b>&nbsp;en mémoire sont dites de type valeur (comme les types&nbsp; int, char, decimal, bool,...)</li>
+                <li>Les variables qui&nbsp;<b>stockent les adresses</b>&nbsp;des objets en mémoire sont dites de type référence (comme les string, tableaux et classes)</li>
+                <li>Référence <span style="color:blue">null :</span>&nbsp;Si l'objet ne fait référence à aucun objet, sa valeur&nbsp;&nbsp;<span style="color:blue">null</span>.&nbsp; Un objet déclaré et non instancié a pour valeur null</li>
+            </ul>
+            <li><strong><span style="font-family: 'courier new', courier, monospace; color: #0000ff;"><a href="https://sites.google.com/site/notionscsharpcem/instanciation_objet" target="_blank"></a></span></strong></li>
+        </ul>
+    </li>
 
-	
+    <li>Variable locale et variable membre
+        <ul>
+            <li>
+                Lorsqu'une variable est déclarée<b> localement dans une méthode ou un bloc d'instructions</b>, elle n'est visible est utilisable que dans la méthode ou le bloc où elle est déclarée. <b>La variable est dite locale</b>. Sa portée se limite
+                à la méthode ou le bloc qui la déclare. Dès que l'exécution de la méthode ou du bloc est terminée, la variable n'existe plus. </li>
+            <li>Dans c# on peut déclarer des variables dont la portée est plus large (la classe). On dit que c'est une variable membre. Sa portée est toute la classe. Elle est <b>utilisable dans toutes les méthodes</b> de la classe. Pour les distinguer des
+                variables locales, on adoptera le standard de les préfixer de <b>m_</b> (m_prix par exemple).&nbsp;</li>
+        </ul>
+    </li>
+    <li>Utilisation du débogueur pour visualiser les membres d'un objet
+        <ul>
+            <li>Lors de l'exécution, en mettant un point d'arrêt et en mettant le curseur sur l'objet, vous pouvez visualiser les valeurs des différentes propriétés de l'objet <img src="data:image/png;base64,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" alt=""></li>
+            <li>Vous pouvez aussi voir la structure de la classe en faisant un clic droit sur le type de l'objet c'est à dire le nom de la classe et choisir "Atteindre la définition" dans le menu.</li>
+        </ul>
+    </li>
+   
+</ol>
+			 </div>
+		 </div>
 
     </div>
 
