@@ -575,7 +575,7 @@ objFichier.Close();</pre>
 			
 			<div class="w3-container w3-cell w3-cell-middle">
 			
-                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre3/R03_Exercices_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre4/R04_Exercices_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
             </div>
 			
             <div class="w3-container w3-cell w3-cell-middle">
@@ -634,6 +634,68 @@ objFichier.Close();</pre>
 			 </div>
 		 </div>
 
+		<div class="w3-panel w3-round w3-border">
+			<h3> Laboratoire : Capsules vidéo</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUFBfoGYJtGNOj-SRGfyQcq" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				<h3> Laboratoire : Matériel</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre4/R04_Laboratoire_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+				
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+			<h3> Laboratoire : Détails </h3>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				Détails de la classe <strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">DisqueCompact</span></strong>
+<ul>
+    <li>Il y a 2 surcharges du constructeur de la classe <strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">DisqueCompact</span></strong>
+        <ul>
+            <li>Le premier sans paramètre permet d'obtenir un disque avec un nombre de pistes et des durées de pistes qui sont aléatoires</li>
+            <li>Le deuxième permet de spécifier le type disque par exemple : <span style="font-family: 'consolas', courier, monospace; color: #000000;">DisqueCompact objDisque = new DisqueCompact(SorteDeDisque.Test1);</span>
+                <ul>
+                    <li>L'énumération SorteDeDisque offre 4 choix possibles, le premier est Normal pour obtenir un disque aléatoire les 3 autres sont fixes soit :<ul>
+                            <li><strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">SorteDeDisque.Test1</span></strong> est un disque de 2 pistes, la première de 59 secondes et la deuxième de 5:01</li>
+                            <li><strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">SorteDeDisque.Test2</span></strong> est un disque de 8 pistes chacune d'une durée de 5 minutes</li>
+                            <li><strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">SorteDeDisque.Test3</span></strong> est un disque de 12 pistes alternant séquentiellement entre 3:59 et 4:01</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>La propriété <strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">Durée</span></strong> fournit la durée total en secondes de toutes les pistes du disque</li>
+    <li>La propriété <strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">Genre</span></strong> fournit le genre de musique du disque, pour l'obtenir en chaîne faire Genre.ToString()</li>
+    <li>La propriété <strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">Pistes</span></strong> fournit un tableau contenant la durée de chacune des pistes<ul>
+            <li><strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">Pistes.Length</span></strong> fournit le nombre de pistes que contient le disque</li>
+            <li>Pour obtenir la durée d'une piste en particulier, il faut indexer la propriété <strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">Pistes</span></strong>
+                <ul>
+                    <li><strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">Pistes[0]</span></strong> c'est la durée en secondes de la première piste</li>
+                    <li><strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">Pistes[1]</span></strong> c'est la durée en secondes de la deuxième piste</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Les méthodes <strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">FormatMMSS</span></strong> et <strong><span style="font-family: 'consolas', courier, monospace; color: #0077ee;">FormatHHMMSS</span></strong> permettent respectivement de formater une durée en secondes&nbsp;<ul>
+            <li>par exemple : <span style="font-family: 'consolas', courier, monospace; color: #000000;">string duréeFormatée = DisqueCompact.FormatMMSS(duréeEnSecondesÀFormater);</span></li>
+        </ul>
+    </li>
+</ul>
+			</div>
+		</div>
     </div>
 
 	
