@@ -950,11 +950,411 @@ m_colMots.<span style="color: #74531f;">Add</span>(<span style="color: #a31515;"
 	<button onclick="accordeon('RC08')" class="w3-button w3-block w3-left-align w3-dark-grey">Rencontre 8  <b></b> 
 	<span style="color:yellow;padding-left: 400px;">(Jeudi 16 février 2023)</span>
 	</button>
-    <div id="RC08" class="w3-container w3-hide">
+	<div id="RC08" class="w3-container w3-hide">
+		<button onclick="accordeon('RC81')" class="w3-button w3-block w3-left-align w3-green">Définition de classes  <b></b> 
+		<span style="color:yellow;padding-left: 400px;"></span>
+		</button>
+     <div id="RC81" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+			<h3> Définition de classes</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYWPmYVtmXJf-3EAGHqESPGj" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre8/R081_Classe_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+			<h3></h3>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<ol>
+    <li><b>Utilisation d'une classe</b> : instancier un ou plusieurs objets à l'aide de l'opérateur <span style="color: #0000ff; font-size: medium;"><strong><span style="font-family: 'courier new', courier, monospace;">new</span></strong></span>.
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: green;">// Instanciation d'un objet facilitant la lecture d'un fichier texte</span>
+<span style="color: #2b91af;">StreamReader</span> objFichier = <span style="color: blue;">new</span> <span style="color: #2b91af;">StreamReader</span>(<span style="color: #a31515;">"UnFichierTexte.txt"</span>);
 
-	
+<span style="color: green;">// Instanciation d'un objet permettant de générer des nombres aléatoires</span>
+<span style="color: #2b91af;">Random</span> m_objRandom = <span style="color: blue;">new</span> <span style="color: #2b91af;">Random</span>();
+
+<span style="color: green;">// Instanciation d'une collection servant à contenir des objets de la classe Morceau</span>
+<span style="color: #2b91af;">List</span>&lt;<span style="color: #2b91af;">Morceau</span>&gt; m_colMorceaux = <span style="color: blue;">new</span> <span style="color: #2b91af;">List</span>&lt;<span style="color: #2b91af;">Morceau</span>&gt;();
+</pre>
+        </div>
+    </li>
+    <li><span style="font-size: medium; color: #0000ff;"><strong><span style="font-family: 'courier new', courier, monospace;">class</span></strong></span> : mot clé servant à définir une classe
+        <ul>
+            <li>un <em><span><span>identificateur</span> </span></em>significatif pour la nommer
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">CompteurHydro</span>
+{
+    <span style="color: gray;">///</span><span style="color: green;"> Définir un ou plusieurs champs</span>
+    <span style="color: gray;">///</span><span style="color: green;"> Définir une ou plusieurs propriétés</span>
+    <span style="color: gray;">///</span><span style="color: green;"> Définir un ou plusieurs constructeurs</span>
+    <span style="color: gray;">///</span><span style="color: green;"> Définir une ou plusieurs méthodes</span>
+}</pre>
+            </li>
+            <li>un ou plusieurs <em><strong><span style="color: #993366;">champs</span> </strong></em>(variables membres privées)</li>
+            <li>une ou plusieurs <strong><em><span style="color: #993366;">propriétés</span> </em></strong>pour donner accès aux champs</li>
+            <li>un ou plusieurs <strong><em><span style="color: #993366;">constructeurs</span> </em></strong>servant à initialiser les champs</li>
+            <li>une ou plusieurs <strong><em><span style="color: #993366;">méthodes</span></em></strong> permettant de manipuler les champs</li>
+        </ul>
+    </li>
+    <li><span style="color: #993366;"><strong><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Champ</span></strong></span> : une variable membre privée servant à stocker une information
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span> <span style="color: blue;">int</span> m_consommationActuelle;
+</pre>
+        </div>
+    </li>
+    <li><span style="color: #993366;"><strong><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Propriété</span></strong></span> : fournit l'accès à un champ en lecture et/ou écriture
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span> <span style="color: blue;">int</span> ConsommationActuelle
+{  
+    <span style="color: green;">// accès en lecture avec get</span>
+    <span style="color: blue;">get</span> { <span style="color: #8f08c4;">return</span> m_consommationActuelle; }
+}</pre>
+        </div>
+    </li>
+    <li><span style="color: #993366;"><strong><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Constructeur</span></strong></span> : initialise <b>tous </b>les champs (variables membres)
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span> <span style="color: #2b91af;">CompteurHydro</span>()
+{
+    m_consommationActuelle = 0;
+}</pre>
+        </div>
+    </li>
+    <li><span style="color: #993366;"><strong><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Méthode</span></strong></span> : permet d'effectuer un traitement sur un ou plusieurs champs
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span> <span style="color: blue;">void</span> <span style="color: #74531f;">Consommer</span>(<span style="color: blue;">int</span> <span style="color: #1f377f;">pQuantitéKwh</span>)
+{
+    m_consommationActuelle += <span style="color: #1f377f;">pQuantitéKwh</span>;
+}</pre>
+        </div>
+    </li>
+    <li>Exemple #1 : La classe CompteurHydro avec un champ et un constructeur
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">CompteurHydro</span>
+{
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;"> Champs : Mémorise la consommation actuelle du compteur</span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">private</span> <span style="color: blue;">int</span> m_consommationActuelle;
+ 
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;">   Constructeur : Initialise une nouvelle instance. </span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">public</span> <span style="color: #2b91af;">CompteurHydro</span>()
+    {
+        m_consommationActuelle = 0;
+    }
+}</pre>
+        </div>
+    </li>
+    <li>Exemple #2 : La classe CompteurHydro avec l'ajout d'une propriété
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">CompteurHydro</span>
+{
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;"> Champs : Mémorise la consommation actuelle du compteur</span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">private</span> <span style="color: blue;">int</span> m_consommationActuelle;
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;">    Propriété : Obtient la consommation totale actuelle </span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">public</span> <span style="color: blue;">int</span> ConsommationActuelle
+    {
+        <span style="color: green;">// accès en lecture avec get</span>
+        <span style="color: blue;">get</span> { <span style="color: #8f08c4;">return</span> m_consommationActuelle; }
+    }
+ 
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;">   Constructeur : Initialise une nouvelle instance. </span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">public</span> <span style="color: #2b91af;">CompteurHydro</span>()
+    {
+        m_consommationActuelle = 0;
+    }
+}</pre>
+        </div>
+    </li>
+    <li>Exemple #3 : La classe CompteurHydro avec l'ajout d'une méthode
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">CompteurHydro</span>
+{
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;"> Champs : Mémorise la consommation actuelle du compteur</span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">private</span> <span style="color: blue;">int</span> m_consommationActuelle;
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;">    Propriété : Obtient la consommation totale actuelle </span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">public</span> <span style="color: blue;">int</span> ConsommationActuelle
+    {
+        <span style="color: green;">// accès en lecture avec get</span>
+        <span style="color: blue;">get</span> { <span style="color: #8f08c4;">return</span> m_consommationActuelle; }
+    }
+ 
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;">   Constructeur : Initialise une nouvelle instance. </span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">public</span> <span style="color: #2b91af;">CompteurHydro</span>()
+    {
+        m_consommationActuelle = 0;
+    }
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;"> Méthode : Augmente la quantité d'électricité consommée.</span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+    <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;</span><span style="color: gray;">param</span><span style="color: gray;"> name</span><span style="color: gray;">=</span><span style="color: gray;">"</span><span style="color: #1f377f;">pQuantitéKwh</span><span style="color: gray;">"</span><span style="color: gray;">&gt;</span><span style="color: green;">Quantité d'électricité à ajouter au compteur</span><span style="color: gray;">&lt;/</span><span style="color: gray;">param</span><span style="color: gray;">&gt;</span>
+    <span style="color: blue;">public</span> <span style="color: blue;">void</span> <span style="color: #74531f;">Consommer</span>(<span style="color: blue;">int</span> <span style="color: #1f377f;">pQuantitéKwh</span>)
+    {
+        m_consommationActuelle += <span style="color: #1f377f;">pQuantitéKwh</span>;
+    }
+}</pre>
+        </div>
+    </li>
+    <li>Exemple #4 : Utilisation de la classe CompteurHydro
+        <div class="syntax">
+            <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: green;">// Instancier un objet CompteurHydro</span>
+m_objCompteurHydro = <span style="color: blue;">new</span> <span style="color: #2b91af;">CompteurHydro</span>();
+ 
+<span style="color: green;">// Consommer 100Kw en utilisant la méthode Consommer </span>
+m_objCompteurHydro.<span style="color: #74531f;">Consommer</span>(100);
+ 
+<span style="color: green;">// Consommer 25Kw en utilisant la méthode Consommer</span>
+m_objCompteurHydro.<span style="color: #74531f;">Consommer</span>(25);
+ 
+<span style="color: green;">// Obtenir la consommation actuelle à l'aide de la propriété ConsommationActuelle</span>
+<span style="color: blue;">int</span> <span style="color: #1f377f;">consommation</span> = m_objCompteurHydro.ConsommationActuelle;
+</pre>
+        </div>
+    </li>
+    <li><span style="color: #993366;"><strong><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Constante</span></strong></span> : une classe peut également inclure des constantes
+        <ul>
+            <li>Exemple de déclaration de 2 constantes publiques et une constante privée
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span>&nbsp;<span style="color: blue;">class</span>&nbsp;<span style="color: #2b91af;">Thermostat</span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;Température&nbsp;minimale&nbsp;autorisée&nbsp;par&nbsp;un&nbsp;Thermostat</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">const</span>&nbsp;<span style="color: blue;">double</span>&nbsp;MIN_TEMPERATURE&nbsp;=&nbsp;5.0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;Température&nbsp;maximale&nbsp;autorisée&nbsp;par&nbsp;un&nbsp;Thermostat</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">const</span>&nbsp;<span style="color: blue;">double</span>&nbsp;MAX_TEMPERATURE&nbsp;=&nbsp;35.0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;Température&nbsp;initiale&nbsp;d'un&nbsp;Thermostat</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">private</span>&nbsp;<span style="color: blue;">const</span>&nbsp;<span style="color: blue;">double</span>&nbsp;TEMPERATURE_DÉFAUT&nbsp;=&nbsp;20.0;
+...
+</pre>
+            </li>
+            <li>Pour accéder une constante de l'extérieur de la classe il faut passer par le nom de la classe :
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">double</span>&nbsp;<span style="color: #1f377f;">laTemperatureMaximaleDuThermostatEst</span>&nbsp;=&nbsp;<span style="color: #2b91af;">Thermostat</span>.MAX_TEMPERATURE;
+</pre>
+            </li>
+        </ul>
+    </li>
+    <li>Exercices en laboratoire (à compléter au besoin à la maison)
+        <ul>
+            <li>Ex1 : Une classe modélisant un compteur hydro-électrique <strong><span style="color: #2b91af; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">CompteurHydro</span></strong></li>
+            <li>Ex2 : Une classe modélisant un <strong><span style="color: #2b91af; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Thermostat</span></strong></li>
+            <li>Ex3 : Une classe modélisant une <strong><span style="color: #2b91af; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Montre</span></strong></li>
+            <li>Ex4 : Une application utilisant 3 objets de la classe <strong><span style="color: #2b91af; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Thermostat</span></strong></li>
+            <li>Ex5 : Une classe modélisant un <strong><span style="color: #2b91af; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Parcometre</span></strong></li>
+        </ul>
+    </li>
+</ol>
+			</div>
+		</div>
 
     </div>
+	<button onclick="accordeon('RC82')" class="w3-button w3-block w3-left-align w3-green">Classe : Encapsulation  <b></b> 
+		<span style="color:yellow;padding-left: 400px;"></span>
+		</button>
+     <div id="RC82" class="w3-container w3-hide">
+		<div class="w3-panel w3-round w3-border">
+			<h3> Encapsulation </h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYUPn8zIgSlHKXb5jGuGdWpv" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre8/R082_Classe_Encapsulation_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+			<h3></h3>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<ol>
+    <li><b>Encapsulation</b> : Protéger les données membres pour assurer l'intégrité de l'objet
+        <div>En programmation, l'encapsulation désigne le principe de regrouper les données (variables membres privées) avec un ensemble de routines (propriétés et/ou méthodes) permettant de les consulter ou de les manipuler. Dans ce cours nous allons protéger
+            les données des objets afin d’assurer leur intégrité. Par exemple, la classe Thermostat qui modélise un objet de la vie réelle, ne devrait pas permettre d’augmenter la température à 999 ou encore de la fixer à -999 degrés Celsius.</div>
+    </li>
+    <li><strong><span style="font-family: 'courier new', courier, monospace; color: #0000ff; font-size: medium;">get</span></strong> : accès en lecture d'une propriété
+        <ul>
+            <li>Propriété en lecture seule
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">int</span>&nbsp;m_heures; <span style="color: green;">//&nbsp;champ </span>
+
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;Heures <span style="color: green;">//&nbsp;propriété </span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;<span style="color: green;">//&nbsp;accès&nbsp;en&nbsp;lecture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre>
+            </li>
+        </ul>
+    </li>
+    <li><strong><span style="font-family: 'courier new', courier, monospace; font-size: medium; color: #0000ff;">set</span></strong> : accès en écriture d'une propriété, utilisation du mot clé <span style="font-size: medium;"><strong><span style="font-family: 'courier new', courier, monospace; color: #0000ff;">value</span></strong>
+        </span>
+        <ul>
+            <li>Propriété en écriture seule
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">int</span>&nbsp;m_heures; <span style="color: green;">//&nbsp;champ </span>
+
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;Heures <span style="color: green;">//&nbsp;propriété </span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">set</span> <span style="color: green;">//&nbsp;accès&nbsp;en&nbsp;écriture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_heures&nbsp;=&nbsp;<span style="color: blue;">value</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+            </li>
+            <li><b>Propriété en lecture et écriture
+                </b>
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">int</span>&nbsp;m_heures; <span style="color: green;">//&nbsp;champ </span>
+
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;Heures <span style="color: green;">//&nbsp;propriété </span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;<span style="color: green;">// accès&nbsp;en&nbsp;lecture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">set</span>&nbsp;<span style="color: green;">//&nbsp;accès&nbsp;en&nbsp;écriture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_heures&nbsp;=&nbsp;<span style="color: blue;">value</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre>
+            </li>
+        </ul>
+    </li>
+    <li><b>Propriété calculée</b> : propriété qui fournit une valeur à partir de champs existants
+        <ul>
+            <li>Une méthode provenant de la classe <strong><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; color: #3366ff;">Montre</span></strong> sans paramètre qui produit un résultat
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span>&nbsp;<span style="color: blue;">string</span>&nbsp;<span style="color: #74531f;">ObtenirTempsCourant</span>()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures&nbsp;+&nbsp;<span style="color: #a31515;">":"</span>&nbsp;+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_minutes.<span style="color: #74531f;">ToString</span>(<span style="color: #a31515;">"00"</span>)&nbsp;+&nbsp;<span style="color: #a31515;">":"</span>&nbsp;+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_secondes.<span style="color: #74531f;">ToString</span>(<span style="color: #a31515;">"00"</span>);
+}</pre>
+                </div>
+            </li>
+            <li>Une propriété calculée qui remplace la méthode ObtenirTempsCourant()
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span>&nbsp;<span style="color: blue;">string</span>&nbsp;TempsCourant
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures&nbsp;+&nbsp;<span style="color: #a31515;">":"</span>&nbsp;+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_minutes.<span style="color: #74531f;">ToString</span>(<span style="color: #a31515;">"00"</span>)&nbsp;+&nbsp;<span style="color: #a31515;">":"</span>&nbsp;+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_secondes.<span style="color: #74531f;">ToString</span>(<span style="color: #a31515;">"00"</span>);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre>
+                </div>
+            </li>
+            <li>Utilisation de la méthode versus utilisation de la propriété calculée
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;">m_objMontre&nbsp;=&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">Montre</span>(9,&nbsp;05,&nbsp;42);
+ 
+<span style="color: green;">//&nbsp;version&nbsp;utilisant&nbsp;la&nbsp;méthode sans paramètre</span>
+txtAffichageMontre.Text&nbsp;=&nbsp;m_objMontre.<span style="color: #74531f;">ObtenirTempsCourant</span>();
+ 
+<span style="color: green;">//&nbsp;version&nbsp;utilisant&nbsp;la&nbsp;propriété calculée</span>
+txtAffichageMontre.Text&nbsp;=&nbsp;m_objMontre.TempsCourant;
+</pre>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li><b>Propriété automatique</b> : elle élimine la déclaration de la variable membre privée, mais elle ne permet pas de valider la valeur assignée avec l'accesseur en écriture.<ul>
+            <li>Version habituelle incluant la déclaration d'une variable membre privée
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">private</span>&nbsp;<span style="color: blue;">double</span>&nbsp;m_temperature;
+ 
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">double</span>&nbsp;Temperature
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;{&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_temperature;&nbsp;}
+}
+</pre>
+            </li>
+            <li>Version utilisant la propriété automatique
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: green;">//&nbsp;Propriété&nbsp;automatique&nbsp;en&nbsp;lecture publique et en écriture privé</span>
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">double</span>&nbsp;Temperature&nbsp;{&nbsp;<span style="color: blue;">get</span>;&nbsp;<span style="color: blue;">private set</span>;&nbsp;}</pre>
+            </li>
+        </ul>
+    </li>
+    <li><strong><span style="font-family: 'courier new', courier, monospace; font-size: medium; color: #8f08c4;">throw</span></strong> : lancer une exception lorsque l'état de l'objet est incohérent
+        <ul>
+            <li>Exemple #1 : un constructeur qui doit respecter la cohérence de l'objet
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: gray;"><span style="color: blue;">public</span>&nbsp;<span style="color: #2b91af;">Thermostat</span>(<span style="color: blue;">double</span>&nbsp;<span style="color: #1f377f;">pTemperature</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">if</span>&nbsp;(<span style="color: #1f377f;">pTemperature</span>&nbsp;&lt;&nbsp;MIN_TEMPERATURE&nbsp;||&nbsp;<span style="color: #1f377f;">pTemperature</span>&nbsp;&gt;&nbsp;MAX_TEMPERATURE)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">throw</span>&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">ArgumentOutOfRangeException</span>();
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;m_temperature&nbsp;=&nbsp;<span style="color: #1f377f;">pTemperature</span>;
+}</span></pre>
+            </li>
+            <li>Exemple #2 : une propriété qui doit respecter la cohérence de l'objet
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;Heures
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;<span style="color: green;">// accès&nbsp;en&nbsp;lecture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_heures;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">set</span>&nbsp;<span style="color: green;">//&nbsp;accès&nbsp;en&nbsp;écriture</span>
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">if</span>&nbsp;(<span style="color: blue;">value</span>&nbsp;&lt;&nbsp;0&nbsp;||&nbsp;<span style="color: blue;">value</span>&nbsp;&gt;&nbsp;23)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">throw</span>&nbsp;<span style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">ArgumentOutOfRangeException</span>();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_heures&nbsp;=&nbsp;<span style="color: blue;">value</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</pre>
+            </li>
+        </ul>
+    </li>
+</ol>
+			</div>
+		</div>
+	  </div>
+	</div>
 	 <!-- <br> -->
 	
   
