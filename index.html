@@ -1379,9 +1379,128 @@ txtAffichageMontre.Text&nbsp;=&nbsp;m_objMontre.TempsCourant;
 	<span style="color:yellow;padding-left: 70px;">(Mardi 28 février 2023)</span>
 	</button>
     <div id="RC10" class="w3-container w3-hide">
-		
-       
+		<div class="w3-panel w3-round w3-border">
+			<h3> TP03 (Partie 01)</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYWPcGeYIRi2_XVp5Q5lQFfB" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre10/TP3P1_AppModeImage_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+			<h3></h3>
+			<div class="w3-panel w3-card w3-light-grey"> 
+				<ol>
+    <li><strong>Diagramme de classes</strong> : Définir des classes en vous basant sur un diagramme de classes fournis</li>
+    <li><strong style="font-size: 0.9375rem;"><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Commentaires</span></strong><span style="font-size: 0.9375rem;"> : Dorénavant vous devrez commenter votre code</span>
+        <ul>
+            <li>commenter l'en-tête de chacune de vos classes</li>
+            <li>commenter les constantes, champs, propriétés, constructeurs et méthodes</li>
+            <li>Un exemple complet avec la classe ComteurHydro
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: gray;"><span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+<span style="color: gray;">///</span><span style="color: green;">&nbsp;Modélise&nbsp;un&nbsp;compteur&nbsp;hydro-électrique&nbsp;</span>
+<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">class</span>&nbsp;<span style="color: #2b91af;">CompteurHydro</span>
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;Mémorise&nbsp;la&nbsp;consommation&nbsp;actuelle&nbsp;du&nbsp;compteur</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">private</span>&nbsp;<span style="color: blue;">int</span>&nbsp;m_consommationActuelle;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;Obtient&nbsp;la&nbsp;consommation&nbsp;totale&nbsp;actuelle&nbsp;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">int</span>&nbsp;ConsommationActuelle
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">get</span>&nbsp;{&nbsp;<span style="color: #8f08c4;">return</span>&nbsp;m_consommationActuelle;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;}
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;&nbsp;Initialise&nbsp;une&nbsp;nouvelle&nbsp;instance.&nbsp;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">public</span>&nbsp;<span style="color: #2b91af;">CompteurHydro</span>()
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_consommationActuelle&nbsp;=&nbsp;0;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;&nbsp;Augmente&nbsp;la&nbsp;quantité&nbsp;d'électricité&nbsp;consommée.</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/</span><span style="color: gray;">summary</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: gray;">///</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;</span><span style="color: gray;">param</span><span style="color: gray;">&nbsp;name</span><span style="color: gray;">=</span><span style="color: gray;">"</span><span style="color: #1f377f;">pQuantitéKwh</span><span style="color: gray;">"</span><span style="color: gray;">&gt;</span><span style="color: green;">Quantité&nbsp;d'électricité&nbsp;à&nbsp;ajouter&nbsp;au&nbsp;compteur</span><span style="color: gray;">&lt;/</span><span style="color: gray;">param</span><span style="color: gray;">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">public</span>&nbsp;<span style="color: blue;">void</span>&nbsp;<span style="color: #74531f;">Consommer</span>(<span style="color: blue;">int</span>&nbsp;<span style="color: #1f377f;">pQuantitéKwh</span>)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_consommationActuelle&nbsp;+=&nbsp;<span style="color: #1f377f;">pQuantitéKwh</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</span></pre>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li><strong><span style="font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;">Définir des régions</span></strong>
+        : pour les constantes, champs et propriétés, constructeurs et méthodes
+        <ul>
+            <li>Exemple avec un constructeur
+                <div class="syntax">
+                    <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: gray;">#region</span>&nbsp;CONSTRUCTEUR
+<span style="color: blue;">public</span>&nbsp;<span style="color: #2b91af;">Thermostat</span>()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;m_temperature&nbsp;=&nbsp;TEMPERATURE_DÉFAUT;
+}
+<span style="color: gray;">#endregion</span>
+</pre>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li><strong>Environnement Test&nbsp;</strong> : Dorénavant vous devrez exécuter des tests afin de vérifier le fonctionnement de vos classes
+        <ul>
+            <li>Activer une série de tests en décommentant du code dans le fichier Correcteur.cs&nbsp;</li>
+            <li>Exécuter des tests pour valider le fonctionnement de votre classe ModeImage</li>
+            <li>Activer une série de tests pour valider le fonctionnement du formulaire principal</li>
+        </ul>
+    </li>
 
+</ol>
+			
+			</div>
+        </div>
+		<div class="w3-panel w3-round w3-border">
+			<h3> TP03 (Partie 02)</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYXfhqSWtm6A5uYxiNWiyIBb" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre10/TP2P2_AppTelecommande_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            
+				
+		</div>
     </div>
     
 	
