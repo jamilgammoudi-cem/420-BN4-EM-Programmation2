@@ -1521,8 +1521,188 @@ txtAffichageMontre.Text&nbsp;=&nbsp;m_objMontre.TempsCourant;
 	<span style="color:yellow;padding-left: 200px;">(Mardi 07 mars 2023)</span>
 	</button>
     <div id="RC11" class="w3-container w3-hide">
-		
+		<div class="w3-panel w3-round w3-border">
+			<h3> Type par énumération</h3>
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/watch?v=vHHBWVGOjrU&list=PLnFT1YNX4hYUwg2TB205i3He6xpF1yrgg&index=1" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre11/R11_Enumeration_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/watch?v=O2Np00RmjAU&list=PLnFT1YNX4hYUwg2TB205i3He6xpF1yrgg&index=3" class="w3-button w3-orange w3-round">Capsule vidéo - Exercices Machine distributrice seulement </a></p>
+            </div>
+            
+				
+		</div>
+		<div class="w3-panel w3-card w3-light-grey"> 
+			<ol>
+    <li><span style="font-size: medium; color: #0000ff;"><strong><span style="font-family: 'courier new', courier, monospace;">enum</span></strong>
+        </span> : mot clé permettant de définir un nouveau type par énumération
+        <ul>
+            <li>Sans spécifier de valeur de départ, va donc débuter à 0 et poursuivre par pas de 1
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;"></span><span style="color: blue;">public enum</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>&nbsp;{&nbsp;Gauche,&nbsp;&nbsp;Droit&nbsp;,&nbsp;Centre&nbsp;};
+</pre>
+            </li>
+            <li>En spécifiant la valeur de départ, va augmenter de 1 par la suite
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;"></span><span style="color: blue;">public enum</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>&nbsp;{&nbsp;Gauche&nbsp;=&nbsp;-1,&nbsp;Droit,&nbsp;Centre&nbsp;};
+</pre>
+            </li>
+            <li>En spécifiant chacune des valeurs
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;"></span><span style="color: blue;">public enum</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>&nbsp;{&nbsp;Gauche&nbsp;=&nbsp;1,&nbsp;Droit&nbsp;=&nbsp;2,&nbsp;Centre&nbsp;=&nbsp;4&nbsp;};
+</pre>
+            </li>
+			
+        </ul>
+    </li>
+	  <li> Variable de type par énumération et conversion
        
+        <ul>
+            <pre style="font-family:Cascadia Mono;font-size:13px;color:black;background:white;"><span style="color:green;">//&nbsp;Déclaration&nbsp;d&#39;une&nbsp;varibale&nbsp;de&nbsp;type&nbsp;par&nbsp;énumération</span>
+&nbsp;ChoixAlignement&nbsp;<span style="color:#1f377f;">choix</span>;
+&nbsp;<span style="color:green;">//&nbsp;Assigantion&nbsp;</span>
+&nbsp;choix&nbsp;=&nbsp;ChoixAlignement.Centre;
+&nbsp;<span style="color:green;">//&nbsp;Conversion&nbsp;type&nbsp;par&nbsp;énumération&nbsp;vers&nbsp;entier</span>
+&nbsp;<span style="color:blue;">int</span>&nbsp;<span style="color:#1f377f;">choixEntier</span>&nbsp;=&nbsp;(<span style="color:blue;">int</span>)choix;
+&nbsp;<span style="color:green;">//&nbsp;Conversion&nbsp;entier&nbsp;vers&nbsp;type&nbsp;par&nbsp;énumération</span>
+&nbsp;choix&nbsp;=&nbsp;(ChoixAlignement)0;</pre>
+            
+           
+           
+			
+        </ul>
+    </li>
+    <li>Différentes utilisations du switch
+        <ul>
+            <li>Exemple d'un switch utilisant des littéraux
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">int</span>&nbsp;<span style="color: #1f377f;">choix</span>&nbsp;=&nbsp;cboChoix.SelectedIndex;
+ 
+<span style="color: #8f08c4;">switch</span>&nbsp;(<span style="color: #1f377f;">choix</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;0:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;gauche"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;1&nbsp;:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;droite"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;2&nbsp;:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;au&nbsp;centre"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+}</pre>
+            </li>
+            <li>Exemple d'un switch utilisant des constantes
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: blue;">const</span>&nbsp;<span style="color: blue;">int</span>&nbsp;GAUCHE&nbsp;=&nbsp;0;
+<span style="color: blue;">const</span>&nbsp;<span style="color: blue;">int</span>&nbsp;DROIT&nbsp;=&nbsp;1;
+<span style="color: blue;">const</span>&nbsp;<span style="color: blue;">int</span>&nbsp;CENTRE&nbsp;=&nbsp;2;
+ 
+<span style="color: blue;">int</span>&nbsp;<span style="color: #1f377f;">choix</span>&nbsp;=&nbsp;cboChoix.SelectedIndex;
+ 
+<span style="color: #8f08c4;">switch</span>&nbsp;(<span style="color: #1f377f;">choix</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;GAUCHE:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;gauche"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;DROIT:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;droite"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;CENTRE:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;au&nbsp;centre"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+}</pre>
+            </li>
+            <li>Exemple utilisant un type par énumération prédéfini nommée HorizontalAlignement
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: #2b91af;">HorizontalAlignment</span>&nbsp;<span style="color: #1f377f;">choix</span>&nbsp;=&nbsp;(<span style="color: #2b91af;">HorizontalAlignment</span>)cboChoix.SelectedIndex;
+ 
+<span style="color: #8f08c4;">switch</span>&nbsp;(<span style="color: #1f377f;">choix</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">HorizontalAlignment</span>.Left:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;gauche"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">HorizontalAlignment</span>.Right:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;droite"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">HorizontalAlignment</span>.Center:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;au&nbsp;centre"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;&nbsp;&nbsp;
+}</pre>
+            </li>
+            <li>Exemple utilisant notre nouveau type par énumération ChoixAlignement
+                <pre style="font-family: Consolas; font-size: 13px; color: black; background: white;"><span style="color: #2b91af;">ChoixAlignement</span>&nbsp;<span style="color: #1f377f;">choix</span>&nbsp;=&nbsp;(<span style="color: #2b91af;">ChoixAlignement</span>)cboChoix.SelectedIndex;
+ 
+<span style="color: #8f08c4;">switch</span>&nbsp;(<span style="color: #1f377f;">choix</span>)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>.Gauche:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;gauche"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>.Droit:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;à&nbsp;droite"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">case</span>&nbsp;<span style="color: #2b91af;">ChoixAlignement</span>.Centre:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;txtVotreChoix.Text&nbsp;=&nbsp;<span style="color: #a31515;">"Alignement&nbsp;au&nbsp;centre"</span>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8f08c4;">break</span>;
+}</pre>
+            </li>
+        </ul>
+    </li>
+   
+ 
+
+    <li>Exercices à compléter en classe (à la maison si nécessaire)
+        <ul>
+            <li>Exer1 : Définir et utiliser un type par énumération</li>
+            <li>Exer3 : Une machine distributrice de breuvages</li>
+			<li>Exer5 : Une machine distributrice de breuvages avec tableau 1D</li>
+          
+        </ul>
+    </li>
+</ol>
+         </div>
+		 
+		 <div class="w3-panel w3-round w3-border">
+			<h3> Examen formatif 02 : Notions à évaluer</h3>
+			<ul>
+				<li> Instancier une classe</li>
+				<li> Parcourir une collection d'objets </li>
+				<li> Sauvegarder les éléments d'une collection dans un fichier texte avec séparateur </li>
+				<li> Définir une classe à partir d'un diagramme</li>
+				<li> Utiliser une classe A dans la définition des propriétés d'une autre classe B</li>
+				<li> Définir et utiliser un type par énumération</li>
+				<li> Exécuter des tests unitaires et utiliser le débogueur</li>
+				
+			</ul>
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://www.youtube.com/playlist?list=PLnFT1YNX4hYXeitFhUVBMcxx67KQ589R2" class="w3-button w3-orange w3-round">Capsule vidéo </a></p>
+            </div>
+			
+				
+		</div>
+		<div class="w3-panel w3-round w3-border">
+				
+				
+			
+			<div class="w3-container w3-cell w3-cell-middle">
+			
+                <p><a href="https://jamilgammoudi-cem.github.io/420-BN4-EM-Programmation2/Rencontre11/Formatif02_Materiel.zip" class="w3-button w3-orange w3-round">Cliquez pour télécharger le matériel </a></p>
+            </div>
+			
+            
+				
+		</div>
+		<div class="w3-panel w3-card w3-light-grey"> 
+		</div>
 
     </div>
 
